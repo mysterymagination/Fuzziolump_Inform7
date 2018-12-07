@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x25a0d10" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7</generator>
+  <activeNode nodeId="node-0x7f55dc0eba50"/>
+  <item nodeId="node-0x25a0d10">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+Fuzziolump
+An Interactive Fiction by jeff creswell
+Release 1 / Serial number 181205 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Chamber of Soiled Vestments
+You can see a Table (closed) and a Dryer (closed) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc0eb150"/>
+      <child nodeId="node-0x2f77b90"/>
+      <child nodeId="node-0x7f55dc0eba50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc0eb150">
+    <command xml:space="preserve">save</command>
+    <result xml:space="preserve">Ok.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2f77b90">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You can see a Table (empty) and a Dryer (in which is Clothes) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f77710"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f77710">
+    <command xml:space="preserve">open table</command>
+    <result xml:space="preserve">It isn&apos;t something you can open.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f77890"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f77890">
+    <command xml:space="preserve">open Table</command>
+    <result xml:space="preserve">It isn&apos;t something you can open.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f77d10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f77d10">
+    <command xml:space="preserve">open Dryer</command>
+    <result xml:space="preserve">It isn&apos;t something you can open.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f77110"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f77110">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc0eb2d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc0eb2d0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You can see a Table (empty) and a Dryer (empty) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f55dc0eba50">
+    <command xml:space="preserve">open table</command>
+    <result xml:space="preserve">You open the Table.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc0ebbd0"/>
+      <child nodeId="node-0x7f55dc0eb5d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc0ebbd0">
+    <command xml:space="preserve">open Table</command>
+    <result xml:space="preserve">It isn&apos;t something you can open.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc0ebd50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc0ebd50">
+    <command xml:space="preserve">look at dryer</command>
+    <result xml:space="preserve">You see nothing special about the Dryer.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc0ebed0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc0ebed0">
+    <command xml:space="preserve">open dryer</command>
+    <result xml:space="preserve">It isn&apos;t something you can open.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc0eb450"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc0eb450">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f55dc0eb5d0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You can see a Table (empty) and a Dryer (closed) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc12c100"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc12c100">
+    <command xml:space="preserve">open dryer</command>
+    <result xml:space="preserve">You open the Dryer, revealing Clothes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc12c280"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc12c280">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You can see a Table (empty) and a Dryer (in which is Clothes) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc12c400"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc12c400">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc12c580"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc12c580">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">You already have that.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f55dc12c700"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f55dc12c700">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You can see a Table (empty) and a Dryer (empty) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+</Skein>
