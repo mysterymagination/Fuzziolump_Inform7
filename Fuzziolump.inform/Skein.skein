@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x25a0d10" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x2aab4a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7</generator>
-  <activeNode nodeId="node-0x7f55dc0eba50"/>
-  <item nodeId="node-0x25a0d10">
+  <activeNode nodeId="node-0x7f420c5c2340"/>
+  <item nodeId="node-0x2aab4a0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 Fuzziolump
 An Interactive Fiction by jeff creswell
-Release 1 / Serial number 181205 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 181211 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Chamber of Soiled Vestments
+The musty warmth of the laundry room has always appealed to you; it suggests a friendly invitation to the unknown, and there always seems to be another unexplored dark corner.  Plus it&apos;s always warm and the soft tumbling of the dryers is soothing.  You smile contentedly at this thought, imagining that few people bother to appreciate the subtle treasures in a blanket of soft shadow.  A shared laundry like the one in your building is exponentially better, since every traveler through it leaves a little bit of themselves behind, enlivening the story.  If you were the type to rifle throw other people&apos;s skivvies it might be livelier-still, but that&apos;s intrusive. Also gross.  The dryer rumbles to a halt, then buzzes obnoxiously.  The world sure seems to love its noise.
+
+
 You can see a Table (closed) and a Dryer (closed) here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc0eb150"/>
-      <child nodeId="node-0x2f77b90"/>
-      <child nodeId="node-0x7f55dc0eba50"/>
+      <child nodeId="node-0x2aab620"/>
+      <child nodeId="node-0x2aab7a0"/>
+      <child nodeId="node-0x3146140"/>
+      <child nodeId="node-0x316ed80"/>
+      <child nodeId="node-0x316ea80"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc0eb150">
+  <item nodeId="node-0x2aab620">
     <command xml:space="preserve">save</command>
     <result xml:space="preserve">Ok.
 
@@ -37,22 +42,28 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2f77b90">
+  <item nodeId="node-0x2aab7a0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
-You can see a Table (empty) and a Dryer (in which is Clothes) here.
+You stand in the laundry room.  A speck of lint drifts by, placidly.
+
+
+You can see a Table (closed) and a Dryer (closed) here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>NO</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2f77710"/>
+      <child nodeId="node-0x2aab920"/>
+      <child nodeId="node-0x25c4a10"/>
+      <child nodeId="node-0x25c4e90"/>
+      <child nodeId="node-0x7f4264189ba0"/>
     </children>
   </item>
-  <item nodeId="node-0x2f77710">
+  <item nodeId="node-0x2aab920">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -63,10 +74,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2f77890"/>
+      <child nodeId="node-0x2aabaa0"/>
     </children>
   </item>
-  <item nodeId="node-0x2f77890">
+  <item nodeId="node-0x2aabaa0">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -77,10 +88,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2f77d10"/>
+      <child nodeId="node-0x2aabc20"/>
     </children>
   </item>
-  <item nodeId="node-0x2f77d10">
+  <item nodeId="node-0x2aabc20">
     <command xml:space="preserve">open Dryer</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -91,10 +102,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2f77110"/>
+      <child nodeId="node-0x2aabda0"/>
     </children>
   </item>
-  <item nodeId="node-0x2f77110">
+  <item nodeId="node-0x2aabda0">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.
 
@@ -105,10 +116,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc0eb2d0"/>
+      <child nodeId="node-0x2aabf20"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc0eb2d0">
+  <item nodeId="node-0x2aabf20">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (empty) here.
@@ -120,22 +131,109 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f55dc0eba50">
-    <command xml:space="preserve">open table</command>
-    <result xml:space="preserve">You open the Table.
+  <item nodeId="node-0x25c4a10">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t go that way.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
+    <played>NO</played>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc0ebbd0"/>
-      <child nodeId="node-0x7f55dc0eb5d0"/>
+      <child nodeId="node-0x25c4b90"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc0ebbd0">
+  <item nodeId="node-0x25c4b90">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You can see a Table (closed) and a Dryer (closed) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x25c4e90">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You stand in the laundry room.  A speck of lint drifts by, placidly.
+
+
+You can see a Table (closed) and a Dryer (closed) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f4264189ba0">
+    <command xml:space="preserve">open dryer</command>
+    <result xml:space="preserve">You open the Dryer, revealing Clothes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f4264189d20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f4264189d20">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
+
+Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He&apos;s wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer&apos;s tumble cycle first-hand.  There&apos;s no pain, however, and after only a few dizzying seconds the world stills.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f4264189ea0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f4264189ea0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You stand in the laundry room.  A speck of lint drifts by, placidly.
+
+
+You can see a Table (closed) and a Dryer (in which is Clothes) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x3146140">
+    <command xml:space="preserve">open table</command>
+    <result xml:space="preserve">You open the Table, revealing a 9-volt Battery, a Singed Penny and a Rusty Pocket Knife.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x31462c0"/>
+      <child nodeId="node-0x31468c0"/>
+      <child nodeId="node-0x316ef00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x31462c0">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -146,10 +244,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc0ebd50"/>
+      <child nodeId="node-0x3146440"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc0ebd50">
+  <item nodeId="node-0x3146440">
     <command xml:space="preserve">look at dryer</command>
     <result xml:space="preserve">You see nothing special about the Dryer.
 
@@ -160,10 +258,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc0ebed0"/>
+      <child nodeId="node-0x31465c0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc0ebed0">
+  <item nodeId="node-0x31465c0">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -174,10 +272,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc0eb450"/>
+      <child nodeId="node-0x3146740"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc0eb450">
+  <item nodeId="node-0x3146740">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -188,7 +286,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f55dc0eb5d0">
+  <item nodeId="node-0x31468c0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (closed) here.
@@ -200,10 +298,10 @@ You can see a Table (empty) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc12c100"/>
+      <child nodeId="node-0x3146a40"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc12c100">
+  <item nodeId="node-0x3146a40">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -214,10 +312,10 @@ You can see a Table (empty) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc12c280"/>
+      <child nodeId="node-0x3146bc0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc12c280">
+  <item nodeId="node-0x3146bc0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (in which is Clothes) here.
@@ -229,10 +327,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc12c400"/>
+      <child nodeId="node-0x3146d40"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc12c400">
+  <item nodeId="node-0x3146d40">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.
 
@@ -243,10 +341,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc12c580"/>
+      <child nodeId="node-0x3146ec0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc12c580">
+  <item nodeId="node-0x3146ec0">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">You already have that.
 
@@ -257,10 +355,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f55dc12c700"/>
+      <child nodeId="node-0x316e180"/>
     </children>
   </item>
-  <item nodeId="node-0x7f55dc12c700">
+  <item nodeId="node-0x316e180">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (empty) here.
@@ -268,6 +366,184 @@ You can see a Table (empty) and a Dryer (empty) here.
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x316ef00">
+    <command xml:space="preserve">look at 9-volt battery</command>
+    <result xml:space="preserve">Time and tide (by the look of it, it has actually been swimming) have not been kind to this old fellow, but he might still have some juice left.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x316ed80">
+    <command xml:space="preserve">examine table</command>
+    <result xml:space="preserve">You see nothing special about the Table.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x316ea80">
+    <command xml:space="preserve">open dryer</command>
+    <result xml:space="preserve">You open the Dryer, revealing Clothes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x316e900"/>
+      <child nodeId="node-0x7f4264189a20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x316e900">
+    <command xml:space="preserve">take clothers</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f428800f2b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f428800f2b0">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f428800f130"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f428800f130">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You stand in the laundry room.  A speck of lint drifts by, placidly.
+
+
+You can see a Table (closed) and a Dryer (in which is Clothes) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25c4d10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25c4d10">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f4264189a20">
+    <command xml:space="preserve">take clothes</command>
+    <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
+
+Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He&apos;s wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer&apos;s tumble cycle first-hand.  There&apos;s no pain, however, and after only a few dizzying seconds the world stills.
+
+Atrium Glade
+Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
+
+You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.
+
+A holly bush rustles thoughtfully in the wind.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f4264189120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f4264189120">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Atrium Glade
+Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
+
+You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.
+
+A holly bush rustles thoughtfully in the wind.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42641898a0"/>
+      <child nodeId="node-0x7f420c5c21c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42641898a0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Chamber of Soiled Vestments
+You stand in the laundry room.  A speck of lint drifts by, placidly.
+
+
+You can see a Table (closed) and a Dryer (in which is Clothes) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f420c5c21c0">
+    <command xml:space="preserve">look holly</command>
+    <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f420c5c2340"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f420c5c2340">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a Sprig of Holly
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
