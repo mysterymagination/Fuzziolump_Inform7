@@ -27,12 +27,12 @@ The Atrium Glade is a room. "Only, it's a different world than the one you left.
 
 You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats."
 The Holly Bush is here. "A holly bush rustles thoughtfully in the wind." 
-The Sprig of Holly is an object.
+The Sprig of Holly is an object. "A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you."
 Instead of examining the Holly Bush:
 	if the  Sprig of Holly is not in the Atrium Glade:
 		say "You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.";
-		now the Sprig of Holly is in The Atrium Glade. "A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you."; 
-		now the description of The Sprig of Holly is "A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush."; 
+		now the Sprig of Holly is in The Atrium Glade; 
+		now the description of The Sprig of Holly is "A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle."; 
 	[apparently anon description assignments are transient -- if I run the bug where looking at the bush always teleports the sprig to the ground, the description is only available when it first enters the environment.  Explicitly looking at the sprig after its first appearance yields default  desc]
 	otherwise:
 		say "The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind."
