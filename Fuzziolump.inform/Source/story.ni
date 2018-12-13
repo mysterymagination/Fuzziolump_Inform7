@@ -1,5 +1,7 @@
 "Fuzziolump" by "jeff creswell"
 
+Chapter 1 - The Frosted Forest
+
 The player is in the Chamber of Soiled Vestments.
 The Chamber of Soiled Vestments is a room.  The description of The Chamber of Soiled vestments is "[laundry-description]"
 
@@ -24,7 +26,10 @@ Re-adjusting yourself, you poke your head in to take a closer look, expecting ru
 The Atrium Glade is a room. "Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
 
 You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats."
-The Sprig of Holly is here. "A holly bush rustles thoughtfully in the wind." 
-Instead of examining the Sprig of Holly:
+The Holly Bush is here. "A holly bush rustles thoughtfully in the wind." 
+The Sprig of Holly is an object.
+Instead of examining the Holly Bush:
 	say "You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.";
-	now the player has the Sprig of Holly.
+	Now the Sprig of Holly is in The Atrium Glade. "A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you."  The description of The Sprig of Holly is "A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush." 
+	[apparently anon description assignments are transient -- if I run the bug where looking at the bush always teleports the sprig to the ground, the description is only available when it first enters the environment.  Explicitly looking at the sprig after its first appearance yields default  desc]
+	
