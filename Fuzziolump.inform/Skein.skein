@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x2aab4a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7</generator>
-  <activeNode nodeId="node-0x7f42645e2280"/>
+  <activeNode nodeId="node-0x7f42645e2580"/>
   <item nodeId="node-0x2aab4a0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -9,7 +9,7 @@
 
 Fuzziolump
 An Interactive Fiction by jeff creswell
-Release 1 / Serial number 181213 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 181214 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Chamber of Soiled Vestments
 The musty warmth of the laundry room has always appealed to you; it suggests a friendly invitation to the unknown, and there always seems to be another unexplored dark corner.  Plus it&apos;s always warm and the soft tumbling of the dryers is soothing.  You smile contentedly at this thought, imagining that few people bother to appreciate the subtle treasures in a blanket of soft shadow.  A shared laundry like the one in your building is exponentially better, since every traveler through it leaves a little bit of themselves behind, enlivening the story.  If you were the type to rifle throw other people&apos;s skivvies it might be livelier-still, but that&apos;s intrusive. Also gross.  The dryer rumbles to a halt, then buzzes obnoxiously.  The world sure seems to love its noise.
@@ -52,7 +52,7 @@ You can see a Table (closed) and a Dryer (closed) here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -178,8 +178,8 @@ You can see a Table (closed) and a Dryer (closed) here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
+    <played>YES</played>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
@@ -192,9 +192,16 @@ You can see a Table (closed) and a Dryer (closed) here.
 
 Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He&apos;s wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer&apos;s tumble cycle first-hand.  There&apos;s no pain, however, and after only a few dizzying seconds the world stills.
 
+Atrium Glade
+Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
+
+You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.
+
+A holly bush rustles thoughtfully in the wind.
+
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -204,15 +211,45 @@ Re-adjusting yourself, you poke your head in to take a closer look, expecting ru
   </item>
   <item nodeId="node-0x7f4264189ea0">
     <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Chamber of Soiled Vestments
-You stand in the laundry room.  A speck of lint drifts by, placidly.
+    <result xml:space="preserve">Atrium Glade
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
 
-
-You can see a Table (closed) and a Dryer (in which is Clothes) here.
+A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42645e2400"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42645e2400">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Atrium Glade
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
+
+A holly bush rustles thoughtfully in the wind.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42645e2580"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42645e2580">
+    <command xml:space="preserve">look bush</command>
+    <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -422,7 +459,7 @@ You can see a Table (empty) and a Dryer (empty) here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -559,7 +596,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -811,7 +848,7 @@ You can also see a Sprig of Holly here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -832,7 +869,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -854,7 +891,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -963,7 +1000,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -984,7 +1021,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -998,7 +1035,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -1019,7 +1056,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -1033,7 +1070,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -1052,7 +1089,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -1066,7 +1103,7 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
