@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x2aab4a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x2c40a50" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7</generator>
-  <activeNode nodeId="node-0x7f42645e2580"/>
-  <item nodeId="node-0x2aab4a0">
+  <activeNode nodeId="node-0x2c40a50"/>
+  <item nodeId="node-0x2c40a50">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -24,14 +24,14 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2aab620"/>
-      <child nodeId="node-0x2aab7a0"/>
-      <child nodeId="node-0x3146140"/>
-      <child nodeId="node-0x316ed80"/>
-      <child nodeId="node-0x316ea80"/>
+      <child nodeId="node-0x2c40bd0"/>
+      <child nodeId="node-0x2c40d50"/>
+      <child nodeId="node-0x3345410"/>
+      <child nodeId="node-0x33708d0"/>
+      <child nodeId="node-0x3370a50"/>
     </children>
   </item>
-  <item nodeId="node-0x2aab620">
+  <item nodeId="node-0x2c40bd0">
     <command xml:space="preserve">save</command>
     <result xml:space="preserve">Ok.
 
@@ -42,7 +42,7 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2aab7a0">
+  <item nodeId="node-0x2c40d50">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -57,13 +57,13 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2aab920"/>
-      <child nodeId="node-0x25c4a10"/>
-      <child nodeId="node-0x25c4e90"/>
-      <child nodeId="node-0x7f4264189ba0"/>
+      <child nodeId="node-0x2c40ed0"/>
+      <child nodeId="node-0x3328790"/>
+      <child nodeId="node-0x3328a90"/>
+      <child nodeId="node-0x3328c10"/>
     </children>
   </item>
-  <item nodeId="node-0x2aab920">
+  <item nodeId="node-0x2c40ed0">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -74,10 +74,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2aabaa0"/>
+      <child nodeId="node-0x3328190"/>
     </children>
   </item>
-  <item nodeId="node-0x2aabaa0">
+  <item nodeId="node-0x3328190">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -88,10 +88,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2aabc20"/>
+      <child nodeId="node-0x3328310"/>
     </children>
   </item>
-  <item nodeId="node-0x2aabc20">
+  <item nodeId="node-0x3328310">
     <command xml:space="preserve">open Dryer</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -102,10 +102,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2aabda0"/>
+      <child nodeId="node-0x3328490"/>
     </children>
   </item>
-  <item nodeId="node-0x2aabda0">
+  <item nodeId="node-0x3328490">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.
 
@@ -116,10 +116,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2aabf20"/>
+      <child nodeId="node-0x3328610"/>
     </children>
   </item>
-  <item nodeId="node-0x2aabf20">
+  <item nodeId="node-0x3328610">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (empty) here.
@@ -131,7 +131,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25c4a10">
+  <item nodeId="node-0x3328790">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -142,10 +142,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c4b90"/>
+      <child nodeId="node-0x3328910"/>
     </children>
   </item>
-  <item nodeId="node-0x25c4b90">
+  <item nodeId="node-0x3328910">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (closed) and a Dryer (closed) here.
@@ -157,7 +157,7 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25c4e90">
+  <item nodeId="node-0x3328a90">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -172,7 +172,7 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f4264189ba0">
+  <item nodeId="node-0x3328c10">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -183,10 +183,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264189d20"/>
+      <child nodeId="node-0x3328d90"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264189d20">
+  <item nodeId="node-0x3328d90">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -206,10 +206,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264189ea0"/>
+      <child nodeId="node-0x3328f10"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264189ea0">
+  <item nodeId="node-0x3328f10">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
@@ -223,10 +223,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42645e2400"/>
+      <child nodeId="node-0x3345110"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42645e2400">
+  <item nodeId="node-0x3345110">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
@@ -240,10 +240,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42645e2580"/>
+      <child nodeId="node-0x3345290"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42645e2580">
+  <item nodeId="node-0x3345290">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -254,7 +254,7 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3146140">
+  <item nodeId="node-0x3345410">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">You open the Table, revealing a 9-volt Battery, a Singed Penny and a Rusty Pocket Knife.
 
@@ -265,12 +265,12 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x31462c0"/>
-      <child nodeId="node-0x31468c0"/>
-      <child nodeId="node-0x316ef00"/>
+      <child nodeId="node-0x3345590"/>
+      <child nodeId="node-0x3345d10"/>
+      <child nodeId="node-0x3370750"/>
     </children>
   </item>
-  <item nodeId="node-0x31462c0">
+  <item nodeId="node-0x3345590">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">That&apos;s already open.
 
@@ -281,10 +281,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3146440"/>
+      <child nodeId="node-0x3345710"/>
     </children>
   </item>
-  <item nodeId="node-0x3146440">
+  <item nodeId="node-0x3345710">
     <command xml:space="preserve">look at dryer</command>
     <result xml:space="preserve">You see nothing special about the Dryer.
 
@@ -295,10 +295,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x31465c0"/>
+      <child nodeId="node-0x3345890"/>
     </children>
   </item>
-  <item nodeId="node-0x31465c0">
+  <item nodeId="node-0x3345890">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -309,10 +309,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3146740"/>
+      <child nodeId="node-0x3345a10"/>
     </children>
   </item>
-  <item nodeId="node-0x3146740">
+  <item nodeId="node-0x3345a10">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -332,10 +332,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f428800f5b0"/>
+      <child nodeId="node-0x3345b90"/>
     </children>
   </item>
-  <item nodeId="node-0x7f428800f5b0">
+  <item nodeId="node-0x3345b90">
     <command xml:space="preserve">look at holly</command>
     <result xml:space="preserve">hello.
 You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
@@ -347,7 +347,7 @@ You examine the nearest frosted greenery, a holly bush whose bright red berries 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x31468c0">
+  <item nodeId="node-0x3345d10">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (closed) here.
@@ -359,10 +359,10 @@ You can see a Table (empty) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3146a40"/>
+      <child nodeId="node-0x3345e90"/>
     </children>
   </item>
-  <item nodeId="node-0x3146a40">
+  <item nodeId="node-0x3345e90">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -373,10 +373,10 @@ You can see a Table (empty) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3146bc0"/>
+      <child nodeId="node-0x3370150"/>
     </children>
   </item>
-  <item nodeId="node-0x3146bc0">
+  <item nodeId="node-0x3370150">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (in which is Clothes) here.
@@ -388,10 +388,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3146d40"/>
+      <child nodeId="node-0x33702d0"/>
     </children>
   </item>
-  <item nodeId="node-0x3146d40">
+  <item nodeId="node-0x33702d0">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.
 
@@ -402,10 +402,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3146ec0"/>
+      <child nodeId="node-0x3370450"/>
     </children>
   </item>
-  <item nodeId="node-0x3146ec0">
+  <item nodeId="node-0x3370450">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">You already have that.
 
@@ -416,10 +416,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x316e180"/>
+      <child nodeId="node-0x33705d0"/>
     </children>
   </item>
-  <item nodeId="node-0x316e180">
+  <item nodeId="node-0x33705d0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (empty) here.
@@ -431,7 +431,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x316ef00">
+  <item nodeId="node-0x3370750">
     <command xml:space="preserve">look at 9-volt battery</command>
     <result xml:space="preserve">Time and tide (by the look of it, it has actually been swimming) have not been kind to this old fellow, but he might still have some juice left.
 
@@ -442,7 +442,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x316ed80">
+  <item nodeId="node-0x33708d0">
     <command xml:space="preserve">examine table</command>
     <result xml:space="preserve">You see nothing special about the Table.
 
@@ -453,7 +453,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x316ea80">
+  <item nodeId="node-0x3370a50">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -464,11 +464,11 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x316e900"/>
-      <child nodeId="node-0x7f4264189a20"/>
+      <child nodeId="node-0x3370bd0"/>
+      <child nodeId="node-0x338b760"/>
     </children>
   </item>
-  <item nodeId="node-0x316e900">
+  <item nodeId="node-0x3370bd0">
     <command xml:space="preserve">take clothers</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -479,10 +479,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f428800f2b0"/>
+      <child nodeId="node-0x3370d50"/>
     </children>
   </item>
-  <item nodeId="node-0x7f428800f2b0">
+  <item nodeId="node-0x3370d50">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -502,11 +502,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f428800f130"/>
-      <child nodeId="node-0x316e480"/>
+      <child nodeId="node-0x3370ed0"/>
+      <child nodeId="node-0x338b2e0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f428800f130">
+  <item nodeId="node-0x3370ed0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -521,10 +521,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c4d10"/>
+      <child nodeId="node-0x338b160"/>
     </children>
   </item>
-  <item nodeId="node-0x25c4d10">
+  <item nodeId="node-0x338b160">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">thing.
 
@@ -535,7 +535,7 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x316e480">
+  <item nodeId="node-0x338b2e0">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -546,10 +546,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x316e300"/>
+      <child nodeId="node-0x338b460"/>
     </children>
   </item>
-  <item nodeId="node-0x316e300">
+  <item nodeId="node-0x338b460">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -567,10 +567,10 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x316e600"/>
+      <child nodeId="node-0x338b5e0"/>
     </children>
   </item>
-  <item nodeId="node-0x316e600">
+  <item nodeId="node-0x338b5e0">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">You see nothing special about the Sprig of Holly.
 
@@ -581,7 +581,7 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f4264189a20">
+  <item nodeId="node-0x338b760">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -601,12 +601,12 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264189120"/>
-      <child nodeId="node-0x7f420c5c2640"/>
-      <child nodeId="node-0x7f42785baed0"/>
+      <child nodeId="node-0x338b8e0"/>
+      <child nodeId="node-0x338bee0"/>
+      <child nodeId="node-0x33d5130"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264189120">
+  <item nodeId="node-0x338b8e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -622,11 +622,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42641898a0"/>
-      <child nodeId="node-0x7f420c5c21c0"/>
+      <child nodeId="node-0x338ba60"/>
+      <child nodeId="node-0x338bbe0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42641898a0">
+  <item nodeId="node-0x338ba60">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -641,7 +641,7 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f420c5c21c0">
+  <item nodeId="node-0x338bbe0">
     <command xml:space="preserve">look holly</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -652,10 +652,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f420c5c2340"/>
+      <child nodeId="node-0x338bd60"/>
     </children>
   </item>
-  <item nodeId="node-0x7f420c5c2340">
+  <item nodeId="node-0x338bd60">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Sprig of Holly
@@ -667,7 +667,7 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f420c5c2640">
+  <item nodeId="node-0x338bee0">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -678,10 +678,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f420c5c24c0"/>
+      <child nodeId="node-0x33b9100"/>
     </children>
   </item>
-  <item nodeId="node-0x7f420c5c24c0">
+  <item nodeId="node-0x33b9100">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -699,10 +699,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f420c5c2f40"/>
+      <child nodeId="node-0x33b9280"/>
     </children>
   </item>
-  <item nodeId="node-0x7f420c5c2f40">
+  <item nodeId="node-0x33b9280">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -713,10 +713,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f420c5c2dc0"/>
+      <child nodeId="node-0x33b9400"/>
     </children>
   </item>
-  <item nodeId="node-0x7f420c5c2dc0">
+  <item nodeId="node-0x33b9400">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -734,10 +734,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785ba150"/>
+      <child nodeId="node-0x33b9580"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785ba150">
+  <item nodeId="node-0x33b9580">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -748,10 +748,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785ba2d0"/>
+      <child nodeId="node-0x33b9700"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785ba2d0">
+  <item nodeId="node-0x33b9700">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -767,10 +767,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785ba450"/>
+      <child nodeId="node-0x33b9880"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785ba450">
+  <item nodeId="node-0x33b9880">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -781,10 +781,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785ba5d0"/>
+      <child nodeId="node-0x33b9a00"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785ba5d0">
+  <item nodeId="node-0x33b9a00">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -802,11 +802,11 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785ba750"/>
-      <child nodeId="node-0x7f42785ba8d0"/>
+      <child nodeId="node-0x33b9b80"/>
+      <child nodeId="node-0x33b9e80"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785ba750">
+  <item nodeId="node-0x33b9b80">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying nothing.
 
@@ -817,10 +817,10 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785bad50"/>
+      <child nodeId="node-0x33b9d00"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785bad50">
+  <item nodeId="node-0x33b9d00">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">You see nothing special about the Sprig of Holly.
 
@@ -831,7 +831,7 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f42785ba8d0">
+  <item nodeId="node-0x33b9e80">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">A sprig of holly rests nearby.  A shy little memento of the frosted forest, it has a single pointy leaf and a single berry the color of a cheerful blush.  A gust of wind pushes it gently towards you.
 
@@ -842,7 +842,7 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f42785baed0">
+  <item nodeId="node-0x33d5130">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -853,10 +853,10 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785baa50"/>
+      <child nodeId="node-0x33d52b0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785baa50">
+  <item nodeId="node-0x33d52b0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -874,11 +874,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42785babd0"/>
-      <child nodeId="node-0x7f4264503d00"/>
+      <child nodeId="node-0x33d5430"/>
+      <child nodeId="node-0x3401ab0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42785babd0">
+  <item nodeId="node-0x33d5430">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -896,11 +896,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503100"/>
-      <child nodeId="node-0x7f4288021c10"/>
+      <child nodeId="node-0x33d55b0"/>
+      <child nodeId="node-0x33d5eb0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503100">
+  <item nodeId="node-0x33d55b0">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.
 
@@ -911,10 +911,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503280"/>
+      <child nodeId="node-0x33d5730"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503280">
+  <item nodeId="node-0x33d5730">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -932,10 +932,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503400"/>
+      <child nodeId="node-0x33d58b0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503400">
+  <item nodeId="node-0x33d58b0">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -946,10 +946,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503580"/>
+      <child nodeId="node-0x33d5a30"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503580">
+  <item nodeId="node-0x33d5a30">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -965,10 +965,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503700"/>
+      <child nodeId="node-0x33d5bb0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503700">
+  <item nodeId="node-0x33d5bb0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Sprig of Holly
@@ -980,10 +980,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503880"/>
+      <child nodeId="node-0x33d5d30"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503880">
+  <item nodeId="node-0x33d5d30">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.
 
@@ -994,7 +994,7 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f4288021c10">
+  <item nodeId="node-0x33d5eb0">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 
@@ -1005,10 +1005,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4288021a90"/>
+      <child nodeId="node-0x34011b0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4288021a90">
+  <item nodeId="node-0x34011b0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -1026,10 +1026,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4288021910"/>
+      <child nodeId="node-0x3401330"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4288021910">
+  <item nodeId="node-0x3401330">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind.
 
@@ -1040,10 +1040,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4288021d90"/>
+      <child nodeId="node-0x34014b0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4288021d90">
+  <item nodeId="node-0x34014b0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -1061,10 +1061,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4288021f10"/>
+      <child nodeId="node-0x3401630"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4288021f10">
+  <item nodeId="node-0x3401630">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -1075,10 +1075,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42645e2100"/>
+      <child nodeId="node-0x34017b0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42645e2100">
+  <item nodeId="node-0x34017b0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -1094,10 +1094,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f42645e2280"/>
+      <child nodeId="node-0x3401930"/>
     </children>
   </item>
-  <item nodeId="node-0x7f42645e2280">
+  <item nodeId="node-0x3401930">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 
@@ -1108,7 +1108,7 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x7f4264503d00">
+  <item nodeId="node-0x3401ab0">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind.
 
@@ -1119,10 +1119,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503b80"/>
+      <child nodeId="node-0x3401c30"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503b80">
+  <item nodeId="node-0x3401c30">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 
@@ -1133,10 +1133,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4264503a00"/>
+      <child nodeId="node-0x3401db0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4264503a00">
+  <item nodeId="node-0x3401db0">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -1147,10 +1147,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4288021610"/>
+      <child nodeId="node-0x3401f30"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4288021610">
+  <item nodeId="node-0x3401f30">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Sprig of Holly
@@ -1162,10 +1162,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x7f4288021790"/>
+      <child nodeId="node-0x341c1c0"/>
     </children>
   </item>
-  <item nodeId="node-0x7f4288021790">
+  <item nodeId="node-0x341c1c0">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 

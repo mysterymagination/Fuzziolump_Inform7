@@ -42,6 +42,9 @@ Instead of examining the Holly Bush:
 	otherwise:
 		say "The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind."
 The Winged Otter is here. "His tophat is dapper."
-Instead of moving:
+Instead of going south:
 	if the player has not spoken to the winged otter:
+		say "The winged otter flaps down to block your path, doffing his dapper tophat to you each time and extending a soft paw to shake.";
+	otherwise:
+		continue the action.
 		
