@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x2c40a50" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x260a710" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7</generator>
-  <activeNode nodeId="node-0x2c40a50"/>
-  <item nodeId="node-0x2c40a50">
+  <activeNode nodeId="node-0x7f63180ca640"/>
+  <item nodeId="node-0x260a710">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 Fuzziolump
 An Interactive Fiction by jeff creswell
-Release 1 / Serial number 181214 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Chamber of Soiled Vestments
 The musty warmth of the laundry room has always appealed to you; it suggests a friendly invitation to the unknown, and there always seems to be another unexplored dark corner.  Plus it&apos;s always warm and the soft tumbling of the dryers is soothing.  You smile contentedly at this thought, imagining that few people bother to appreciate the subtle treasures in a blanket of soft shadow.  A shared laundry like the one in your building is exponentially better, since every traveler through it leaves a little bit of themselves behind, enlivening the story.  If you were the type to rifle throw other people&apos;s skivvies it might be livelier-still, but that&apos;s intrusive. Also gross.  The dryer rumbles to a halt, then buzzes obnoxiously.  The world sure seems to love its noise.
@@ -24,14 +24,15 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2c40bd0"/>
-      <child nodeId="node-0x2c40d50"/>
-      <child nodeId="node-0x3345410"/>
-      <child nodeId="node-0x33708d0"/>
-      <child nodeId="node-0x3370a50"/>
+      <child nodeId="node-0x260a890"/>
+      <child nodeId="node-0x260aa10"/>
+      <child nodeId="node-0x2d57130"/>
+      <child nodeId="node-0x2d7f5a0"/>
+      <child nodeId="node-0x2d7f720"/>
+      <child nodeId="node-0x2ee85d0"/>
     </children>
   </item>
-  <item nodeId="node-0x2c40bd0">
+  <item nodeId="node-0x260a890">
     <command xml:space="preserve">save</command>
     <result xml:space="preserve">Ok.
 
@@ -42,7 +43,7 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2c40d50">
+  <item nodeId="node-0x260aa10">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -52,18 +53,18 @@ You can see a Table (closed) and a Dryer (closed) here.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2c40ed0"/>
-      <child nodeId="node-0x3328790"/>
-      <child nodeId="node-0x3328a90"/>
-      <child nodeId="node-0x3328c10"/>
+      <child nodeId="node-0x260ab90"/>
+      <child nodeId="node-0x2d38460"/>
+      <child nodeId="node-0x2d38760"/>
+      <child nodeId="node-0x2d388e0"/>
     </children>
   </item>
-  <item nodeId="node-0x2c40ed0">
+  <item nodeId="node-0x260ab90">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -74,10 +75,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328190"/>
+      <child nodeId="node-0x260ad10"/>
     </children>
   </item>
-  <item nodeId="node-0x3328190">
+  <item nodeId="node-0x260ad10">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -88,10 +89,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328310"/>
+      <child nodeId="node-0x260ae90"/>
     </children>
   </item>
-  <item nodeId="node-0x3328310">
+  <item nodeId="node-0x260ae90">
     <command xml:space="preserve">open Dryer</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -102,10 +103,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328490"/>
+      <child nodeId="node-0x2d38160"/>
     </children>
   </item>
-  <item nodeId="node-0x3328490">
+  <item nodeId="node-0x2d38160">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.
 
@@ -116,10 +117,10 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328610"/>
+      <child nodeId="node-0x2d382e0"/>
     </children>
   </item>
-  <item nodeId="node-0x3328610">
+  <item nodeId="node-0x2d382e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (empty) here.
@@ -131,7 +132,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3328790">
+  <item nodeId="node-0x2d38460">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -142,10 +143,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328910"/>
+      <child nodeId="node-0x2d385e0"/>
     </children>
   </item>
-  <item nodeId="node-0x3328910">
+  <item nodeId="node-0x2d385e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (closed) and a Dryer (closed) here.
@@ -157,7 +158,7 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3328a90">
+  <item nodeId="node-0x2d38760">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -172,21 +173,21 @@ You can see a Table (closed) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3328c10">
+  <item nodeId="node-0x2d388e0">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328d90"/>
+      <child nodeId="node-0x2d38a60"/>
     </children>
   </item>
-  <item nodeId="node-0x3328d90">
+  <item nodeId="node-0x2d38a60">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -201,15 +202,15 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3328f10"/>
+      <child nodeId="node-0x2d38be0"/>
     </children>
   </item>
-  <item nodeId="node-0x3328f10">
+  <item nodeId="node-0x2d38be0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
@@ -218,15 +219,15 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345110"/>
+      <child nodeId="node-0x2d38d60"/>
     </children>
   </item>
-  <item nodeId="node-0x3345110">
+  <item nodeId="node-0x2d38d60">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
@@ -235,26 +236,26 @@ A holly bush rustles thoughtfully in the wind.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345290"/>
+      <child nodeId="node-0x2d38ee0"/>
     </children>
   </item>
-  <item nodeId="node-0x3345290">
+  <item nodeId="node-0x2d38ee0">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3345410">
+  <item nodeId="node-0x2d57130">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">You open the Table, revealing a 9-volt Battery, a Singed Penny and a Rusty Pocket Knife.
 
@@ -265,12 +266,12 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345590"/>
-      <child nodeId="node-0x3345d10"/>
-      <child nodeId="node-0x3370750"/>
+      <child nodeId="node-0x2d572b0"/>
+      <child nodeId="node-0x2d57a30"/>
+      <child nodeId="node-0x2d7f420"/>
     </children>
   </item>
-  <item nodeId="node-0x3345590">
+  <item nodeId="node-0x2d572b0">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">That&apos;s already open.
 
@@ -281,10 +282,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345710"/>
+      <child nodeId="node-0x2d57430"/>
     </children>
   </item>
-  <item nodeId="node-0x3345710">
+  <item nodeId="node-0x2d57430">
     <command xml:space="preserve">look at dryer</command>
     <result xml:space="preserve">You see nothing special about the Dryer.
 
@@ -295,10 +296,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345890"/>
+      <child nodeId="node-0x2d575b0"/>
     </children>
   </item>
-  <item nodeId="node-0x3345890">
+  <item nodeId="node-0x2d575b0">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -309,10 +310,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345a10"/>
+      <child nodeId="node-0x2d57730"/>
     </children>
   </item>
-  <item nodeId="node-0x3345a10">
+  <item nodeId="node-0x2d57730">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -332,10 +333,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345b90"/>
+      <child nodeId="node-0x2d578b0"/>
     </children>
   </item>
-  <item nodeId="node-0x3345b90">
+  <item nodeId="node-0x2d578b0">
     <command xml:space="preserve">look at holly</command>
     <result xml:space="preserve">hello.
 You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
@@ -347,7 +348,7 @@ You examine the nearest frosted greenery, a holly bush whose bright red berries 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3345d10">
+  <item nodeId="node-0x2d57a30">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (closed) here.
@@ -359,10 +360,10 @@ You can see a Table (empty) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3345e90"/>
+      <child nodeId="node-0x2d57bb0"/>
     </children>
   </item>
-  <item nodeId="node-0x3345e90">
+  <item nodeId="node-0x2d57bb0">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
@@ -373,10 +374,10 @@ You can see a Table (empty) and a Dryer (closed) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3370150"/>
+      <child nodeId="node-0x2d57d30"/>
     </children>
   </item>
-  <item nodeId="node-0x3370150">
+  <item nodeId="node-0x2d57d30">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (in which is Clothes) here.
@@ -388,10 +389,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33702d0"/>
+      <child nodeId="node-0x2d57eb0"/>
     </children>
   </item>
-  <item nodeId="node-0x33702d0">
+  <item nodeId="node-0x2d57eb0">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.
 
@@ -402,10 +403,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3370450"/>
+      <child nodeId="node-0x2d7f120"/>
     </children>
   </item>
-  <item nodeId="node-0x3370450">
+  <item nodeId="node-0x2d7f120">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">You already have that.
 
@@ -416,10 +417,10 @@ You can see a Table (empty) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33705d0"/>
+      <child nodeId="node-0x2d7f2a0"/>
     </children>
   </item>
-  <item nodeId="node-0x33705d0">
+  <item nodeId="node-0x2d7f2a0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You can see a Table (empty) and a Dryer (empty) here.
@@ -431,7 +432,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3370750">
+  <item nodeId="node-0x2d7f420">
     <command xml:space="preserve">look at 9-volt battery</command>
     <result xml:space="preserve">Time and tide (by the look of it, it has actually been swimming) have not been kind to this old fellow, but he might still have some juice left.
 
@@ -442,7 +443,7 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x33708d0">
+  <item nodeId="node-0x2d7f5a0">
     <command xml:space="preserve">examine table</command>
     <result xml:space="preserve">You see nothing special about the Table.
 
@@ -453,22 +454,22 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3370a50">
+  <item nodeId="node-0x2d7f720">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3370bd0"/>
-      <child nodeId="node-0x338b760"/>
+      <child nodeId="node-0x2d7f8a0"/>
+      <child nodeId="node-0x2d9c460"/>
     </children>
   </item>
-  <item nodeId="node-0x3370bd0">
+  <item nodeId="node-0x2d7f8a0">
     <command xml:space="preserve">take clothers</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -479,10 +480,10 @@ You can see a Table (empty) and a Dryer (empty) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3370d50"/>
+      <child nodeId="node-0x2d7fa20"/>
     </children>
   </item>
-  <item nodeId="node-0x3370d50">
+  <item nodeId="node-0x2d7fa20">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -502,11 +503,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3370ed0"/>
-      <child nodeId="node-0x338b2e0"/>
+      <child nodeId="node-0x2d7fba0"/>
+      <child nodeId="node-0x2d7fea0"/>
     </children>
   </item>
-  <item nodeId="node-0x3370ed0">
+  <item nodeId="node-0x2d7fba0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -521,10 +522,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x338b160"/>
+      <child nodeId="node-0x2d7fd20"/>
     </children>
   </item>
-  <item nodeId="node-0x338b160">
+  <item nodeId="node-0x2d7fd20">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">thing.
 
@@ -535,7 +536,7 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x338b2e0">
+  <item nodeId="node-0x2d7fea0">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -546,10 +547,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x338b460"/>
+      <child nodeId="node-0x2d9c160"/>
     </children>
   </item>
-  <item nodeId="node-0x338b460">
+  <item nodeId="node-0x2d9c160">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -567,10 +568,10 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x338b5e0"/>
+      <child nodeId="node-0x2d9c2e0"/>
     </children>
   </item>
-  <item nodeId="node-0x338b5e0">
+  <item nodeId="node-0x2d9c2e0">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">You see nothing special about the Sprig of Holly.
 
@@ -581,7 +582,7 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x338b760">
+  <item nodeId="node-0x2d9c460">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you&apos;re greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They&apos;re the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.
 
@@ -590,30 +591,40 @@ Re-adjusting yourself, you poke your head in to take a closer look, expecting ru
 Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
 
-You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.
+You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.
 
 A holly bush rustles thoughtfully in the wind.
+
+A winged otter flaps serenely nearby.  His tophat is dapper.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
+    <played>YES</played>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x338b8e0"/>
-      <child nodeId="node-0x338bee0"/>
-      <child nodeId="node-0x33d5130"/>
+      <child nodeId="node-0x2d9c5e0"/>
+      <child nodeId="node-0x2dc8180"/>
+      <child nodeId="node-0x2de5290"/>
+      <child nodeId="node-0x2e2c480"/>
+      <child nodeId="node-0x2e2c600"/>
+      <child nodeId="node-0x2e2ca80"/>
+      <child nodeId="node-0x2e58330"/>
+      <child nodeId="node-0x2e58db0"/>
+      <child nodeId="node-0x2ec1400"/>
+      <child nodeId="node-0x2ec1a00"/>
+      <child nodeId="node-0x2ee8150"/>
     </children>
   </item>
-  <item nodeId="node-0x338b8e0">
+  <item nodeId="node-0x2d9c5e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
-Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
-
-You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
 
 A holly bush rustles thoughtfully in the wind.
+
+The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -622,11 +633,12 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x338ba60"/>
-      <child nodeId="node-0x338bbe0"/>
+      <child nodeId="node-0x2d9c760"/>
+      <child nodeId="node-0x2d9c8e0"/>
+      <child nodeId="node-0x2d9cbe0"/>
     </children>
   </item>
-  <item nodeId="node-0x338ba60">
+  <item nodeId="node-0x2d9c760">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments
 You stand in the laundry room.  A speck of lint drifts by, placidly.
@@ -641,7 +653,7 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x338bbe0">
+  <item nodeId="node-0x2d9c8e0">
     <command xml:space="preserve">look holly</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -652,10 +664,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x338bd60"/>
+      <child nodeId="node-0x2d9ca60"/>
     </children>
   </item>
-  <item nodeId="node-0x338bd60">
+  <item nodeId="node-0x2d9ca60">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Sprig of Holly
@@ -667,7 +679,51 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x338bee0">
+  <item nodeId="node-0x2d9cbe0">
+    <command xml:space="preserve">examine otter</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d9cd60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d9cd60">
+    <command xml:space="preserve">examine Nuvi</command>
+    <result xml:space="preserve">You see nothing special about Nuvi.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d9cee0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d9cee0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Atrium Glade
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
+
+A holly bush rustles thoughtfully in the wind.
+
+The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2dc8180">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -678,10 +734,10 @@ You can see a Table (closed) and a Dryer (in which is Clothes) here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9100"/>
+      <child nodeId="node-0x2dc8300"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9100">
+  <item nodeId="node-0x2dc8300">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -699,10 +755,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9280"/>
+      <child nodeId="node-0x2dc8480"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9280">
+  <item nodeId="node-0x2dc8480">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -713,10 +769,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9400"/>
+      <child nodeId="node-0x2dc8600"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9400">
+  <item nodeId="node-0x2dc8600">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -734,10 +790,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9580"/>
+      <child nodeId="node-0x2dc8780"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9580">
+  <item nodeId="node-0x2dc8780">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -748,10 +804,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9700"/>
+      <child nodeId="node-0x2dc8900"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9700">
+  <item nodeId="node-0x2dc8900">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -767,10 +823,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9880"/>
+      <child nodeId="node-0x2dc8a80"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9880">
+  <item nodeId="node-0x2dc8a80">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -781,10 +837,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9a00"/>
+      <child nodeId="node-0x2dc8c00"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9a00">
+  <item nodeId="node-0x2dc8c00">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -802,11 +858,11 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9b80"/>
-      <child nodeId="node-0x33b9e80"/>
+      <child nodeId="node-0x2dc8d80"/>
+      <child nodeId="node-0x2de5110"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9b80">
+  <item nodeId="node-0x2dc8d80">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying nothing.
 
@@ -817,10 +873,10 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33b9d00"/>
+      <child nodeId="node-0x2dc8f00"/>
     </children>
   </item>
-  <item nodeId="node-0x33b9d00">
+  <item nodeId="node-0x2dc8f00">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">You see nothing special about the Sprig of Holly.
 
@@ -831,7 +887,7 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x33b9e80">
+  <item nodeId="node-0x2de5110">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">A sprig of holly rests nearby.  A shy little memento of the frosted forest, it has a single pointy leaf and a single berry the color of a cheerful blush.  A gust of wind pushes it gently towards you.
 
@@ -842,7 +898,7 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x33d5130">
+  <item nodeId="node-0x2de5290">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.
 
@@ -853,10 +909,10 @@ You can also see a Sprig of Holly here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d52b0"/>
+      <child nodeId="node-0x2de5410"/>
     </children>
   </item>
-  <item nodeId="node-0x33d52b0">
+  <item nodeId="node-0x2de5410">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -874,11 +930,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d5430"/>
-      <child nodeId="node-0x3401ab0"/>
+      <child nodeId="node-0x2de5590"/>
+      <child nodeId="node-0x2e0fbe0"/>
     </children>
   </item>
-  <item nodeId="node-0x33d5430">
+  <item nodeId="node-0x2de5590">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -896,11 +952,11 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d55b0"/>
-      <child nodeId="node-0x33d5eb0"/>
+      <child nodeId="node-0x2de5710"/>
+      <child nodeId="node-0x2e0f160"/>
     </children>
   </item>
-  <item nodeId="node-0x33d55b0">
+  <item nodeId="node-0x2de5710">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.
 
@@ -911,10 +967,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d5730"/>
+      <child nodeId="node-0x2de5890"/>
     </children>
   </item>
-  <item nodeId="node-0x33d5730">
+  <item nodeId="node-0x2de5890">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -932,10 +988,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d58b0"/>
+      <child nodeId="node-0x2de5a10"/>
     </children>
   </item>
-  <item nodeId="node-0x33d58b0">
+  <item nodeId="node-0x2de5a10">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -946,10 +1002,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d5a30"/>
+      <child nodeId="node-0x2de5b90"/>
     </children>
   </item>
-  <item nodeId="node-0x33d5a30">
+  <item nodeId="node-0x2de5b90">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -965,10 +1021,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d5bb0"/>
+      <child nodeId="node-0x2de5d10"/>
     </children>
   </item>
-  <item nodeId="node-0x33d5bb0">
+  <item nodeId="node-0x2de5d10">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Sprig of Holly
@@ -980,10 +1036,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x33d5d30"/>
+      <child nodeId="node-0x2de5e90"/>
     </children>
   </item>
-  <item nodeId="node-0x33d5d30">
+  <item nodeId="node-0x2de5e90">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.
 
@@ -994,7 +1050,7 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x33d5eb0">
+  <item nodeId="node-0x2e0f160">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 
@@ -1005,10 +1061,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x34011b0"/>
+      <child nodeId="node-0x2e0f2e0"/>
     </children>
   </item>
-  <item nodeId="node-0x34011b0">
+  <item nodeId="node-0x2e0f2e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -1026,10 +1082,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3401330"/>
+      <child nodeId="node-0x2e0f460"/>
     </children>
   </item>
-  <item nodeId="node-0x3401330">
+  <item nodeId="node-0x2e0f460">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind.
 
@@ -1040,10 +1096,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x34014b0"/>
+      <child nodeId="node-0x2e0f5e0"/>
     </children>
   </item>
-  <item nodeId="node-0x34014b0">
+  <item nodeId="node-0x2e0f5e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -1061,10 +1117,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3401630"/>
+      <child nodeId="node-0x2e0f760"/>
     </children>
   </item>
-  <item nodeId="node-0x3401630">
+  <item nodeId="node-0x2e0f760">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -1075,10 +1131,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x34017b0"/>
+      <child nodeId="node-0x2e0f8e0"/>
     </children>
   </item>
-  <item nodeId="node-0x34017b0">
+  <item nodeId="node-0x2e0f8e0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade
 Only, it&apos;s a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
@@ -1094,10 +1150,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3401930"/>
+      <child nodeId="node-0x2e0fa60"/>
     </children>
   </item>
-  <item nodeId="node-0x3401930">
+  <item nodeId="node-0x2e0fa60">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 
@@ -1108,7 +1164,7 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x3401ab0">
+  <item nodeId="node-0x2e0fbe0">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind.
 
@@ -1119,10 +1175,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3401c30"/>
+      <child nodeId="node-0x2e0fd60"/>
     </children>
   </item>
-  <item nodeId="node-0x3401c30">
+  <item nodeId="node-0x2e0fd60">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
 
@@ -1133,10 +1189,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3401db0"/>
+      <child nodeId="node-0x2e0fee0"/>
     </children>
   </item>
-  <item nodeId="node-0x3401db0">
+  <item nodeId="node-0x2e0fee0">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.
 
@@ -1147,10 +1203,10 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x3401f30"/>
+      <child nodeId="node-0x2e2c180"/>
     </children>
   </item>
-  <item nodeId="node-0x3401f30">
+  <item nodeId="node-0x2e2c180">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Sprig of Holly
@@ -1162,12 +1218,818 @@ A holly bush rustles thoughtfully in the wind.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x341c1c0"/>
+      <child nodeId="node-0x2e2c300"/>
     </children>
   </item>
-  <item nodeId="node-0x341c1c0">
+  <item nodeId="node-0x2e2c300">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2c480">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2c600">
+    <command xml:space="preserve">speak to otter</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2c780"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2c780">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2c900"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2c900">
+    <command xml:space="preserve">say &quot;hello&quot; to otter</command>
+    <result xml:space="preserve">You can only do that to something animate.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2ca80">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2cc00"/>
+      <child nodeId="node-0x2e581b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2cc00">
+    <command xml:space="preserve">speak to otter</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2cd80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2cd80">
+    <command xml:space="preserve">speak to winged otter</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2cf00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2cf00">
+    <command xml:space="preserve">say &quot;hello&quot; to otter</command>
+    <result xml:space="preserve">[answering the Winged Otter that &quot;&quot; hello &quot;&quot;]
+There is no reply.
+[answering the Winged Otter that &quot;&quot; hello &quot;&quot; - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e581b0">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">[answering Nuvi that &quot;hello&quot;]
+The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot;
+[answering Nuvi that &quot;hello&quot; - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e58330">
+    <command xml:space="preserve">say yo to Nuvi</command>
+    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e584b0"/>
+      <child nodeId="node-0x2e587b0"/>
+      <child nodeId="node-0x7f63180ca4c0"/>
+      <child nodeId="node-0x7f63180ca940"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e584b0">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e58630"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e58630">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e587b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The winged otter flaps down to block your path, doffing his dapper tophat to you each time and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e58930"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e58930">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The winged otter flaps down to block your path, doffing his dapper tophat to you each time and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e58ab0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e58ab0">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e58c30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e58c30">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f63180ca4c0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Atrium Glade
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
+
+A holly bush rustles thoughtfully in the wind.
+
+The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f63180ca940">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Atrium Glade
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
+
+A holly bush rustles thoughtfully in the wind.
+
+A winged otter flaps serenely nearby.  His tophat is dapper.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f63180ca7c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f63180ca7c0">
+    <command xml:space="preserve">look at Nuvi</command>
+    <result xml:space="preserve">The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f63180ca640"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f63180ca640">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Atrium Glade
+A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter&apos;s wings breaks the tranquil silence, a comforting constant.
+
+A holly bush rustles thoughtfully in the wind.
+
+A winged otter flaps serenely nearby.  His tophat is dapper.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e58db0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e58f30"/>
+      <child nodeId="node-0x2e7ea70"/>
+      <child nodeId="node-0x2ea5190"/>
+      <child nodeId="node-0x2ea5610"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e58f30">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7e170"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7e170">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7e2f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7e2f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7e470"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7e470">
+    <command xml:space="preserve">say yo to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7e5f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7e5f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7e770"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7e770">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7e8f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7e8f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e7ea70">
+    <command xml:space="preserve">q</command>
+    <result xml:space="preserve">Are you sure you want to quit? </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7ebf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7ebf0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7ed70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7ed70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7eef0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7eef0">
+    <command xml:space="preserve">go anywhere</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ea5190">
+    <command xml:space="preserve">say heLLo to Nuvi</command>
+    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5310"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5310">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5490"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5490">
+    <command xml:space="preserve">say heLLo to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ea5610">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5790"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5790">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5910"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5910">
+    <command xml:space="preserve">look otter</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5a90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5a90">
+    <command xml:space="preserve">look Nuvi</command>
+    <result xml:space="preserve">You see nothing special about Nuvi.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5c10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5c10">
+    <command xml:space="preserve">say yo to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5d90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5d90">
+    <command xml:space="preserve">say x to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ea5f10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ea5f10">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1100"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1100">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">[answering Nuvi that &quot;hello&quot;]
+There is no reply.
+[answering Nuvi that &quot;hello&quot; - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1280"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1280">
+    <command xml:space="preserve">say hello</command>
+    <result xml:space="preserve">(to Nuvi)
+[answering Nuvi that &quot;hello&quot;]
+There is no reply.
+[answering Nuvi that &quot;hello&quot; - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ec1400">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1580"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1580">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1700"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1700">
+    <command xml:space="preserve">go</command>
+    <result xml:space="preserve">You&apos;ll have to say which compass direction to go in.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1880"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1880">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ec1a00">
+    <command xml:space="preserve">say fuck off to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1b80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1b80">
+    <command xml:space="preserve">say yo to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1d00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1d00">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ec1e80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ec1e80">
+    <command xml:space="preserve">say &quot;hello&quot; to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee8150">
+    <command xml:space="preserve">say x to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee82d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee82d0">
+    <command xml:space="preserve">say hello to Nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee8450"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee8450">
+    <command xml:space="preserve">look Nuvi</command>
+    <result xml:space="preserve">You see nothing special about Nuvi.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee85d0">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee8750"/>
+      <child nodeId="node-0x2ee8a50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee8750">
+    <command xml:space="preserve">speak to dryer</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee88d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee88d0">
+    <command xml:space="preserve">say &quot;hello&quot; to dryer</command>
+    <result xml:space="preserve">You can only do that to something animate.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee8a50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">[going south]
+You can&apos;t go that way.
+[going south - failed the can&apos;t go that way rule]
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>

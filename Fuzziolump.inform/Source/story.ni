@@ -15,7 +15,7 @@ The Table is a closed and openable container in the Chamber of Soiled Vestments.
 There is a 9-volt Battery in the Table.  The description of the 9-volt Battery is "Time and tide (by the look of it, it has actually been swimming) have not been kind to this old fellow, but he might still have some juice left."
 There is a Singed Penny in the Table.  The description of the Singed Penny is "This is an especially bad sign; completing a fuse with a penny is a classic strategy for starting electrical fires in the handbook of the incompetent handyman.  Since this one evidently did not burn down your home, you decide it must be a lucky penny.  At least this one is not currently serving as a vector to fiery oblivion for the building's occupants, but another one may have replaced it... you shudder and try to put it out of your mind."
 There is a Rusty Pocket Knife in the Table.  The description of the Rusty Pocket Knife is "A simple folding pocket knife, its blade pitted by age, the elements, and lack of maintenance.  Still, the edge is sharp and the knife is compact when folded."
-The Dryer is a closed and openable container in the Chamber of Soiled Vestments.
+The Dryer is a closed and openable container in the Chamber of Soiled Vestments. 
 There are Clothes in The Dryer.
 Instead of taking the Clothes:
 	say "Ducking down peer to inside, you're greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They're the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.  
@@ -28,7 +28,7 @@ To say atrium-glade-desc:
 	if Atrium Glade has not been visited:
 		say "Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.
 
-		    You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats";
+		    You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you";
 	otherwise:
 		say "A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter's wings breaks the tranquil silence, a comforting constant".
 The Holly Bush is here. "A holly bush rustles thoughtfully in the wind." 
@@ -41,10 +41,17 @@ Instead of examining the Holly Bush:
 	[apparently anon description assignments are transient -- if I run the bug where looking at the bush always teleports the sprig to the ground, the description is only available when it first enters the environment.  Explicitly looking at the sprig after its first appearance yields default  desc]
 	otherwise:
 		say "The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind."
-The Winged Otter is here. "His tophat is dapper."
-Instead of going south:
-	if the player has not spoken to the winged otter:
-		say "The winged otter flaps down to block your path, doffing his dapper tophat to you each time and extending a soft paw to shake.";
+Understand "hello/hey/yo/hiya" as "[greeting]".
+A Winged Otter is a kind of person. 
+Nuvi is a Winged Otter.  Nuvi is here.  Nuvi can be hat-tipped.  "A winged otter flaps serenely nearby.  His tophat is dapper." 
+The description of Nuvi is "The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est."
+After answering Nuvi that "[greeting]" for the first time:
+    now Nuvi is hat-tipped;
+    say "The Winged Otter beams at you.  'Hello, there Human!  My name is Nuvi.'"
+Check going in the Atrium Glade:
+	if Nuvi is not hat-tipped:
+		say "As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.";
+		stop the action;
 	otherwise:
 		continue the action.
 		
