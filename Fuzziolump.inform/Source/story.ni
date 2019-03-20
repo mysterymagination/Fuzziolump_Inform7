@@ -42,15 +42,25 @@ Instead of examining the Holly Bush:
 	otherwise:
 		say "The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind."
 Understand "hello/hey/yo/hiya" as "[greeting]".
+[does it make sense to follow a similar pattern re: trigger statements/actions that advance the story in a general context?  It was required in Twine because gamebooks, but here there is a significantly more freedom.  That freedom, however, does not mean it's wise to make obstacles out of everything, especially when it only makes sense that an NPC would try to further things along themselves.  What might make some sense, just to break up the exposition train, would be to have Nuvi listening for the purposes of adapting to whatever language The Human speaks... but then we're getting close to boulder-skipping unless we want to actually delve into some sort of universal translator-mo-tron system.  Best bet would be to have Nuvi act like he reasonably would based on his motivations but also not drown the player in information -- the player can ask for clarification if necessary, and Nuvi's NLP KR should handle that.]
+Understand "where am I/where is this" as "[query_location]".
+Understand "who are you/what's your name/what is your name" as "[query_nuvi_re_personal_info_polite]".
+Understand "what are you" as "[query_nuvi_re_personal_info_rude]".
+Understand "what is a conduit/explain conduits/explain conduit" as "[query_nuvi_re_conduit]".
 A Winged Otter is a kind of person. 
+[todo: does this define Winged Otter a new noun that inherits from person, or does it simply alias Winged Otter to person?]
+[todo: how do I assign new properties to a custom noun, e.g. 'Player_Affinity is a number.  An Actor has Player_Affinity. Winged Otter is a type of Actor.  Nuvi's Player_Affinity increases by 1.' ?]
+[todo: does Inform 7 support maps/dictionaries?  I'd like to be able to map character id : affinity value like I did in JS]
 Nuvi is a Winged Otter.  Nuvi is here.  Nuvi can be hat-tipped.  "A winged otter flaps serenely nearby.  His tophat is dapper." 
-The description of Nuvi is "The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est."
+Understand "otter" and "winged otter" as Nuvi. [why doesn't the same x/y/z syntax used for defining text subs above work?]
+The description of Nuvi is "The otter, who sports a pair of fluffy brown wings the same shade as his sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est."
 After answering Nuvi that "[greeting]" for the first time:
     now Nuvi is hat-tipped;
-    say "The Winged Otter beams at you.  'Hello, there Human!  My name is Nuvi.'"
+    say "The Winged Otter beams at you.  'Hello, there Human!  My name is Nuvi.  I'm sure you're wondering what just happened -- the short version is that you've been transported across time and space to another world.'  He grins whiskeryly and spreads his little paws wide in proud indication.  Or maybe he wants a hug. 
+	'[paragraph break]This is not Earth, but a wondrous land of whimsy and warmth called Fuzziolump!  Specifically, we're standing in a lovely little area we lumpkins call the Atrium Glade.  It's the lumpside connection point, which we call a Socket, of the Conduit you passed through to get here; your dryer was the Socket on your end.  Dryers are often Sockets on Earth for some reason -- we get all kinds of socks and, erm, other underthings coming through.'  He manages to blush through his fur."
 Check going in the Atrium Glade:
 	if Nuvi is not hat-tipped:
-		say "As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.";
+		say "As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and waving a soft paw shyly.";
 		stop the action;
 	otherwise:
 		continue the action.
