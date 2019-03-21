@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x13d6320" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7</generator>
-  <activeNode nodeId="node-0x7fb1740fd300"/>
+  <activeNode nodeId="node-0x7fb1740fd480"/>
   <item nodeId="node-0x13d6320">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -9,7 +9,7 @@
 
 Fuzziolump
 An Interactive Fiction by jeff creswell
-Release 1 / Serial number 190315 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190321 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Chamber of Soiled Vestments
 The musty warmth of the laundry room has always appealed to you; it suggests a friendly invitation to the unknown, and there always seems to be another unexplored dark corner.  Plus it&apos;s always warm and the soft tumbling of the dryers is soothing.  You smile contentedly at this thought, imagining that few people bother to appreciate the subtle treasures in a blanket of soft shadow.  A shared laundry like the one in your building is exponentially better, since every traveler through it leaves a little bit of themselves behind, enlivening the story.  If you were the type to rifle throw other people&apos;s skivvies it might be livelier-still, but that&apos;s intrusive. Also gross.  The dryer rumbles to a halt, then buzzes obnoxiously.  The world sure seems to love its noise.
@@ -20,7 +20,7 @@ You can see a Table (closed) and a Dryer (closed) here.
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
@@ -30,6 +30,7 @@ You can see a Table (closed) and a Dryer (closed) here.
       <child nodeId="node-0x1b8e190"/>
       <child nodeId="node-0x1b8e310"/>
       <child nodeId="node-0x1e251b0"/>
+      <child nodeId="node-0x1e25f30"/>
     </children>
   </item>
   <item nodeId="node-0x13d64a0">
@@ -616,6 +617,7 @@ A winged otter flaps serenely nearby.  His tophat is dapper.
       <child nodeId="node-0x1d945a0"/>
       <child nodeId="node-0x1d94ba0"/>
       <child nodeId="node-0x1dbe320"/>
+      <child nodeId="node-0x1e25ab0"/>
     </children>
   </item>
   <item nodeId="node-0x1bd1180">
@@ -1354,12 +1356,21 @@ The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot
   </item>
   <item nodeId="node-0x1cc4d40">
     <command xml:space="preserve">say yo to Nuvi</command>
-    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot;
+    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.  I&apos;m sure you&apos;re wondering what just happened -- the short version is that you&apos;ve been transported across time and space to another world.&quot;  He grins whiskeryly and spreads his little paws wide in proud indication.  Or maybe he wants a hug. 
+
+&quot;This is not Earth, but a wondrous land of whimsy and warmth called Fuzziolump!  Your people&apos;s thoughts and feelings and imaginings gave us life, in point of fact, a process which has accelerated exponentially in recent decades with the advent of telecommunications and a magical thing called The Internet -- all that cognition flying about in the aether sort of landed here, and took root.  It&apos;s not a well-understood matter, but we know we have humanity to thank for our existence! 
+
+Glossing right over that massive tidbit, we&apos;re standing in a lovely little area of the Frosted Forest we lumpkins call the Atrium Glade.  It&apos;s the lumpside connection point, which we call a Socket, of the Conduit you passed through to get here; your dryer was the Socket on your end.  Dryers are often Sockets on Earth for some reason -- we get all kinds of socks and, erm, other underthings coming through.&quot;  He manages to blush through his fur.
+
+
+&quot;I know that doesn&apos;t make a lot of sense: it&apos;s fine, don&apos;t worry about it.  You can always ask me about Conduits, Sockets, Atrium Glade, Frosted Forest, or Fuzziolump itself on the way, if you like.&quot;  He smiles and blinks placidly while the two of you stare at each other in awkward silence for several seconds.  Then a realization strikes him: &quot;Oh!  Yes, sorry, I haven&apos;t told you why I brought you here yet.  Our Great Need.&quot;  He twitches his whiskers and adjusts his bowtie anxiously. &quot;You see, Fuzziolump has long been a place of peace enjoyed by one and all, but recently there has been an upwelling of violence and turmoil.  The cause is our gods.  We didn&apos;t have any at first.  The fully mortal lumpkins are quite complex enough, and even with the vast sum of Earth&apos;s imaginings it took ages for us to develop.  Several centuries have passed since we grew smart enough to start recording our history, and it seems the more we wrote and thought and felt the experiences of life, the faster Fuzziolump grew.  Its own denizens&quot; imaginings fuel it in addition to Earth&apos;s ever-deepening pool of creative energy, and this exponentiation plus some experimentation with tool-assisted metamorphosis has led to a few more potent lifeforms.  Effectively, gods. 
+
+Now, this might be cause for celebration -- a whole new category of sapient life, more deeply sapient than any of us can fathom!  Unfortunately, power and depth of mind do not equate to wisdom.  The young gods of Fuzziolump are very different, but their common trait is an understandable lack of experience combined with an unprecedented ability to influence the world around them.  Some have even learned to syphon off the creative energy Fuzziolump thrives on, and threaten to collapse this world in on itself.  It isn&apos;t clear what would happen to the gods if this world perished, but I and my loved ones and millions more like us would surely be snuffed out like the humble little candle flames we are.  I cannot allow that to happen.  What to do though?  Every lumpkin knows that Earth and humanity are our progenitors, specifically your creativity.  So, it only seemed reasonable to bring a human creative here to help untangle this little knot of divinity.  At least, I think that&apos;s why we&apos;ve summoned you.  The Council of Animals made it a top secret matter, so little folk like me can only guess.  But yeah, you create every day -- you must know how to turn that power off, or keep it under control?&quot;
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
+    <played>YES</played>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
@@ -1367,6 +1378,7 @@ The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot
       <child nodeId="node-0x1cf1330"/>
       <child nodeId="node-0x1cf1930"/>
       <child nodeId="node-0x1cf1ab0"/>
+      <child nodeId="node-0x1e25db0"/>
     </children>
   </item>
   <item nodeId="node-0x1cc4ec0">
@@ -1512,13 +1524,66 @@ A winged otter flaps serenely nearby.  His tophat is dapper.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
+  <item nodeId="node-0x1e25db0">
+    <command xml:space="preserve">ask nuvi about conduit</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x1e25c30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x1e25c30">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7fb1740fd600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7fb1740fd600">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7fb1740fd480"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7fb1740fd480">
+    <command xml:space="preserve">say hello to nuvi</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
   <item nodeId="node-0x1cf1f30">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and extending a soft paw to shake.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -1848,7 +1913,7 @@ There is no reply.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -1862,7 +1927,7 @@ There is no reply.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -2004,6 +2069,24 @@ There is no reply.
   <item nodeId="node-0x1dbe620">
     <command xml:space="preserve">look Nuvi</command>
     <result xml:space="preserve">You see nothing special about Nuvi.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x1e25ab0">
+    <command xml:space="preserve">say hello to otter</command>
+    <result xml:space="preserve">The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.  I&apos;m sure you&apos;re wondering what just happened -- the short version is that you&apos;ve been transported across time and space to another world.&quot;  He grins whiskeryly and spreads his little paws wide in proud indication.  Or maybe he wants a hug. &quot;
+
+This is not Earth, but a wondrous land of whimsy and warmth called Fuzziolump!  Your people&apos;s thoughts and feelings and imaginings gave us life, in point of fact, a process which has accelerated exponentially in recent decades with the advent of telecommunications and a magical thing called The Internet -- all that cognition flying about in the aether sort of landed here, and took root.  It&apos;s not a well-understood matter, but we know we have humanity to thank for our existence! 
+
+Glossing right over that massive tidbit, we&apos;re standing in a lovely little area of the Frosted Forest we lumpkins call the Atrium Glade.  It&apos;s the lumpside connection point, which we call a Socket, of the Conduit you passed through to get here; your dryer was the Socket on your end.  Dryers are often Sockets on Earth for some reason -- we get all kinds of socks and, erm, other underthings coming through.&quot;  He manages to blush through his fur.
+&quot;I know that doesn&apos;t make a lot of sense: it&apos;s fine, don&apos;t worry about it.  You can always ask me about Conduits, Sockets, Atrium Glade, Frosted Forest, or Fuzziolump itself on the way, if you like.&quot;  He smiles and blinks placidly while the two of you stare at each other in awkward silence for several seconds.  Then a realization strikes him: &quot;Oh!  Yes, sorry, I haven&apos;t told you why I brought you here yet.  Our Great Need.&quot;  He twitches his whiskers and adjusts his bowtie anxiously. &quot;You see, Fuzziolump has long been a place of peace enjoyed by one and all, but recently there has been an upwelling of violence and turmoil.  The cause is our gods.  We didn&apos;t have any at first.  The fully mortal lumpkins are quite complex enough, and even with the vast sum of Earth&apos;s imaginings it took ages for us to develop.  Several centuries have passed since we grew smart enough to start recording our history, and it seems the more we wrote and thought and felt the experiences of life, the faster Fuzziolump grew.  Its own denizens&quot; imaginings fuel it in addition to Earth&apos;s ever-deepening pool of creative energy, and this exponentiation plus some experimentation with tool-assisted metamorphosis has led to a few more potent lifeforms.  Effectively, gods.&quot; &quot;
+
+Now, this might be cause for celebration -- a whole new category of sapient life, more deeply sapient than any of us can fathom!  Unfortunately, power and depth of mind do not equate to wisdom.  The young gods of Fuzziolump are very different, but their common trait is an understandable lack of experience combined with an unprecedented ability to influence the world around them.  Some have even learned to syphon off the creative energy Fuzziolump thrives on, and threaten to collapse this world in on itself.  It isn&apos;t clear what would happen to the gods if this world perished, but I and my loved ones and millions more like us would surely be snuffed out like the humble little candle flames we are.  I cannot allow that to happen.  What to do though?  Every lumpkin knows that Earth and humanity are our progenitors, specifically your creativity.  So, it only seemed reasonable to bring a human creative here to help untangle this little knot of divinity.  At least, I think that&apos;s why we&apos;ve summoned you.  The Council of Animals made it a top secret matter, so little folk like me can only guess.  But yeah, you create every day -- you must know how to turn that power off, or keep it under control?&quot;
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -2298,6 +2381,16 @@ The Winged Otter beams at you.  &quot;Hello, there Human!  My name is Nuvi.&quot
 You can&apos;t go that way.
 [going south - failed the can&apos;t go that way rule]
 
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x1e25f30">
+    <command xml:space="preserve">test me</command>
+    <result xml:space="preserve">&gt;--&gt; No test scripts exist for this game.
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>NO</played>
