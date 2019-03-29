@@ -42,7 +42,7 @@ Instead of examining the Holly Bush:
 	otherwise:
 		say "The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind."
 [it would be nice to define a greet action that can be certain verbs like 'shake hand/paw' or 'say [greeting]' so we avoid get ye flask situations... later perhaps]
-Understand "hello/hey/yo/hiya" as "[greeting]".
+Understand "hello/hey/yo/hiya/hi" as "[greeting]".
 [does it make sense to follow a similar pattern re: trigger statements/actions that advance the story in a general context?  It was required in Twine because gamebooks, but here there is a significantly more freedom.  That freedom, however, does not mean it's wise to make obstacles out of everything, especially when it only makes sense that an NPC would try to further things along themselves.  What might make some sense, just to break up the exposition train, would be to have Nuvi listening for the purposes of adapting to whatever language The Human speaks... but then we're getting close to boulder-skipping unless we want to actually delve into some sort of universal translator-mo-tron system.  Best bet would be to have Nuvi act like he reasonably would based on his motivations but also not drown the player in information -- the player can ask for clarification if necessary, and Nuvi's NLP KR should handle that.]
 Understand "where am I/where is this" as "[query_location]".
 Understand "who are you/what's your name/what is your name" as "[query_nuvi_re_personal_info_polite]".
@@ -52,7 +52,7 @@ A Winged Otter is a kind of person.
 [todo: does this define Winged Otter a new noun that inherits from person, or does it simply alias Winged Otter to person?]
 [todo: how do I assign new properties to a custom noun, e.g. 'Player_Affinity is a number.  An Actor has Player_Affinity. Winged Otter is a type of Actor.  Nuvi's Player_Affinity increases by 1.' ?]
 [todo: does Inform 7 support maps/dictionaries?  I'd like to be able to map character id : affinity value like I did in JS]
-Nuvi is a Winged Otter.  Nuvi is here.  Nuvi can be hat-tipped.  "A winged otter flaps serenely nearby.  His tophat is dapper." 
+Nuvi is a Winged Otter.  Nuvi is here.  Nuvi can be hat-tipped.  Nuvi can be ready to ride.  "A winged otter flaps serenely nearby.  His tophat is dapper." 
 Understand "otter" and "winged otter" as Nuvi. [why doesn't the same x/y/z syntax used for defining text subs above work?]
 The description of Nuvi is "The otter, who sports a pair of fluffy brown wings the same shade as his sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est."
 After answering Nuvi that "[greeting]" for the first time:
@@ -61,9 +61,18 @@ After answering Nuvi that "[greeting]" for the first time:
 	[paragraph break]'This is not Earth, but a wondrous land of whimsy and warmth called Fuzziolump!  Your people's thoughts and feelings and imaginings gave us life, in point of fact, a process which has accelerated exponentially in recent decades with the advent of telecommunications and a magical thing called The Internet -- all that cognition flying about in the aether sort of landed here, and took root.  It's not a well-understood matter, but we know we have humanity to thank for our existence! [paragraph break]Glossing right over that massive tidbit, we're standing in a lovely little area of the Frosted Forest we lumpkins call the Atrium Glade.  It's the lumpside connection point, which we call a Socket, of the Conduit you passed through to get here; your dryer was the Socket on your end.  Dryers are often Sockets on Earth for some reason -- we get all kinds of socks and, erm, other underthings coming through.'  He manages to blush through his fur.";
 	say "[paragraph break]'I know that doesn't make a lot of sense: it's fine, don't worry about it.  You can always ask me about Conduits, Sockets, Atrium Glade, Frosted Forest, or Fuzziolump itself on the way, if you like.'  He smiles and blinks placidly while the two of you stare at each other in awkward silence for several seconds.  Then a realization strikes him: 'Oh!  Yes, sorry, I haven't told you why I brought you here yet.  Our Great Need.'  He twitches his whiskers and adjusts his bowtie anxiously. 'You see, Fuzziolump has long been a place of peace enjoyed by one and all, but recently there has been an upwelling of violence and turmoil.  The cause is our gods.  We didn't have any at first.  The fully mortal lumpkins are quite complex enough, and even with the vast sum of Earth's imaginings it took ages for us to develop.  Several centuries have passed since we grew smart enough to start recording our history, and it seems the more we wrote and thought and felt the experiences of life, the faster Fuzziolump grew.  Its own denizens' imaginings fuel it in addition to Earth's ever-deepening pool of creative energy, and this exponentiation plus some experimentation with tool-assisted metamorphosis has led to a few more potent lifeforms.  Effectively, gods.
 	[paragraph break]Now, this might be cause for celebration -- a whole new category of sapient life, more deeply sapient than any of us can fathom!  Unfortunately, power and depth of mind do not equate to wisdom.  The young gods of Fuzziolump are very different, but their common trait is an understandable lack of experience combined with an unprecedented ability to influence the world around them.  Some have even learned to syphon off the creative energy Fuzziolump thrives on, and threaten to collapse this world in on itself.  It isn't clear what would happen to the gods if this world perished, but I and my loved ones and millions more like us would surely be snuffed out like the humble little candle flames we are.  I cannot allow that to happen.  What to do though?  Every lumpkin knows that Earth and humanity are our progenitors, specifically your creativity.  So, it only seemed reasonable to bring a human creative here to help untangle this little knot of divinity.  At least, I think that's why we've summoned you.  The Council of Animals made it a top secret matter, so little folk like me can only guess.  But yeah, you create every day -- you must know how to turn that power off, or keep it under control?'"
+[todo: this doesn't seem to work for identifying a key regex within an input string -- can you use regex or wildcards within string matchers like this?]
+Understand "*creativity*" as "[creativity control]".
+After answering Nuvi that "[creativity control]" for the first time:
+	now Nuvi is ready to ride;
+	[todo: can we examine the exact string the user gave and then respond appropriately here?]
+	say "all right then."
 Check going in the Atrium Glade:
 	if Nuvi is not hat-tipped:
 		say "As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and waving a soft paw shyly.";
+		stop the action;
+	otherwise if Nuvi is not ready to ride:
+		say "Nuvi flaps neurotically and squeaks 'Hang on, hang on, can you control creativity as we assumed?'";
 		stop the action;
 	otherwise:
 		continue the action.
