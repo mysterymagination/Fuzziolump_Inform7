@@ -77,7 +77,7 @@ After answering Nuvi that when the topic understood includes "creativity/creativ
 		now the player affinity of Nuvi is player affinity of Nuvi + 5;
 		say "after unlikely magic, Nuvi's fondness for the player has an amplitude of [player affinity of Nuvi]";
 	otherwise:
-		say "His little whiskers droop, and his tophat slides down over his eyes. Pushing it back up into place, he responds, 'Oh.  Well, I can't say I'm surprised that you're not able to control elemental creativity.  We'd always hoped that Humanity, as our sires and kinda sorta ancestor god type of things, would be... I dunno, super-crazy-magic, I guess.  That's a childish assumption, however, and there's surely nothing for children in Fuzziolump!'  His snoot wiggles thoughtfully, and then his whiskers spring up so fast they bounce. 'Ah well!  It is the nature of things to generally be more realistic than we imagine them, unless of course we're actually imagining them into reality.'  He grins at you, as if this was a perfectly normal sentence. 'Come on then, let's go see the Council of Animals anyway -- I'm sure you can help us somehow!  They're off North, beyond the Frosted Forest's edge and across the Wombat Plains.'" 
+		say "His little whiskers droop, and his tophat slides down over his eyes. Pushing it back up into place, he responds, 'Oh.  Well, I can't say I'm surprised that you're not able to control elemental creativity.  We'd always hoped that Humanity, as our sires and kinda sorta ancestor god type of things, would be... I dunno, super-crazy-magic, I guess.  That's a childish assumption, however, and there's surely nothing for children in Fuzziolump!'  His snoot wiggles thoughtfully, and then his whiskers spring up so fast they bounce. 'Ah well!  It is the nature of things to generally be more realistic than we imagine them, unless of course we're actually imagining them into reality.'  He grins at you, as if this was a perfectly normal sentence. 'Come on then, let's go see the Council of Animals anyway -- I'm sure you can help us somehow!  They're off North, beyond the Frosted Forest's edge in the sandy savannah of the Wombat Warrens.'" 
 Check going in the Atrium Glade:
 	if Nuvi is not hat-tipped:
 		say "As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and waving a soft paw shyly.";
@@ -92,6 +92,9 @@ Check going in the Atrium Glade:
 The Bejeweled Pines is a room. "[bejeweled pines desc]".
 North of the Atrium Glade is the Bejeweled Pines.
 To say bejeweled pines desc:
-	say "glittery pines TODO."
+	if bejeweled pines has been visisted:
+		say "You stand amongst a dazzling array of colors: the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic."
+After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
+	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
 
 Release along with a website, an interpreter
