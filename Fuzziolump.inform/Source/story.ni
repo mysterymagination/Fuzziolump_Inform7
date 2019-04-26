@@ -2,6 +2,10 @@
 
 Chapter 1 - The Frosted Forest
 
+The Party is a List of texts which varies.
+When play begins:
+	add "player" to The Party.
+	
 The player is in the Chamber of Soiled Vestments.
 The Chamber of Soiled Vestments is a room.  The description of The Chamber of Soiled vestments is "[laundry-description]"
 
@@ -71,6 +75,7 @@ After answering Nuvi that "yes":
 Understand "no/not/cannot/can't" as "[negation]".
 After answering Nuvi that when the topic understood includes "creativity/creative" for the first time:
 	now Nuvi is ready to ride;
+	add "nuvi" to the Party;
 	if the topic understood does not include "[negation]":
 		say "'Really?!  I thought it was a longshot, honestly, that you would be able to control elemental creativity!  Well, the Council of Animals will be thrilled.'  He does a barrel roll and flits about your head, joyously.  Shame on you for lying to such an innocent creature!";
 		say "prior to unlikely magic, Nuvi's fondness for the player has an amplitude of [player affinity of Nuvi]";
@@ -89,11 +94,18 @@ Check going in the Atrium Glade:
 	otherwise:
 		continue the action.
 
-The Bejeweled Pines is a room. "[bejeweled pines desc]".
+A Dryad is a kind of Person.  Willoweave is a Dryad.
+A Faerie is a kind of Person. Shimmerin is a Faerie.
+The Bejeweled Pines is a room. "[bejeweled pines desc]".  [Shimmerin and Willoweave are here. -- don't want them to show up named immediately]
 North of the Atrium Glade is the Bejeweled Pines.
 To say bejeweled pines desc:
-	if bejeweled pines has been visisted:
-		say "You stand amongst a dazzling array of colors: the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic."
+	if bejeweled pines has not been visited:
+		say "You stand amongst a dazzling array of colors: the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic.";
+	otherwise:
+		say "You stand amongst a dazzling array of colors: the trees are Fancy.";
+	if "shimmerin" is not listed in The Party:
+		say "An especially vibrant lilac light departs from the others, flitting about your head playfully.  As your gaze follows it, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost."
+		
 After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
 
