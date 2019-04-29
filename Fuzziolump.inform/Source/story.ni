@@ -2,6 +2,10 @@
 
 Chapter 1 - The Frosted Forest
 
+The Party is a List of texts which varies.
+When play begins:
+	add "player" to The Party.
+	
 The player is in the Chamber of Soiled Vestments.
 The Chamber of Soiled Vestments is a room.  The description of The Chamber of Soiled vestments is "[laundry-description]"
 
@@ -71,11 +75,12 @@ After answering Nuvi that "yes":
 Understand "no/not/cannot/can't" as "[negation]".
 After answering Nuvi that when the topic understood includes "creativity/creative" for the first time:
 	now Nuvi is ready to ride;
+	add "nuvi" to the Party;
 	if the topic understood does not include "[negation]":
 		say "'Really?!  I thought it was a longshot, honestly, that you would be able to control elemental creativity!  Well, the Council of Animals will be thrilled.'  He does a barrel roll and flits about your head, joyously.  Shame on you for lying to such an innocent creature!";
-		say "prior to unlikely magic, Nuvi's fondness for the player has an amplitude of [player affinity of Nuvi]";
+		[say "prior to unlikely magic, Nuvi's fondness for the player has an amplitude of [player affinity of Nuvi]";]
 		now the player affinity of Nuvi is player affinity of Nuvi + 5;
-		say "after unlikely magic, Nuvi's fondness for the player has an amplitude of [player affinity of Nuvi]";
+		[say "after unlikely magic, Nuvi's fondness for the player has an amplitude of [player affinity of Nuvi]";]
 	otherwise:
 		say "His little whiskers droop, and his tophat slides down over his eyes. Pushing it back up into place, he responds, 'Oh.  Well, I can't say I'm surprised that you're not able to control elemental creativity.  We'd always hoped that Humanity, as our sires and kinda sorta ancestor god type of things, would be... I dunno, super-crazy-magic, I guess.  That's a childish assumption, however, and there's surely nothing for children in Fuzziolump!'  His snoot wiggles thoughtfully, and then his whiskers spring up so fast they bounce. 'Ah well!  It is the nature of things to generally be more realistic than we imagine them, unless of course we're actually imagining them into reality.'  He grins at you, as if this was a perfectly normal sentence. 'Come on then, let's go see the Council of Animals anyway -- I'm sure you can help us somehow!  They're off North, beyond the Frosted Forest's edge in the sandy savannah of the Wombat Warrens.'" 
 Check going in the Atrium Glade:
@@ -89,16 +94,34 @@ Check going in the Atrium Glade:
 	otherwise:
 		continue the action.
 
-A Dryad is a kind of Person.
-A Faerie is a kind of Person.
-Shimmerin is a Faerie.  
-The Bejeweled Pines is a room. "[bejeweled pines desc]".  Here is a Dryad. "A feminine face wearing a necklace of amethyst you had taken for a strange crystalline growth on the tree's bark peeks out at you, curiously."  Shimmerin is here. "One of the lights flits about your head, in a bid to get your attention."
+A Dryad is a kind of Person.  Willoweave is a Dryad.
+A Faerie is a kind of Person. Shimmerin is a Faerie.
+The Bejeweled Pines is a room. "[bejeweled pines desc]".  [Shimmerin and Willoweave are here. -- don't want them to show up named immediately]
 North of the Atrium Glade is the Bejeweled Pines.
+There are trees in the Bejeweled Pines. "[initial fancy trees desc]".
+To say initial fancy trees desc:
+	say "the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic."
 To say bejeweled pines desc:
-	if bejeweled pines has not been visited:
-		say "You stand amongst a dazzling array of colors: the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic.";
-	otherwise:
+	[if bejeweled pines has not been visited:
+		say "You stand amongst a dazzling array of colors: [initial fancy trees desc]";
+	otherwise:]
 		say "You stand amongst a dazzling array of colors: these trees are Fancy."
+	[todo: move these descs to handling for closer looks at the trees and lights
+	if "shimmerin" is not listed in The Party:
+		say "An especially vibrant lilac light departs from the others, flitting about your head playfully.  As your gaze follows it, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost."]
+After going to the Bejeweled Pines for the first time:
+	repeat with character running through the Party:
+		if character is "nuvi":
+			now Nuvi is in the location;
+	continue the action.
+[ todo: nope, this doesn't work.  *sigh* I just want to either have anonymous tree objects in the room that the player can examine and are NOT auto-mentioned by the library or just have them mentioned in the desc along with context sensitive action handling as necessary.  Neither of these seems to be a possibility.
+After examining anything when the player's command includes "tree" and the player is in the bejeweled pines:]
+The description of the the trees is "[detailed bejeweled trees desc]".
+To say detailed bejeweled trees desc:
+	if "willoweave" is not listed in the party:
+		say "Upon closer inspection of a nearby tree, glittering with tinsel made from filaments of actual silver, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost.";
+	otherwise:
+		say "Baubles and glorious gizmos adorn the trees all around this grove.  It may just be you, but they seem to be preening in so far as plants can pose."
 		
 After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
