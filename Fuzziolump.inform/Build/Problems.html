@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <style type="text/css">
     <!--
         *, *:before, *:after {
@@ -280,16 +281,44 @@
             }
         }
     </script>
-    </head>
-    <body><font size=2>
+</head>
+<body>
+    <font size=2>
     <!--CONTENT BEGINS-->
+    <!--BANNER BEGINS-->
+    <table cellspacing="3" border="0" width="100%">
+        <tr id="surround0">
+            <td style="width:100%">
+                <!--HEADING BEGINS-->
+                <div class="headingboxFailed">
+                    <div class="headingtext">Report on Translation: Failed</div>
+                    <div class="headingrubric">Produced by Inform 7 (build 6M62)</div>
+                </div>
+                <!--HEADING ENDS-->
+            </td>
+        </tr>
+    </table>
+    <!--BANNER ENDS-->
+    <table border="0" cellspacing="4" cellpadding="0" width=100%>
+        <tr><td align="left" valign="top" width="110"><font size=2>
+            <img src=inform:/outcome_images/ni_failed@2x.png border=1 width=100 height=100>
+        &nbsp;&nbsp;&nbsp;&nbsp;</font></td><td align="left" valign="top"><font size=2>
+        <!--HEADNOTE-->
+        <p style="margin-top:0;">(Each time <b>Go</b> or <b>Replay</b> is clicked, Inform tries to translate the source text into a working story, and updates this report.)</p>
+        <!--PROBLEMS BEGIN-->
+        In<b> Chapter 1 - The Frosted Forest</b>:</p>
 
-    <table cellspacing="3" border="0" width="100%"><tr id="surround0"><td style="width:100%">
-    <div class="headingboxSucceeded">
-    	<div class="headingtext">Report on Translation: Succeeded</div>
-    	<div class="headingrubric">Produced by Inform 7 (build 6L38)</div>
-    </div></td>
-    </tr></table><p><center><img src=inform:/outcome_images/ni_succeeded_3.png border=0></center><p><p style="margin-top:0;">(Each time <b>Go</b> or <b>Replay</b> is clicked, Inform tries to translate the source text into a working story, and updates this report.)</p>  The 2270-word source text has successfully been translated into a world with 3 rooms and 10 things, and the index has been brought up to date.</p>
+          <p class="hang"><b>Problem.</b>  You wrote '&quot;[bejeweled pines desc]&quot;' &nbsp;<a href="source:story.ni#line95"><img border=0 src=inform:/doc_images/Reveal.png></a>, but in another sentence '&quot;A feminine face wearing a necklace [...] bark peeks out at you, curiously.&quot;' &nbsp;<a href="source:story.ni#line95"><img border=0 src=inform:/doc_images/Reveal.png></a>: Bejeweled Pines seems to have two different descriptions, perhaps because you intended the second description to apply to something mentioned in between, but declared it in such a way that it was never the subject of an assertion. For instance, 'The Forest Clearing is northeast of the Woods.' makes the Forest Clearing the current room being discussed, but 'Northeast of the Woods is the Forest Clearing.' leaves the room under discussion unchanged, because the Forest Clearing is not the subject of the sentence.</p>
+
+        <p class="tightin2"><a href=inform:/doc36.html><img border=0 src=inform:/doc_images/help.png></a>&nbsp;<i>See the manual: 3.11 &gt; 3.11. Two descriptions of things</i></p>
+        <!--PROBLEMS END-->
+        </font></td></tr>
+    </table>
+
+    <!--FOOTNOTE-->
+      <p class="in2">Because of this problem, the source could not be translated into a working game. (Correct the source text to remove the difficulty and click on Go once again.)</p>
 
     <!--CONTENT ENDS-->
-    </font></body></html>
+    </font>
+</body>
+</html>

@@ -89,11 +89,17 @@ Check going in the Atrium Glade:
 	otherwise:
 		continue the action.
 
-The Bejeweled Pines is a room. "[bejeweled pines desc]".
+A Dryad is a kind of Person.
+A Faerie is a kind of Person.
+Shimmerin is a Faerie.  
+The Bejeweled Pines is a room. "[bejeweled pines desc]".  Here is a Dryad. "A feminine face wearing a necklace of amethyst you had taken for a strange crystalline growth on the tree's bark peeks out at you, curiously."  Shimmerin is here. "One of the lights flits about your head, in a bid to get your attention."
 North of the Atrium Glade is the Bejeweled Pines.
 To say bejeweled pines desc:
-	if bejeweled pines has been visisted:
-		say "You stand amongst a dazzling array of colors: the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic."
+	if bejeweled pines has not been visited:
+		say "You stand amongst a dazzling array of colors: the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.  Little soft-glowing lights flit from ornament to ornament, keeping the emphasis and shading dynamic.";
+	otherwise:
+		say "You stand amongst a dazzling array of colors: these trees are Fancy."
+		
 After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
 
