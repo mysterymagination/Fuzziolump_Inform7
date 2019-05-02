@@ -1,28 +1,28 @@
 Debugging log of Inform 7
-Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -internal C:\Program Files (x86)\Inform 7\Internal -project C:\Users\crescojeff\Documents\git_repos\Fuzziolump_Inform7\Fuzziolump.inform -format=ulx
-Found language bundle 'English' (from .materials)
-Found language bundle 'French' (from .materials)
-Found language bundle 'German' (from .materials)
-Found language bundle 'Italian' (from .materials)
-Found language bundle 'Spanish' (from .materials)
-Found language bundle 'Swedish' (from .materials)
+Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -internal C:\Program Files (x86)\Inform 7\Internal -project C:\Users\Jeffrey.Creswell\IF\Fuzziolump_Inform7\Fuzziolump.inform -format=ulx
+Found language bundle 'English' (built in)
+Found language bundle 'French' (built in)
+Found language bundle 'German' (built in)
+Found language bundle 'Italian' (built in)
+Found language bundle 'Spanish' (built in)
+Found language bundle 'Swedish' (built in)
 Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Languages\English\Syntax.preform>
-720 declarations read (14002 words)
+720 declarations read (14183 words)
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 2658 words long.
+I've now read your source text, which is 2726 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 42616 words long.
-I've also read English Language by Graham Nelson, which is 2288 words long.
+I've also read Standard Rules by Graham Nelson, which is 42655 words long.
+I've also read English Language by Graham Nelson, which is 2297 words long.
 
 
 -----------------------------------------------------
@@ -175,7 +175,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 102 files written as streams.
-CPU time: 146 centiseconds
+CPU time: 415 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
