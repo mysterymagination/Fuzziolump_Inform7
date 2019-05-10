@@ -1,5 +1,47 @@
 "Fuzziolump" by "jeff creswell"
 
+Section 1 - Custom Definitions
+
+Underlying relates various things to one thing. The verb to underlie means the underlying relation. The verb to be under means the underlying relation. The verb to be beneath means the underlying relation.
+
+Instead of looking under a thing which is underlaid by something (called the lost object): 
+	say "You find [the list of things which underlie the noun]!"; 
+	now every thing which underlies the noun is carried by the player; 
+	now every thing which underlies the noun does not underlie the noun.
+
+Hiding it under is an action applying to one carried thing and one thing. Understand "put [something preferably held] under [something]" as hiding it under. Understand "hide [something preferably held] under [something]" as hiding it under. Understand the commands "shove" and "conceal" and "stick" as "hide".
+
+Check hiding it under: 
+	if the second noun is not fixed in place, say "[The second noun] wouldn't be a very effective place of concealment." instead.
+
+Carry out hiding it under: 
+	now the noun is nowhere; 
+	now the noun underlies the second noun.
+
+Report hiding it under: 
+	say "You shove [the noun] out of sight beneath [the second noun]."
+	
+Behind relates various things to one thing. The verb to be behind means the behind relation. The verb to be occluded by means the behind relation.
+
+[Instead of looking behind a thing which has something behind it (called the hidden object): 
+	say "You find [the list of things which are behind the noun]!"; 
+	now every thing which is behind the noun is carried by the player; 
+	now every thing which is behind the noun is not behind the noun. -- todo: such wacky syntax]
+
+Hiding it behind is an action applying to one thing and one thing. Understand "hide [something] behind [something]" as hiding it behind.
+
+Check hiding it behind: 
+	if the second noun is not fixed in place, say "[The second noun] wouldn't be a very effective place of concealment." instead.
+
+Carry out hiding it behind: 
+	now the noun is nowhere; 
+	now the noun is behind the second noun.
+	
+[todo: visibility mod re: behind relation?]
+
+Report hiding it behind: 
+	say "You shove [the noun] out of sight behind [the second noun]."
+
 Chapter 1 - The Frosted Forest
 
 The Party is a List of People which varies.
@@ -94,12 +136,12 @@ Check going in the Atrium Glade:
 	otherwise:
 		continue the action.
 
-A Dryad is a kind of Person.  Willoweave is a Dryad. "[willoweave desc]".  Willoweave can be shy.  Willoweave is shy.
+A Dryad is a kind of Person.  Willoweave is a Dryad.  "[willoweave desc]".  Willoweave can be shy.  Willoweave is shy. [Willoweave is in the Bejeweled Pines.] Willoweave is behind the Trees.
 To say willoweave desc:
 	if Willoweave is shy:
 		say "A gorgeous dryad peeks out from a nearby tree, curiously.";
 	otherwise:
-		say "Willoweave bounces on her roots enthusiastically, eager to see what's next."
+		say "Willoweave bounces on her rainbow-painted roots enthusiastically, eager to see what's next."
 A Faerie is a kind of Person. Shimmerin is a Faerie.
 The Bejeweled Pines is a room. "[bejeweled pines desc]".  [Shimmerin and Willoweave are here. -- don't want them to show up named immediately]
 North of the Atrium Glade is the Bejeweled Pines.
@@ -114,20 +156,23 @@ To say bejeweled pines desc:
 	[todo: move these descs to handling for closer looks at the trees and lights
 	if "shimmerin" is not listed in Thelooo Party:
 		say "An especially vibrant lilac light departs from the others, flitting about your head playfully.  As your gaze follows it, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost."]
-After going to the Bejeweled Pines for the first time:
+After going:
 	repeat with character running through the Party:
-		if character is Nuvi:
-			now Nuvi is in the location;
+		say "[character] shuffles along after the player.";
+		now character is in the location;
 	continue the action.
 [ todo: nope, this doesn't work.  *sigh* I just want to either have anonymous tree objects in the room that the player can examine and are NOT auto-mentioned by the library or just have them mentioned in the desc along with context sensitive action handling as necessary.  Neither of these seems to be a possibility.
 After examining anything when the player's command includes "tree" and the player is in the bejeweled pines:]
 The description of the the trees is "[detailed bejeweled trees desc]".
 To say detailed bejeweled trees desc:
-	if Willoweave is not listed in the party:
+	[if the location of Willoweave is not the Bejeweled Pines: -- todo: doesn't work?  With this condition I always skip down to the she's not here block, but her location there reports as here.  When the condition is 'is she here' I still skip down to the else block except now the reported location is 'nothing']
+	if the Player cannot see Willoweave:
 		say "Upon closer inspection of a nearby tree, glittering with tinsel made from filaments of actual silver, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost.  When you raise your eyes to hers again, you find her arching an eyebrow at you.";
-		now Willoweave is in the Bejeweled Pines;
+		[move Willoweave to the Bejeweled Pines;]
+		now Willoweave is not behind the Trees;
 	otherwise:
-		say "Baubles and glorious gizmos adorn the trees all around this grove.  It may just be you, but they seem to be preening in so far as plants can pose."
+		say "Baubles and glorious gizmos adorn the trees all around this grove.  It may just be you, but they seem to be preening in so far as plants can pose.";
+		say the location of Willoweave.
 		
 After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
