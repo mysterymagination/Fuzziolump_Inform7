@@ -2,6 +2,7 @@
 
 Section 1 - Custom Definitions
 
+[
 Underlying relates various things to one thing. The verb to underlie means the underlying relation. The verb to be under means the underlying relation. The verb to be beneath means the underlying relation.
 
 Instead of looking under a thing which is underlaid by something (called the lost object): 
@@ -34,13 +35,21 @@ Check hiding it behind:
 	if the second noun is not fixed in place, say "[The second noun] wouldn't be a very effective place of concealment." instead.
 
 Carry out hiding it behind: 
-	now the noun is nowhere; 
+	now the noun is nowhere;
 	now the noun is behind the second noun.
 	
-[todo: visibility mod re: behind relation?]
+[todo: visibility mod re: behind relation? this is bloody nuts.  Why oh why can't I just say 'now X is invisible'?  How is that vague?!  How is some crazy hardcoded nonsense about light levels when the issue is occlusion less vague?
+
+Visibility rule when looking at something behind: 
+	if description of the noun is not "": 
+		say "[description of the noun]";
+		there is sufficient light; 
+	there is insufficient light.]
 
 Report hiding it behind: 
 	say "You shove [the noun] out of sight behind [the second noun]."
+	
+]
 
 Chapter 1 - The Frosted Forest
 
@@ -136,12 +145,15 @@ Check going in the Atrium Glade:
 	otherwise:
 		continue the action.
 
-A Dryad is a kind of Person.  Willoweave is a Dryad.  "[willoweave desc]".  Willoweave can be shy.  Willoweave is shy. [Willoweave is in the Bejeweled Pines.] Willoweave is behind the Trees.
-To say willoweave desc:
+A Dryad is a kind of Person.  Willoweave is a Dryad.  "[willoweave basic desc]".  Willoweave can be shy.  Willoweave is shy. [Willoweave is in the Bejeweled Pines. todo: adding Willoweave to a room in the hopes of init'ing her did not help with the meld check in describing the trees.  I'm guessing the problem is that maybe the tree desc rule is compiled at build time and thus the condition is not checked for updated values at runtime?  The analogous example for a lost/found flag in the manual uses an instead of... rule, rather than a to say... rule.] Willoweave can be melded or unmelded.  Willoweave is melded.
+Understand "dryad" as Willoweave.
+To say willoweave basic desc:
 	if Willoweave is shy:
 		say "A gorgeous dryad peeks out from a nearby tree, curiously.";
 	otherwise:
 		say "Willoweave bounces on her rainbow-painted roots enthusiastically, eager to see what's next."
+The description of Willoweave is "Emerald green ivy interspersed and accented by soft thistle down serves this dryad like hair, pouring down from her head well past the small of her back.  Soft tawny eyes peer out from a face ever-bright with wonder.  Her skin is the gleaming nut brown of polished oak, and is smoother to the touch than glass.  She has the shape of a human woman carved from wood, save that her feet and hands are more like the roots and branches of trees, respectively.  This has not stopped her from painting the tips of each tendril with whimsical splashes of (mostly contrasting) color.  Being essentially a tree, she wears nothing, but when she catches you examinig her sinuousness, crimson poppies burst into bloom on her cheeks and she summons up a modest dusting of moss to cover her torso like a dress.  A very clingy dress.  These seem to fall away on their own over time as her attention flits elsewhere."
+
 A Faerie is a kind of Person. Shimmerin is a Faerie.
 The Bejeweled Pines is a room. "[bejeweled pines desc]".  [Shimmerin and Willoweave are here. -- don't want them to show up named immediately]
 North of the Atrium Glade is the Bejeweled Pines.
@@ -163,16 +175,25 @@ After going:
 	continue the action.
 [ todo: nope, this doesn't work.  *sigh* I just want to either have anonymous tree objects in the room that the player can examine and are NOT auto-mentioned by the library or just have them mentioned in the desc along with context sensitive action handling as necessary.  Neither of these seems to be a possibility.
 After examining anything when the player's command includes "tree" and the player is in the bejeweled pines:]
-The description of the the trees is "[detailed bejeweled trees desc]".
-To say detailed bejeweled trees desc:
+[The description of the the Trees is "[detailed bejeweled trees desc]". todo: to say... rule doesn't seem to respect Willoweave's melded state?  It always evaluates to false.
+To say detailed bejeweled trees desc: ]
+Instead of examining the Trees in the Bejeweled Pines:
 	[if the location of Willoweave is not the Bejeweled Pines: -- todo: doesn't work?  With this condition I always skip down to the she's not here block, but her location there reports as here.  When the condition is 'is she here' I still skip down to the else block except now the reported location is 'nothing']
-	if the Player cannot see Willoweave:
+	[if the Player cannot see Willoweave:  todo: visibility is a rabbit hole for no reason]
+	if Willoweave is melded:
 		say "Upon closer inspection of a nearby tree, glittering with tinsel made from filaments of actual silver, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost.  When you raise your eyes to hers again, you find her arching an eyebrow at you.";
-		[move Willoweave to the Bejeweled Pines;]
-		now Willoweave is not behind the Trees;
+		move Willoweave to the Bejeweled Pines;
+		[now Willoweave is not behind the Trees;]
+		now Willoweave is unmelded;
 	otherwise:
 		say "Baubles and glorious gizmos adorn the trees all around this grove.  It may just be you, but they seem to be preening in so far as plants can pose.";
-		say the location of Willoweave.
+		
+[todo: other interactions with Willoweave?]
+After Answering Willoweave that "[greeting]" for the first time:
+	now Willoweave is not shy;
+	say "The pretty young dryad cringes away as you focus on her, throwing up an arm of wood smooth as glass to shield herself from your wrath and violence.  After a moment passes peacefully, albeit awkwardly, she lowers her arm and blinks at you in surprise. 'Mother always told us that Outsiders are deadly dangerous things.  You don't seem terribly murderous.'  Her own words lend her courage, and she approaches steadily.  When she reaches you and is still alive, she plants herself well within your personal space and immediately begins a thorough investigation of your squishy person.  'You're so soft!' she giggles delightedly, poking and pinching any exposed flesh she can find on you.  'And you're not very hairy, so I can see so much detail!  Take your clothes off, please.'  She starts to pull at your clothing when Nuvi swoops down and whacks her on the head with his hat.  Her wild mane of ivy and thistle down cushions the blow, but she steps back anyway, thoroughly rebuked.  'Sorry about that; got overexcited.  My name is Willoweave, and I'm ecstatic to meet you!  If I promise not to poke you much without asking first, can I travel with your for a bit?  I wanna see everything!'  [paragraph break]Willoweave has inserted herself into the party.";
+	add Willoweave to the Party.
+	
 		
 After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
