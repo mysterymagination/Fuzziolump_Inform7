@@ -188,7 +188,7 @@ Instead of examining the Trees in the Bejeweled Pines:
 		[now Willoweave is not behind the Trees;]
 		now Willoweave is unmelded;
 	otherwise:
-		say "Baubles and glorious gizmos adorn the trees all around this grove.  It may just be you, but they seem to be preening in so far as plants can pose.";
+		say "Baubles and glorious gizmos adorn the trees all around this grove.  It may just be you, but they seem to be preening in so far as plants can pose."
 		
 [todo: other interactions with Willoweave?]
 After Answering Willoweave that "[greeting]" for the first time:
@@ -208,18 +208,26 @@ After answering Nuvi that when the topic understood includes "trees" and the pla
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
 
 [meet Shimmerin]
+The description of the Glowy Lights is "Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic."
 Instead of examining the Glowy Lights: 
 	if we have not examined the Glowy Lights:
-		say "Nuvi follows your gaze and pipes up, 'Those are faeries!  They're whimsical little beauties with insatiable curiosity.  They trade their light for secrets, whispered by the woods; little goes on anywhere nearby that isn't witnessed by the trees.'  Each faerie's wings are different colors, like intricate stained glass.  As you watch, a faery winks at you and performs a graceful series of barrel rolls while the colors of her wings shift and the soft lilac light pulsing off her skin twinkles to produce a mesmerizing chromatic metamorphosis.  She giggles at your awed expression, and zooms off out of sight through the dense foliage to the East.";
+		now the description of the Glowy Lights is "Nuvi follows your gaze and pipes up, 'Those are faeries!  They're whimsical little beauties with insatiable curiosity.  They trade their light for secrets, whispered by the woods; little goes on anywhere nearby that isn't witnessed by the trees.'  Each faerie's wings are different colors, like intricate stained glass.  As you watch, a faerie winks at you and performs a graceful series of barrel rolls while the colors of her wings shift and the soft lilac light pulsing off her skin twinkles to produce a mesmerizing chromatic metamorphosis.  She giggles at your awed expression, blows you a kiss, and zooms off out of sight through the dense foliage to the East.  A moment later, her slender arm pokes back through and she beckons you to follow her.";
 	otherwise:
 		if Shimmerin is listed in the Party:
-			say "Shimmerin gazes at the other faeries' carefree play with a wistful expression, and looks away when they meet her eyes.  'Can we get on with exploring the forest, please?' she asks, her voice uncharacteristically meek.";
+			now the description of the Glowy Lights is "Shimmerin gazes at the other faeries' carefree play with a wistful expression, and looks away when they meet her eyes.  'Can we get on with exploring the forest, please?' she asks, her voice uncharacteristically meek.";
 		otherwise:
-			say "Noting that they have your attention, the faeries dance while simultaneously flying in complex artisticly synchronized patterns.  You literally cannot stop yourself from clapping appreciatively."
+			now the description of the Glowy Lights is "Noting that they have your attention, the faeries dance while simultaneously flying in complex artisticly synchronized patterns.  You literally cannot stop yourself from clapping appreciatively.";
+	continue the action.
 			
 [After examining when the topic understood includes "light/lights/glow" for the first time:
 	say "glow test." -- todo: this approach didn't work.  Is it possible to define handling for examine etc. actions where the topic understood or complete command text includes some pattern?]
 [todo: shimmerin maze, off to the east]
+Check going East in the Bejeweled Pines:
+	if Shimmerin is not listed in the Party:
+		say "Crashing through the frosted pines as gracefully as possible for a fully grown human following a faery no larger than your little finger, you chase after the elusive sphere of lilac light.  Luckily, she's waiting just at the edge of the current clearing every time you make it through an obstacle blocking line of sight to her.  Eventually, you tumble out into a strange vista of minute ruins.";
+	continue the action.
+	
+The Ghostly Greeting Chamber is a room.  "You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East."
 East of the Bejeweled Pines is The Ghostly Greeting Chamber.
 
 Release along with a website, an interpreter
