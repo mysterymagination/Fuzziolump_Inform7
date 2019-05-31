@@ -159,7 +159,7 @@ A Faerie is a kind of Person. Shimmerin is a Faerie.
 The Bejeweled Pines is a room. "[bejeweled pines desc]".  [Shimmerin and Willoweave are here. -- don't want them to show up named immediately]
 North of the Atrium Glade is the Bejeweled Pines.
 There are Trees in the Bejeweled Pines. "[initial fancy trees desc]". Understand "tree/forest/woods/trees/greenery" as Trees.
-There are Glowy Lights in the Bejeweled Pines. "Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic." Understand "glow/light/lights/faeries" as Glowy Lights.
+There are Glowy Lights in the Bejeweled Pines. "Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic." Understand "glow/light/lights/faeries/faerie" as Glowy Lights.
 To say initial fancy trees desc:
 	say "the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue."
 To say bejeweled pines desc:
@@ -183,7 +183,7 @@ Instead of examining the Trees in the Bejeweled Pines:
 	[if the location of Willoweave is not the Bejeweled Pines: -- todo: doesn't work?  With this condition I always skip down to the she's not here block, but her location there reports as here.  When the condition is 'is she here' I still skip down to the else block except now the reported location is 'nothing']
 	[if the Player cannot see Willoweave:  todo: visibility is a rabbit hole for no reason]
 	if Willoweave is melded:
-		say "Upon closer inspection of a nearby tree, glittering with tinsel made from filaments of actual silver, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost.  When you raise your eyes to hers again, you find her arching an eyebrow at you.";
+		say "Upon closer inspection of a nearby tree, glittering with tinsel made from filaments of actual silver, you note a pair of brilliant green eyes in a feminine face looking back at you from the bark of a nearby tree!  Wood creaks softly as she leans out from the tree to watch you, blinking curiously.  Now that she has separated herself from the bark somewhat, you can see that a large assortment of the glitz you had taken for light cast by the tree's copious ornaments is actually jewelry.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost.  When you raise your eyes to hers again, you find her arching an eyebrow at you.";
 		move Willoweave to the Bejeweled Pines;
 		[now Willoweave is not behind the Trees;]
 		now Willoweave is unmelded;
@@ -193,17 +193,33 @@ Instead of examining the Trees in the Bejeweled Pines:
 [todo: other interactions with Willoweave?]
 After Answering Willoweave that "[greeting]" for the first time:
 	now Willoweave is not shy;
-	say "The pretty young dryad cringes away as you focus on her, throwing up an arm of wood smooth as glass to shield herself from your wrath and violence.  After a moment passes peacefully, albeit awkwardly, she lowers her arm and blinks at you in surprise. 'Mother always told us that Outsiders are deadly dangerous things.  You don't seem terribly murderous.'  Her own words lend her courage, and she approaches steadily.  When she reaches you and is still alive, she plants herself well within your personal space and immediately begins a thorough investigation of your squishy person.  'You're so soft!' she giggles delightedly, poking and pinching any exposed flesh she can find on you.  'And you're not very hairy, so I can see so much detail!  Take your clothes off, please.'  She starts to pull at your clothing when Nuvi swoops down and whacks her on the head with his hat.  Her wild mane of ivy and thistle down cushions the blow, but she steps back anyway, thoroughly rebuked.  'Sorry about that; got overexcited.  My name is Willoweave, and I'm ecstatic to meet you!  If I promise not to prod you much without asking first, can I travel with your for a bit?  My sisters are too shy and I always thought strangers were insane and I wanna see everything!'  [paragraph break]Willoweave has inserted herself into the party.";
+	say "The pretty young dryad cringes away as you focus on her, throwing up an arm of wood smooth as glass to shield herself from your wrath and violence.  After a moment passes peacefully, albeit awkwardly, she lowers her arm and blinks at you in surprise. 'Mother always told us that Outsiders are deadly dangerous things.  You don't seem terribly murderous.'  Her own words lend her courage, and she approaches steadily.  Though she is timid, her bearing pulses with stately confidence.  Adding to her regal aesthetic is a gleaming tiara perched atop the mane of gossamer vines, leaves, and spider silk that form her waist-length hair.  When she reaches you and is still alive, she plants herself well within your personal space and immediately begins a thorough investigation of your squishy person.  'You're so soft!' she giggles delightedly, poking and pinching any exposed flesh she can find on you.  'And you're not very hairy, so I can see so much detail!  Take your clothes off, please.'  She starts to pull at your clothing when Nuvi swoops down and whacks her on the head with his hat.  Her wild mane poofs up of its own accord with a frizz of ivy and thistle down to cushion the blow, but she steps back anyway, thoroughly rebuked.  'Sorry about that; got overexcited.  My name is Willoweave, and I'm ecstatic to meet you!  If I promise not to prod you much without asking first, can I travel with your for a bit?  My sisters are too shy and I always thought strangers were insane and I wanna see everything!'  [paragraph break]Willoweave has inserted herself into the party.";
 	add Willoweave to the Party.
-	
+
+Understand "dryad/dryads" as "[dryad subject]".
+After answering Nuvi that when the topic understood includes "[dryad subject]":
+	say "'Dryads are the keepers of the woods.  They tend the trees, guide their growth, and defend them ferociously.  They don't usually go in for all that finery, but the bejeweled dryads have as curious a sense of style as their trees!'";
+	if Willoweave is not listed in the Party:  
+		say "Nuvi points a small claw toward a strange pattern along the bark of a nearby willow, whispering, 'Take a closer look at the trees.'";
+	otherwise:
+		say "Willoweave nods her head fervently along with Nuvi's words."
+
 After answering Nuvi that when the topic understood includes "trees" and the player is in the bejeweled pines:
 	say "A sudden grin brightening his whiskery mug, Nuvi explains, 'A small tree effigy fell into this forest long ago, decorated in a similar manner. The trees here were so smitten by the style they demanded to be honored with comparable shinies and lights.  The dryads felt abashed that trees elsewhere were so honored, and strove to worship their charges fittingly.  Unluckily for the glass-blowers and enterprising faeries, the trend did not catch on elsewhere in the forest.'  Flapping down close your ear, his whiskers tickling your cheeks, he whispers,  'The other trees consider these ones a bit gaudy.'  He holds a little paw over his mouth to stifle his giggles.  When his secret laughter knocks his monocle off, he sobers quickly."
 
-[todo: meet Shimmerin]
-Instead of examining Glowy Lights:
-	say "shimmerin greeting placeholder"
+[meet Shimmerin]
+Instead of examining the Glowy Lights: 
+	if we have not examined the Glowy Lights:
+		say "Nuvi follows your gaze and pipes up, 'Those are faeries!  They're whimsical little beauties with insatiable curiosity.  They trade their light for secrets, whispered by the woods; little goes on anywhere nearby that isn't witnessed by the trees.'  Each faerie's wings are different colors, like intricate stained glass.  As you watch, a faery winks at you and performs a graceful series of barrel rolls while the colors of her wings shift and the soft lilac light pulsing off her skin twinkles to produce a mesmerizing chromatic metamorphosis.  She giggles at your awed expression, and zooms off out of sight through the dense foliage to the East.";
+	otherwise:
+		if Shimmerin is listed in the Party:
+			say "Shimmerin gazes at the other faeries' carefree play with a wistful expression, and looks away when they meet her eyes.  'Can we get on with exploring the forest, please?' she asks, her voice uncharacteristically meek.";
+		otherwise:
+			say "Noting that they have your attention, the faeries dance while simultaneously flying in complex artisticly synchronized patterns.  You literally cannot stop yourself from clapping appreciatively."
+			
 [After examining when the topic understood includes "light/lights/glow" for the first time:
 	say "glow test." -- todo: this approach didn't work.  Is it possible to define handling for examine etc. actions where the topic understood or complete command text includes some pattern?]
-[todo: shimmerin maze]
+[todo: shimmerin maze, off to the east]
+East of the Bejeweled Pines is The Ghostly Greeting Chamber.
 
 Release along with a website, an interpreter
