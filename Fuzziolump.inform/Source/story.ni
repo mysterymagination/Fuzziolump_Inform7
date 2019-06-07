@@ -1,6 +1,6 @@
 "Fuzziolump" by "jeff creswell"
 
-Section 1 - Custom Definitions
+Section 1 - Custom Definitions, or That Shouldn't Be
 
 [
 Underlying relates various things to one thing. The verb to underlie means the underlying relation. The verb to be under means the underlying relation. The verb to be beneath means the underlying relation.
@@ -51,7 +51,7 @@ Report hiding it behind:
 	
 ]
 
-Section 2 - Of Global Declarations
+Section 2 - On Global Declarations and the Virtue of Simplicity
 
 [declare/define global rooms]
 The Frozen Stair is a Room.
@@ -264,8 +264,8 @@ East of the Bejeweled Pines is The Ghostly Greeting Chamber.
 
 [ doesn't work for no reason?
 Before entering the Ghostly Greeting Chamber for the first time:
-	now Ice Mole is in entry Ice Mole Maze Index of the Shimmerin Maze;
-	say "A nice mole can be found in [the location of Ice Mole].";
+	now Mr Diggums is in entry Ice Mole Maze Index of the Shimmerin Maze;
+	say "And again, a nice mole can be found in [the location of Mr Diggums].";
 	continue the action.
 ]
 
