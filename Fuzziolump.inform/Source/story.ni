@@ -51,11 +51,45 @@ Report hiding it behind:
 	
 ]
 
-Chapter 1 - The Frosted Forest
+Section 2 - Of Global Declarations
 
+[declare/define global rooms]
+The Frozen Stair is a Room.
+The Diamond Throneroom is a Room.
+The Treasure of Stillness is a Room.
+The Crystal Gardens is a Room.
+
+[declare/define global characters]
+[careful with names of characters vs their type -- I originally wanted to say that An Ice Mole is a man in the Ghostly Greeting Chamber.  I figured that man would imply a person who should get the male pronouns.  Then I would refer to the Ice Mole instance via the symbol 'Ice Mole' but this caused a silent failure and things related to Ice Mole simply failed.  Changing the decl to An Ice Molde is a kind of person in the Ghostly Greeting Chamber led to multiple compilation errors, but the main and first one was a confusion of referring to an object by its type rather than name; this made it clear that Inform 7 was only understanding Ice Mole to be a kind of object (a kind of person specifically), and not an instance of an object]
+The Ice Mole is a kind of person.
+Mr Diggums is an Ice Mole. 
+Mr Diggums is in the Ghostly Greeting Chamber.
+
+[declare/define global trackers]
+The Ice Mole Maze Index is a number which varies.  The Ice Mole Maze Index is 1.
+
+[declare/define global arrays]
+The Shimmerin Maze is a list of Rooms that varies.
 The Party is a List of People which varies.
+
+[now set 'em up]
 When play begins:
-	add player to The Party.
+	[shimmerin maze init]
+	add The Frozen Stair to the Shimmerin Maze;
+	add The Diamond Throneroom to the Shimmerin Maze;
+	add The Treasure of Stillness to the Shimmerin Maze;
+	add The Crystal Gardens to the Shimmerin Maze;
+	[party init]
+	[add player to The Party. -- this causes double room desc as the player both goes and is teleported to their own location since they are one of the entries in the party list and we move all such to the player's location.]
+	
+[global event handling]
+After going: [todo: this seems to cause us to enter rooms multiple times?  I get a room desc for both 'yourself' entering a room and for Nuvi entering.  Maybe it's because of the initial desc due to going and then another due to teleporting the player to their current location?  Might be solved easiest just be removing player from the party array and considering them to be a special character.]
+	repeat with character running through the Party:
+		say "[character] shuffles along after the player.";
+		now character is in the location;
+	continue the action.
+
+Chapter 1 - The Frosted Forest
 	
 The player is in the Chamber of Soiled Vestments.
 The Chamber of Soiled Vestments is a room.  The description of The Chamber of Soiled vestments is "[laundry-description]"
@@ -170,11 +204,7 @@ To say bejeweled pines desc:
 	[todo: move these descs to handling for closer looks at the trees and lights
 	if "shimmerin" is not listed in Thelooo Party:
 		say "An especially vibrant lilac light departs from the others, flitting about your head playfully.  As your gaze follows it, you note a pair of brilliant green eyes in a feminine face blinking curiously at you from the bark of a nearby tree.  What you had taken to be an odd crystalline growth on the side of the tree resolves itself to be an amethyst necklace cascading down her decolletage like a waterfall's wildness stilled by the gentling influence of frost."]
-After going:
-	repeat with character running through the Party:
-		say "[character] shuffles along after the player.";
-		now character is in the location;
-	continue the action.
+
 [ todo: nope, this doesn't work.  *sigh* I just want to either have anonymous tree objects in the room that the player can examine and are NOT auto-mentioned by the library or just have them mentioned in the desc along with context sensitive action handling as necessary.  Neither of these seems to be a possibility.
 After examining anything when the player's command includes "tree" and the player is in the bejeweled pines:]
 [The description of the the Trees is "[detailed bejeweled trees desc]". todo: to say... rule doesn't seem to respect Willoweave's melded state?  It always evaluates to false.
@@ -225,9 +255,18 @@ Instead of examining the Glowy Lights:
 Check going East in the Bejeweled Pines:
 	if Shimmerin is not listed in the Party:
 		say "Crashing through the frosted pines as gracefully as possible for a fully grown human following a faery no larger than your little finger, you chase after the elusive sphere of lilac light.  Luckily, she's waiting just at the edge of the current clearing every time you make it through an obstacle blocking line of sight to her.  Eventually, you tumble out into a strange vista of minute ruins.";
+		now Mr Diggums is in entry Ice Mole Maze Index of the Shimmerin Maze;
+		say "A nice mole can be found in [the location of Mr Diggums].";
 	continue the action.
-	
-The Ghostly Greeting Chamber is a room.  "You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East."
+
+The Ghostly Greeting Chamber is a room.  "You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake."
 East of the Bejeweled Pines is The Ghostly Greeting Chamber.
+
+[ doesn't work for no reason?
+Before entering the Ghostly Greeting Chamber for the first time:
+	now Ice Mole is in entry Ice Mole Maze Index of the Shimmerin Maze;
+	say "A nice mole can be found in [the location of Ice Mole].";
+	continue the action.
+]
 
 Release along with a website, an interpreter
