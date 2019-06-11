@@ -53,7 +53,12 @@ Report hiding it behind:
 
 Section 2 - On Global Declarations and the Virtue of Simplicity
 
+[declare/define global regions]
+Fallen Fae Maze is a region.
+The Ghostly Greeting Chamber, Frozen Stair, Diamond Throneroom, Treasure of Stillness, and Crystal Gardens are in Fallen Fae Maze.
+
 [declare/define global rooms]
+The Ghostly Greeting Chamber is a Room.
 The Frozen Stair is a Room.
 The Diamond Throneroom is a Room.
 The Treasure of Stillness is a Room.
@@ -66,19 +71,19 @@ Mr Diggums is an Ice Mole.
 Mr Diggums is in the Ghostly Greeting Chamber.
 
 [declare/define global trackers]
-The Ice Mole Maze Index is a number which varies.  The Ice Mole Maze Index is 1.
+The Ice Mole Path Index is a number which varies.  The Ice Mole Path Index is 1.
 
 [declare/define global arrays]
-The Shimmerin Maze is a list of Rooms that varies.
+The Ice Mole Path is a list of Rooms that varies.
 The Party is a List of People which varies.
 
 [now set 'em up]
 When play begins:
 	[shimmerin maze init]
-	add The Frozen Stair to the Shimmerin Maze;
-	add The Diamond Throneroom to the Shimmerin Maze;
-	add The Treasure of Stillness to the Shimmerin Maze;
-	add The Crystal Gardens to the Shimmerin Maze;
+	add The Frozen Stair to the Ice Mole Path;
+	add The Diamond Throneroom to the Ice Mole Path;
+	add The Treasure of Stillness to the Ice Mole Path;
+	add The Crystal Gardens to the Ice Mole Path;
 	[party init]
 	[add player to The Party. -- this causes double room desc as the player both goes and is teleported to their own location since they are one of the entries in the party list and we move all such to the player's location.]
 	
@@ -252,10 +257,27 @@ Instead of examining the Glowy Lights:
 [After examining when the topic understood includes "light/lights/glow" for the first time:
 	say "glow test." -- todo: this approach didn't work.  Is it possible to define handling for examine etc. actions where the topic understood or complete command text includes some pattern?]
 [todo: shimmerin maze, off to the east]
-Check going East in the Bejeweled Pines:
+[Check going East in the Bejeweled Pines:
 	if Shimmerin is not listed in the Party:
 		say "Crashing through the frosted pines as gracefully as possible for a fully grown human following a faery no larger than your little finger, you chase after the elusive sphere of lilac light.  Luckily, she's waiting just at the edge of the current clearing every time you make it through an obstacle blocking line of sight to her.  Eventually, you tumble out into a strange vista of minute ruins.";
-		now Mr Diggums is in entry Ice Mole Maze Index of the Shimmerin Maze;
+		[
+		now Mr Diggums is in entry Ice Mole Path Index of the Ice Mole Path;
+		say "A nice mole can be found in [the location of Mr Diggums].";
+		]
+	continue the action.]
+
+[todo: this works to assess the location of the mole when the player enters a room in the maze, but it doesn't render nicely (the text here renders above the nice bolded room title and desc boilerplate).  Maybe put this logic as prefix to each room's description in the maze?]
+After going in the Fallen Fae Maze:
+	if Mr Diggums is in the location:
+		say "you found anicemole placeholder in [the location]";
+	otherwise:
+		now Mr Diggums is in entry Ice Mole Path Index of the Ice Mole Path;
+		if Ice Mole Path Index is the number of entries in Ice Mole Path:
+			now Ice Mole Path Index is 1;
+			say "ice mole path index is now [Ice Mole Path Index]";
+		otherwise:
+			increase Ice Mole Path Index by 1;
+			say "ice mole path index is now [Ice Mole Path Index]";
 		say "A nice mole can be found in [the location of Mr Diggums].";
 	continue the action.
 
