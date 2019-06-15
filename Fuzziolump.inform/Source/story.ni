@@ -59,7 +59,8 @@ The Ghostly Greeting Chamber, Frozen Stair, Diamond Throneroom, Treasure of Stil
 
 [declare/define global rooms]
 The Ghostly Greeting Chamber is a Room.
-The Frozen Stair is a Room.
+[apparently you can't both define a room's spatial relationship to another room and then go on to give the subject room's init desc in one step?  You have to instead give the init desc when defining the room, and separately define its relative location.  The compiler claims that saying 'RoomA is East of RoomB' should work, but you get the dreaded '...appears to say two things are the same' BS compiler error.  IIIIIIIIIS!!!]
+The Frozen Stair is a Room. 
 The Diamond Throneroom is a Room.
 The Treasure of Stillness is a Room.
 The Crystal Gardens is a Room.
@@ -67,7 +68,7 @@ The Crystal Gardens is a Room.
 [declare/define global characters]
 [careful with names of characters vs their type -- I originally wanted to say that An Ice Mole is a man in the Ghostly Greeting Chamber.  I figured that man would imply a person who should get the male pronouns.  Then I would refer to the Ice Mole instance via the symbol 'Ice Mole' but this caused a silent failure and things related to Ice Mole simply failed.  Changing the decl to An Ice Molde is a kind of person in the Ghostly Greeting Chamber led to multiple compilation errors, but the main and first one was a confusion of referring to an object by its type rather than name; this made it clear that Inform 7 was only understanding Ice Mole to be a kind of object (a kind of person specifically), and not an instance of an object]
 The Ice Mole is a kind of person.
-Mr Diggums is an Ice Mole. 
+Mr Diggums is an Ice Mole. "An ice mole (who is also a nice mole) snuffles peacefully nearby." 
 Mr Diggums is in the Ghostly Greeting Chamber.
 
 [declare/define global trackers]
@@ -93,6 +94,37 @@ After going: [todo: this seems to cause us to enter rooms multiple times?  I get
 		say "[character] shuffles along after the player.";
 		now character is in the location;
 	continue the action.
+
+Section 3 - On Global Functions, or Why Can't My Mole Just dig()
+
+To burrow like an ice mole:
+	[todo: map mod upon burrowing away]
+	advance like an ice mole.
+To advance like an ice mole:
+	now Mr Diggums is in entry Ice Mole Path Index of the Ice Mole Path;
+	[re-check location: the mole will flee if he discovers the player]
+	if Mr Diggums is in the location of the Player: [retreat]
+		if the location of the Player is the Frozen Stair:
+			say "An ice mole slides in on his belly like (?) the most elegant figure skater you've ever seen from the Northwest.  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.";
+			[todo: other locations' mole-discovers-player handling a.k.a retreat()]
+			retreat like an ice mole;
+	otherwise: [actual advancement -- the mole has already moved this turn, so just need to update the next dest] 
+		if Ice Mole Path Index is the number of entries in Ice Mole Path:
+			now Ice Mole Path Index is 1;
+			say "ice mole path index is now [Ice Mole Path Index]";
+		otherwise:
+			increase Ice Mole Path Index by 1;
+			say "ice mole path index is now [Ice Mole Path Index]";
+To retreat like an ice mole: 
+	[in the case of retreat, the mole has moved but the dest index should not be updated because we have to move him back; given that he only moves clockwise, we just leave his dest index where it is]
+	let retreatIndex be 1;
+	if Ice Mole Path Index is 1: 
+		now retreatIndex is the number of entries in Ice Mole Path;
+	otherwise:
+		now retreatIndex is Ice Mole Path Index minus 1;
+	say "retreat index came out to [retreatIndex].";
+	now Mr Diggums is in entry retreatIndex of Ice Mole Path;
+	say "ice mole path index is still [Ice Mole Path Index] which points to [entry Ice Mole Path Index of Ice Mole Path] and now Mr Diggums is back in [the location of Mr Diggums]."
 
 Chapter 1 - The Frosted Forest
 	
@@ -145,6 +177,7 @@ Understand "who are you/what's your name/what is your name" as "[query_nuvi_re_p
 Understand "what are you" as "[query_nuvi_re_personal_info_rude]".
 Understand "what is a conduit/explain conduits/explain conduit" as "[query_nuvi_re_conduit]".
 A person has a number called player affinity.  Understand player affinity property as referring to a person.
+[todo: relational mapping between other characters and associated affinity values as a property of each character]
 A Winged Otter is a kind of person.     
 [todo: does this define Winged Otter a new noun that inherits from person, or does it simply alias Winged Otter to person?]
 [todo: does Inform 7 support maps/dictionaries?  I'd like to be able to map character id : affinity value like I did in JS]
@@ -246,7 +279,7 @@ After answering Nuvi that when the topic understood includes "trees" and the pla
 The description of the Glowy Lights is "Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic."
 Instead of examining the Glowy Lights: 
 	if we have not examined the Glowy Lights:
-		now the description of the Glowy Lights is "Nuvi follows your gaze and pipes up, 'Those are faeries!  They're whimsical little beauties with insatiable curiosity.  They trade their light for secrets, whispered by the woods; little goes on anywhere nearby that isn't witnessed by the trees.'  Each faerie's wings are different colors, like intricate stained glass.  As you watch, a faerie winks at you and performs a graceful series of barrel rolls while the colors of her wings shift and the soft lilac light pulsing off her skin twinkles to produce a mesmerizing chromatic metamorphosis.  She giggles at your awed expression, blows you a kiss, and zooms off out of sight through the dense foliage to the East.  A moment later, her slender arm pokes back through and she beckons you to follow her.";
+		now the description of the Glowy Lights is "Nuvi follows your gaze and pipes up, 'Those are faeries!  They're whimsical little beauties with insatiable curiosity.  They trade their light for secrets, whispered by the woods; little goes on anywhere nearby that isn't witnessed by the trees.'  Each faerie's wings are different colors, like intricate stained glass.  As you watch, a faerie winks at you and performs a graceful series of barrel rolls while the colors of her wings shift and the soft lilac light pulsing off her skin twinkles to produce a mesmerizing chromatic metamorphosis.  She giggles at your awed expression, blows you a kiss, slaps her flank invitingly, and zooms off out of sight through the dense foliage to the East.  A moment later, her slender arm pokes back through and she beckons you to follow her.";
 	otherwise:
 		if Shimmerin is listed in the Party:
 			now the description of the Glowy Lights is "Shimmerin gazes at the other faeries' carefree play with a wistful expression, and looks away when they meet her eyes.  'Can we get on with exploring the forest, please?' she asks, her voice uncharacteristically meek.";
@@ -267,10 +300,15 @@ Instead of examining the Glowy Lights:
 	continue the action.]
 
 [todo: this works to assess the location of the mole when the player enters a room in the maze, but it doesn't render nicely (the text here renders above the nice bolded room title and desc boilerplate).  Maybe put this logic as prefix to each room's description in the maze?]
+[todo: mole holes -- there are supposed to be map effects when the mole burrows away]
 After going in the Fallen Fae Maze:
 	if Mr Diggums is in the location:
+		if the location is the Frozen Stair:
+			say "An ice mole (who is, incidentally, a nice mole) is sniffing at the few valiant flowers poking up through the snow.  When he senses your approach he bellows with a mighty voice that would make a hippopotamus proud, and then dives into the ground just to the side of the marble tile like a breaching porpoise.  Tile cracks and rises for a few yards on a distinctly Southwest heading.";
 		say "you found anicemole placeholder in [the location]";
-	otherwise:
+		[common handling of player discovers mole a.k.a burrow()]
+		burrow like an ice mole; [todo: how do I pass args to a 'to ...' global fn?]
+		[
 		now Mr Diggums is in entry Ice Mole Path Index of the Ice Mole Path;
 		if Ice Mole Path Index is the number of entries in Ice Mole Path:
 			now Ice Mole Path Index is 1;
@@ -278,11 +316,29 @@ After going in the Fallen Fae Maze:
 		otherwise:
 			increase Ice Mole Path Index by 1;
 			say "ice mole path index is now [Ice Mole Path Index]";
-		say "A nice mole can be found in [the location of Mr Diggums].";
+		]
+	otherwise:
+		advance like an ice mole;
 	continue the action.
 
 The Ghostly Greeting Chamber is a room.  "You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake."
 East of the Bejeweled Pines is The Ghostly Greeting Chamber.
+Check taking in The Ghostly Greeting Chamber:
+	if the topic understood includes "powder":
+		say "Gently scooping up a bit of the brilliantly glowing faerie powder, you immediately feel a wave of euphoric warmth wash over you.  A compulsion to obey the faerie, to please her at all costs begins to consume you.  The powder glitters independent of the light, sparkling like laughter in a trickster's eye.";
+		[todo: increase player affinity for Shimmerin to redonkulous levels, ensuring that certain actions counter to her interests will be costly or impossible for the player later on]
+	continue the action.
+
+East of the Ghostly Greeting Chamber is The Frozen Stair. 
+The description of the Frozen Stair is "[Frozen Stair desc]."
+To say Frozen Stair desc:
+	if the Frozen Stair is unvisited:
+		say "Carefully hewn marble shows through the blanket of ice and snow, giving the area a feeling of patchy oppulence.  Much of the remaining stonework seems to be ornamental -- a great deal of work seems to have gone into framing the large and once-grandiose sweeping staircase that leads down into a small valley surrounded by icy cliffs.  Gold leaf on every stair adds a curious flair to the shine of sunlight off the slippery rime that flows like a runner carpet all the way down.";
+	otherwise:
+		say "An ice-slicked sweeping staircase leads Southwest down into a small valley ringed all 'round by iron-gray cliffs that look ready for war in thorned mail of merciless ice.  You surmise the frozen steps should be safe, so long as you climb down slowly (and carefully).  Up a little curving path Northwest you can just make out oddly cultivated-looking shards of colorful crystal.  Through a close copse of snowy pines to the West you can see hints of fallen grandeur.";
+	if Shimmerin is not listed in the Party:
+		say "You can see your faerie quarry's lilac glow disappearing down the stairs."
+	
 
 [ doesn't work for no reason?
 Before entering the Ghostly Greeting Chamber for the first time:
