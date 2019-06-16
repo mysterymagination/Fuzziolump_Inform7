@@ -69,7 +69,7 @@ The Crystal Gardens is a Room.
 [careful with names of characters vs their type -- I originally wanted to say that An Ice Mole is a man in the Ghostly Greeting Chamber.  I figured that man would imply a person who should get the male pronouns.  Then I would refer to the Ice Mole instance via the symbol 'Ice Mole' but this caused a silent failure and things related to Ice Mole simply failed.  Changing the decl to An Ice Molde is a kind of person in the Ghostly Greeting Chamber led to multiple compilation errors, but the main and first one was a confusion of referring to an object by its type rather than name; this made it clear that Inform 7 was only understanding Ice Mole to be a kind of object (a kind of person specifically), and not an instance of an object]
 The Ice Mole is a kind of person.
 Mr Diggums is an Ice Mole. "An ice mole (who is also a nice mole) snuffles peacefully nearby." 
-Mr Diggums is in the Ghostly Greeting Chamber.
+Mr Diggums is in the Frozen Stair.
 
 [declare/define global trackers]
 The Ice Mole Path Index is a number which varies.  The Ice Mole Path Index is 1.
@@ -97,25 +97,38 @@ After going: [todo: this seems to cause us to enter rooms multiple times?  I get
 
 Section 3 - On Global Functions, or Why Can't My Mole Just dig()
 
-To burrow like an ice mole:
-	[todo: map mod upon burrowing away]
-	advance like an ice mole.
 To advance like an ice mole:
+	if Mr Diggums is in the location: [burrow case]
+		burrow like an ice mole;
+	[common advance case, potentially followed by retreat, although not if we already burrowed... barring player omnipresence]
+	say "An ice mole snuffles off to [entry Ice Mole Path Index of Ice Mole Path].";
 	now Mr Diggums is in entry Ice Mole Path Index of the Ice Mole Path;
 	[re-check location: the mole will flee if he discovers the player]
 	if Mr Diggums is in the location of the Player: [retreat]
-		if the location of the Player is the Frozen Stair:
-			say "An ice mole slides in on his belly like (?) the most elegant figure skater you've ever seen from the Northwest.  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.";
-			[todo: other locations' mole-discovers-player handling a.k.a retreat()]
-			retreat like an ice mole;
+		retreat like an ice mole;
 	otherwise: [actual advancement -- the mole has already moved this turn, so just need to update the next dest] 
 		if Ice Mole Path Index is the number of entries in Ice Mole Path:
 			now Ice Mole Path Index is 1;
-			say "ice mole path index is now [Ice Mole Path Index]";
+			say "[paragraph break]ice mole path index is now [Ice Mole Path Index] which points to [entry Ice Mole Path Index of Ice Mole Path].";
 		otherwise:
 			increase Ice Mole Path Index by 1;
-			say "ice mole path index is now [Ice Mole Path Index]";
+			say "[paragraph break]ice mole path index is now [Ice Mole Path Index] which points to [entry Ice Mole Path Index of Ice Mole Path].";
+
+To burrow like an ice mole:
+	[todo: map mod upon burrowing away]
+	say "An ice mole burrows [the location of Mr Diggums].";
+	if the location is the Frozen Stair:
+		say "An ice mole (who is, incidentally, a nice mole) is sniffing at the few valiant flowers poking up through the snow.  When he senses your approach he bellows with a mighty voice that would make a hippopotamus proud, and then dives into the ground just to the side of the marble tile like a breaching porpoise.  Tile cracks and rises for a few yards on a distinctly Southwest heading.";
+	otherwise if the location is the Diamond Throneroom:
+		say "An ice mole licks the frozen waterfall gingerly, as if giving it a friendly kiss.  Or perhaps more than friendly.  When he hears you tromping through the crunchy snows, he tunnels away Northwest directly into the ice and has been replaced by a mole hole in the blink of an eye.  As you perform said blink, a chunk of ice falls from the tunnel roof, sympathetically.";
+
 To retreat like an ice mole: 
+	say "An ice mole moonwalks back from [the location of Mr Diggums]";
+	if the location of the Player is the Frozen Stair:
+		say "An ice mole slides in on his belly like (?) the most elegant figure skater you've ever seen from the Northwest.  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.";
+		[todo: other locations' mole-discovers-player handling a.k.a retreat()]
+	otherwise if the location is the Diamond Throneroom:
+		say "An ice mole shimmies down from the Northeast over the frozen staircase, managing the steps with more dignity than any quadraped ever managed steps before (you're certain).  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.  You'd swear he never touched the ground on the way back up.";
 	[in the case of retreat, the mole has moved but the dest index should not be updated because we have to move him back; given that he only moves clockwise, we just leave his dest index where it is]
 	let retreatIndex be 1;
 	if Ice Mole Path Index is 1: 
@@ -302,28 +315,14 @@ Instead of examining the Glowy Lights:
 [todo: this works to assess the location of the mole when the player enters a room in the maze, but it doesn't render nicely (the text here renders above the nice bolded room title and desc boilerplate).  Maybe put this logic as prefix to each room's description in the maze?]
 [todo: mole holes -- there are supposed to be map effects when the mole burrows away]
 After going in the Fallen Fae Maze:
-	if Mr Diggums is in the location:
-		if the location is the Frozen Stair:
-			say "An ice mole (who is, incidentally, a nice mole) is sniffing at the few valiant flowers poking up through the snow.  When he senses your approach he bellows with a mighty voice that would make a hippopotamus proud, and then dives into the ground just to the side of the marble tile like a breaching porpoise.  Tile cracks and rises for a few yards on a distinctly Southwest heading.";
-		say "you found anicemole placeholder in [the location]";
-		[common handling of player discovers mole a.k.a burrow()]
-		burrow like an ice mole; [todo: how do I pass args to a 'to ...' global fn?]
-		[
-		now Mr Diggums is in entry Ice Mole Path Index of the Ice Mole Path;
-		if Ice Mole Path Index is the number of entries in Ice Mole Path:
-			now Ice Mole Path Index is 1;
-			say "ice mole path index is now [Ice Mole Path Index]";
-		otherwise:
-			increase Ice Mole Path Index by 1;
-			say "ice mole path index is now [Ice Mole Path Index]";
-		]
-	otherwise:
-		advance like an ice mole;
+	advance like an ice mole;
 	continue the action.
 
 The Ghostly Greeting Chamber is a room.  "You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake."
 East of the Bejeweled Pines is The Ghostly Greeting Chamber.
-Check taking in The Ghostly Greeting Chamber:
+There is Violet Powder in the Ghostly Greeting Chamber.
+Check taking in The Ghostly Greeting Chamber: [wtf Inform7?!  In order for an action intercept to run, you need to have the arbitrary noun that the verb happens to refer to via user input be present in the room?  Smol gods all around us, why?  Graham Nelson is an architect of madness.]
+	say "we are executing the taking action regarding [the noun].";
 	if the topic understood includes "powder":
 		say "Gently scooping up a bit of the brilliantly glowing faerie powder, you immediately feel a wave of euphoric warmth wash over you.  A compulsion to obey the faerie, to please her at all costs begins to consume you.  The powder glitters independent of the light, sparkling like laughter in a trickster's eye.";
 		[todo: increase player affinity for Shimmerin to redonkulous levels, ensuring that certain actions counter to her interests will be costly or impossible for the player later on]
@@ -333,11 +332,23 @@ East of the Ghostly Greeting Chamber is The Frozen Stair.
 The description of the Frozen Stair is "[Frozen Stair desc]."
 To say Frozen Stair desc:
 	if the Frozen Stair is unvisited:
-		say "Carefully hewn marble shows through the blanket of ice and snow, giving the area a feeling of patchy oppulence.  Much of the remaining stonework seems to be ornamental -- a great deal of work seems to have gone into framing the large and once-grandiose sweeping staircase that leads down into a small valley surrounded by icy cliffs.  Gold leaf on every stair adds a curious flair to the shine of sunlight off the slippery rime that flows like a runner carpet all the way down.";
+		say "Carefully hewn marble shows through the blanket of ice and snow, giving the area a feeling of patchy oppulence.  Much of the remaining stonework seems to be ornamental -- a great deal of work seems to have gone into framing the large and once-grandiose sweeping staircase that leads down into a small valley surrounded by icy cliffs.  Gold leaf on every stair adds a curious flair to the shine of sunlight off the slippery rime that flows like a runner carpet all the way down.
+		
+		You surmise the frozen steps should be safe, so long as you climb down slowly (and carefully).  Up a little curving path Northwest you can just make out oddly cultivated-looking shards of colorful crystal.  Through a close copse of snowy pines to the West you can see hints of fallen grandeur.";
 	otherwise:
 		say "An ice-slicked sweeping staircase leads Southwest down into a small valley ringed all 'round by iron-gray cliffs that look ready for war in thorned mail of merciless ice.  You surmise the frozen steps should be safe, so long as you climb down slowly (and carefully).  Up a little curving path Northwest you can just make out oddly cultivated-looking shards of colorful crystal.  Through a close copse of snowy pines to the West you can see hints of fallen grandeur.";
 	if Shimmerin is not listed in the Party:
 		say "You can see your faerie quarry's lilac glow disappearing down the stairs."
+
+Southwest of the Frozen Stair is the Diamond Throneroom.
+South of the Ghostly Greeting Chamber is the Diamond Throneroom. 
+The description of the Diamond Throneroom is "[Diamond Throneroom desc]".
+To say Diamond Throneroom desc:
+	say "You stand in a small valley surrounded by sheer cliffs of slick sapphire ice and unforgiving slate-gray stone.  The remains of graduated curved stone benches step down in a hemisphere around a clearing below and infrastructure that reminds you of the retractable roofing in fancier outdoor theatres peeks out from snow drifts here and there.  Down at the center of the declining rows of benches is a large marble dais, upon which proudly stands the most enormously overwrought chair you've ever seen -- truly a throne.  It is majestic and imperious, with impossibly intricate and delicate gossamer weaves of crystals and gems decorating its broad frame; the morning light shining through their many hues blankets the dais in a constant rainbow corona.  The dais abutts a massive waterfall, all its roaring might condensed into a single moment frozen forever in time.  And ice.  A chill wind kisses your cheek and you shiver, feeling profoundly alone.
+	
+	The stairs lead up Northeast and away from the lonely throne.  Directly North, hanging over the ancient little throne, is the fraying end of a sturdy rope hanging down from a slippery pass hiding shyly within a blanket of shadows upon the mountainside.";
+	if Shimmerin is not listed in the Party:
+		say "A distant lilac glow flickers with a cadence quite like giggling laughter as it dances about the waterfall's massive tusk and claw-like iceicles.  When you reach the waterfall she is already gone."
 	
 
 [ doesn't work for no reason?
