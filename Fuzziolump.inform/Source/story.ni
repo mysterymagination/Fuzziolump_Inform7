@@ -121,6 +121,9 @@ To burrow like an ice mole:
 		say "An ice mole (who is, incidentally, a nice mole) is sniffing at the few valiant flowers poking up through the snow.  When he senses your approach he bellows with a mighty voice that would make a hippopotamus proud, and then dives into the ground just to the side of the marble tile like a breaching porpoise.  Tile cracks and rises for a few yards on a distinctly Southwest heading.";
 	otherwise if the location is the Diamond Throneroom:
 		say "An ice mole licks the frozen waterfall gingerly, as if giving it a friendly kiss.  Or perhaps more than friendly.  When he hears you tromping through the crunchy snows, he tunnels away Northwest directly into the ice and has been replaced by a mole hole in the blink of an eye.  As you perform said blink, a chunk of ice falls from the tunnel roof, sympathetically.";
+	otherwise if the location is the Treasure of Stillness:
+		say "An ice mole patiently shovels snow with his great digging claws, to no particular purpose you can see.  His earnest little brow is furrowed, however, so you imagine he must have important duties here.  When he catches your scent on the wind, he abandons his shoveling and burrows away in a shower of glittering ice chips.  The tinkling of disturbed gold and gemstones showering over one another fades out to the Northeast.";
+		now Field Mods Map at Treasure of Stillness has "molehole".
 
 To retreat like an ice mole: 
 	say "An ice mole moonwalks back from [the location of Mr Diggums]";
@@ -129,6 +132,8 @@ To retreat like an ice mole:
 		[todo: other locations' mole-discovers-player handling a.k.a retreat()]
 	otherwise if the location is the Diamond Throneroom:
 		say "An ice mole shimmies down from the Northeast over the frozen staircase, managing the steps with more dignity than any quadraped ever managed steps before (you're certain).  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.  You'd swear he never touched the ground on the way back up.";
+	otherwise if the location is the Treasure of Stillness:
+		say "An ice mole snuffles in amongst the treasures from the Southeast, ignoring the sparklies and evidently intent on some secret quest.  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.";
 	[in the case of retreat, the mole has moved but the dest index should not be updated because we have to move him back; given that he only moves clockwise, we just leave his dest index where it is]
 	let retreatIndex be 1;
 	if Ice Mole Path Index is 1: 
@@ -349,6 +354,21 @@ To say Diamond Throneroom desc:
 	The stairs lead up Northeast and away from the lonely throne.  Directly North, hanging over the ancient little throne, is the fraying end of a sturdy rope hanging down from a slippery pass hiding shyly within a blanket of shadows upon the mountainside.";
 	if Shimmerin is not listed in the Party:
 		say "A distant lilac glow flickers with a cadence quite like giggling laughter as it dances about the waterfall's massive tusk and claw-like iceicles.  When you reach the waterfall she is already gone."
+		
+West of the Ghostly Greeting Chamber is the Treasure of Stillness.
+The description of the Treasure of Stillness is "[Treasure of Stillness desc]".
+To say Treasure of Stillness desc:
+	say "Heaps of gold coins and gemstones lay scattered about in the snow and ice.  The coins show significant patina and undisturbed drifts blanket much of the hoard, suggesting that it has been here for some time.  As you ogle the goodies, you imagine you can hear it calling out to you, begging to be scooped up and appreciated.  Notably, several humanoid bones are interspersed with the treasures.  The air here is alarmingly still, as if the very world holds its breath.
+	
+	Up a gradual incline and over the remains of a once-sturdy gate to the Northeast, you can see several oddly pointy bushes glittering in the verdant sunlight.  Down a slightly harsh rockfall (best to slide, but watch your rump!) Southeast lies a lonely little frosted valley; judging by the incline, this particular vector will be a one-way trip.  Up the slope and over the sad ruins of a once fancy archway stand the bases of mighty pillars that once supported a grand antechamber East of here."; 
+	if Shimmerin is not listed in the Party:
+		if Field Mods Map at Treasure of Stillness includes molehole:
+			say "Scattered about the mole hole are several exciting shinies: a large emerald carved in the likeness of a winking fairy, which pulses gently with a soft verdant radiance; a needle-sized sword that gleams whiter than the fresh snow, its brightness searing an impression behind your eyes; a shimmering midnight blue dress, with skirts divided for riding, that fits in the palm of your hand.";
+			if the Summer Court Tiara is not listed in the Player's inventory:  
+				say "The main point of interest, however, is the tiny jewel-encrusted tiara which seems to be calling to you with a sensual humming.  You find yourself longing more than anything to pick it up...";
+		otherwise:
+			say "In addition to all the loose treasure, you can see faint glimmering from within the ice; you note that there may be yet more wonders held prisoner in its frosty grip.";
+		say "You see no sign of your fairy friend here; seems she didn't wish to linger."
 	
 
 [ doesn't work for no reason?
