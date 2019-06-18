@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x031B5AF0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02B66038" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x031B5AF0"/>
-  <item nodeId="node-0x031B5AF0">
+  <activeNode nodeId="node-0x02B66038"/>
+  <item nodeId="node-0x02B66038">
     <command xml:space="preserve">Fuzziolump</command>
     <result xml:space="preserve">Fuzziolump&#x000A;An Interactive Fiction by jeff creswell&#x000A;Release 1 / Serial number 190615 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Chamber of Soiled Vestments&#x000A;The musty warmth of the laundry room has always appealed to you; it suggests a friendly invitation to the unknown, and there always seems to be another unexplored dark corner.  Plus it's always warm and the soft tumbling of the dryers is soothing.  You smile contentedly at this thought, imagining that few people bother to appreciate the subtle treasures in a blanket of soft shadow.  A shared laundry like the one in your building is exponentially better, since every traveler through it leaves a little bit of themselves behind, enlivening the story.  If you were the type to rifle throw other people's skivvies it might be livelier-still, but that's intrusive. Also gross.  The dryer rumbles to a halt, then buzzes obnoxiously.  The world sure seems to love its noise.&#x000A;&#x000A;&#x000A;You can see a Table (closed) and a Dryer (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -10,14 +10,14 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031EFE60"/>
-      <child nodeId="node-0x031EFED0"/>
-      <child nodeId="node-0x031C0140"/>
-      <child nodeId="node-0x031C2728"/>
-      <child nodeId="node-0x031C2A38"/>
+      <child nodeId="node-0x02B660A8"/>
+      <child nodeId="node-0x02B66270"/>
+      <child nodeId="node-0x02B7FB90"/>
+      <child nodeId="node-0x02B81F08"/>
+      <child nodeId="node-0x02B821A8"/>
     </children>
   </item>
-  <item nodeId="node-0x031EFE60">
+  <item nodeId="node-0x02B660A8">
     <command xml:space="preserve">save</command>
     <result xml:space="preserve">Ok.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -25,7 +25,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031EFED0">
+  <item nodeId="node-0x02B66270">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You stand in the laundry room.  A speck of lint drifts by, placidly.&#x000A;&#x000A;&#x000A;You can see a Table (closed) and a Dryer (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -33,13 +33,13 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031EFF40"/>
-      <child nodeId="node-0x031E8260"/>
-      <child nodeId="node-0x031E8560"/>
-      <child nodeId="node-0x031E8640"/>
+      <child nodeId="node-0x02B662E0"/>
+      <child nodeId="node-0x02BB4CB8"/>
+      <child nodeId="node-0x02BAB198"/>
+      <child nodeId="node-0x02BAB278"/>
     </children>
   </item>
-  <item nodeId="node-0x031EFF40">
+  <item nodeId="node-0x02B662E0">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -47,10 +47,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031A6248"/>
+      <child nodeId="node-0x02B66350"/>
     </children>
   </item>
-  <item nodeId="node-0x031A6248">
+  <item nodeId="node-0x02B66350">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -58,10 +58,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031A62B8"/>
+      <child nodeId="node-0x02B663C0"/>
     </children>
   </item>
-  <item nodeId="node-0x031A62B8">
+  <item nodeId="node-0x02B663C0">
     <command xml:space="preserve">open Dryer</command>
     <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -69,10 +69,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031A6328"/>
+      <child nodeId="node-0x02BB4B10"/>
     </children>
   </item>
-  <item nodeId="node-0x031A6328">
+  <item nodeId="node-0x02BB4B10">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -80,10 +80,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031A6398"/>
+      <child nodeId="node-0x02BB4C48"/>
     </children>
   </item>
-  <item nodeId="node-0x031A6398">
+  <item nodeId="node-0x02BB4C48">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You can see a Table (empty) and a Dryer (empty) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -91,7 +91,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031E8260">
+  <item nodeId="node-0x02BB4CB8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -99,10 +99,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031E8398"/>
+      <child nodeId="node-0x02BB4DF0"/>
     </children>
   </item>
-  <item nodeId="node-0x031E8398">
+  <item nodeId="node-0x02BB4DF0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You can see a Table (closed) and a Dryer (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -110,7 +110,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031E8560">
+  <item nodeId="node-0x02BAB198">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You stand in the laundry room.  A speck of lint drifts by, placidly.&#x000A;&#x000A;&#x000A;You can see a Table (closed) and a Dryer (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -118,7 +118,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031E8640">
+  <item nodeId="node-0x02BAB278">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -126,10 +126,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031B62B8"/>
+      <child nodeId="node-0x02BAB2E8"/>
     </children>
   </item>
-  <item nodeId="node-0x031B62B8">
+  <item nodeId="node-0x02BAB2E8">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you're greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They're the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.&#x000A;&#x000A;Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He's wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer's tumble cycle first-hand.  There's no pain, however, and after only a few dizzying seconds the world stills.&#x000A;&#x000A;Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -137,10 +137,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFCE0"/>
+      <child nodeId="node-0x02B80220"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFCE0">
+  <item nodeId="node-0x02B80220">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter's wings breaks the tranquil silence, a comforting constant.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -148,10 +148,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C0300"/>
+      <child nodeId="node-0x02B7FEA0"/>
     </children>
   </item>
-  <item nodeId="node-0x031C0300">
+  <item nodeId="node-0x02B7FEA0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter's wings breaks the tranquil silence, a comforting constant.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -159,10 +159,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFB90"/>
+      <child nodeId="node-0x02B7FF10"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFB90">
+  <item nodeId="node-0x02B7FF10">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -170,7 +170,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C0140">
+  <item nodeId="node-0x02B7FB90">
     <command xml:space="preserve">open table</command>
     <result xml:space="preserve">You open the Table, revealing a 9-volt Battery, a Singed Penny and a Rusty Pocket Knife.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -178,12 +178,12 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFD50"/>
-      <child nodeId="node-0x031BFE30"/>
-      <child nodeId="node-0x031C31A8"/>
+      <child nodeId="node-0x02B7FE30"/>
+      <child nodeId="node-0x02B80060"/>
+      <child nodeId="node-0x02B81BF8"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFD50">
+  <item nodeId="node-0x02B7FE30">
     <command xml:space="preserve">open Table</command>
     <result xml:space="preserve">That's already open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -191,10 +191,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFC00"/>
+      <child nodeId="node-0x02B801B0"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFC00">
+  <item nodeId="node-0x02B801B0">
     <command xml:space="preserve">look at dryer</command>
     <result xml:space="preserve">You see nothing special about the Dryer.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -202,10 +202,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C00D0"/>
+      <child nodeId="node-0x02B80140"/>
     </children>
   </item>
-  <item nodeId="node-0x031C00D0">
+  <item nodeId="node-0x02B80140">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -213,10 +213,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C01B0"/>
+      <child nodeId="node-0x02B7FF80"/>
     </children>
   </item>
-  <item nodeId="node-0x031C01B0">
+  <item nodeId="node-0x02B7FF80">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you're greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They're the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.&#x000A;&#x000A;Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He's wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer's tumble cycle first-hand.  There's no pain, however, and after only a few dizzying seconds the world stills.&#x000A;&#x000A;Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -224,10 +224,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFC70"/>
+      <child nodeId="node-0x02B7FFF0"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFC70">
+  <item nodeId="node-0x02B7FFF0">
     <command xml:space="preserve">look at holly</command>
     <result xml:space="preserve">hello.&#x000A;You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -235,7 +235,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031BFE30">
+  <item nodeId="node-0x02B80060">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You can see a Table (empty) and a Dryer (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -243,10 +243,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFEA0"/>
+      <child nodeId="node-0x02B80290"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFEA0">
+  <item nodeId="node-0x02B80290">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -254,10 +254,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031BFFF0"/>
+      <child nodeId="node-0x02B80300"/>
     </children>
   </item>
-  <item nodeId="node-0x031BFFF0">
+  <item nodeId="node-0x02B80300">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You can see a Table (empty) and a Dryer (in which is Clothes) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -265,10 +265,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C0060"/>
+      <child nodeId="node-0x02B7FC70"/>
     </children>
   </item>
-  <item nodeId="node-0x031C0060">
+  <item nodeId="node-0x02B7FC70">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -276,10 +276,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C0220"/>
+      <child nodeId="node-0x02B7FCE0"/>
     </children>
   </item>
-  <item nodeId="node-0x031C0220">
+  <item nodeId="node-0x02B7FCE0">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -287,10 +287,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C0290"/>
+      <child nodeId="node-0x02B7FD50"/>
     </children>
   </item>
-  <item nodeId="node-0x031C0290">
+  <item nodeId="node-0x02B7FD50">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You can see a Table (empty) and a Dryer (empty) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -298,7 +298,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C31A8">
+  <item nodeId="node-0x02B81BF8">
     <command xml:space="preserve">look at 9-volt battery</command>
     <result xml:space="preserve">Time and tide (by the look of it, it has actually been swimming) have not been kind to this old fellow, but he might still have some juice left.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -306,7 +306,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C2728">
+  <item nodeId="node-0x02B81F08">
     <command xml:space="preserve">examine table</command>
     <result xml:space="preserve">You see nothing special about the Table.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -314,7 +314,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C2A38">
+  <item nodeId="node-0x02B821A8">
     <command xml:space="preserve">open dryer</command>
     <result xml:space="preserve">You open the Dryer, revealing Clothes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -322,11 +322,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2FE8"/>
-      <child nodeId="node-0x031C30C8"/>
+      <child nodeId="node-0x02B81F78"/>
+      <child nodeId="node-0x02B81FE8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2FE8">
+  <item nodeId="node-0x02B81F78">
     <command xml:space="preserve">take clothers</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -334,10 +334,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3288"/>
+      <child nodeId="node-0x02B827C8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3288">
+  <item nodeId="node-0x02B827C8">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you're greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They're the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.&#x000A;&#x000A;Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He's wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer's tumble cycle first-hand.  There's no pain, however, and after only a few dizzying seconds the world stills.&#x000A;&#x000A;Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -345,11 +345,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C32F8"/>
-      <child nodeId="node-0x031C2798"/>
+      <child nodeId="node-0x02B81DB8"/>
+      <child nodeId="node-0x02B81AA8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C32F8">
+  <item nodeId="node-0x02B81DB8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You stand in the laundry room.  A speck of lint drifts by, placidly.&#x000A;&#x000A;&#x000A;You can see a Table (closed) and a Dryer (in which is Clothes) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -357,10 +357,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2D48"/>
+      <child nodeId="node-0x02B81E98"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2D48">
+  <item nodeId="node-0x02B81E98">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -368,7 +368,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C2798">
+  <item nodeId="node-0x02B81AA8">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -376,10 +376,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2958"/>
+      <child nodeId="node-0x02B81D48"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2958">
+  <item nodeId="node-0x02B81D48">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;You can also see a Sprig of Holly here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -387,10 +387,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3058"/>
+      <child nodeId="node-0x02B81C68"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3058">
+  <item nodeId="node-0x02B81C68">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">You see nothing special about the Sprig of Holly.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -398,7 +398,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C30C8">
+  <item nodeId="node-0x02B81FE8">
     <command xml:space="preserve">take clothes</command>
     <result xml:space="preserve">Ducking down peer to inside, you're greeted by a pleasant surprise -- your clothes are fully dry for once!  As you pull clothes from the dryer and pile them in your hamper, you note that only a single sock of your favorite pair is present and accounted for. They're the super-fuzzy wooly kind, and are patterned with kittens playing with balls of yarn on one and puppies chasing sticks on the other.  Looking down at the lonely puppy sock, your heart aches a little.  Poor guy.  Practically climbing halfway into the dryer, you reach and flail about for the errant kitten sock to no avail.&#x000A;&#x000A;Re-adjusting yourself, you poke your head in to take a closer look, expecting ruefully to see only empty dryer walls. Instead, you see the head, forelegs, and fuzzy whiskers of an otter staring at you with anxiety quaking in its fathomless black eyes.  He's wearing a darling little tophat, bowtie, and a gold-rimmed monocle adorns one eye.  Before you can react, he boops your nose with a soft paw, his expression apprehensive. After a bizarre moment staring at each other in this manner, reality begins to spin and you fear someone has turned the dryer on with you halfway inside!  You close your eyes, bracing for the inevitable pain as you evaluate the strength of the dryer's tumble cycle first-hand.  There's no pain, however, and after only a few dizzying seconds the world stills.&#x000A;&#x000A;Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -406,14 +406,14 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3368"/>
-      <child nodeId="node-0x031C2AA8"/>
-      <child nodeId="node-0x031C2F08"/>
-      <child nodeId="node-0x031CD398"/>
-      <child nodeId="node-0x031F48E0"/>
+      <child nodeId="node-0x02B82058"/>
+      <child nodeId="node-0x02B82138"/>
+      <child nodeId="node-0x02B82758"/>
+      <child nodeId="node-0x02B8D408"/>
+      <child nodeId="node-0x02BB7728"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3368">
+  <item nodeId="node-0x02B82058">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter's wings breaks the tranquil silence, a comforting constant.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -421,12 +421,12 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C29C8"/>
-      <child nodeId="node-0x031C33D8"/>
-      <child nodeId="node-0x031C3218"/>
+      <child nodeId="node-0x02B81B18"/>
+      <child nodeId="node-0x02B82528"/>
+      <child nodeId="node-0x02B820C8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C29C8">
+  <item nodeId="node-0x02B81B18">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Chamber of Soiled Vestments&#x000A;You stand in the laundry room.  A speck of lint drifts by, placidly.&#x000A;&#x000A;&#x000A;You can see a Table (closed) and a Dryer (in which is Clothes) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -434,7 +434,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C33D8">
+  <item nodeId="node-0x02B82528">
     <command xml:space="preserve">look holly</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -442,10 +442,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2C68"/>
+      <child nodeId="node-0x02B81B88"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2C68">
+  <item nodeId="node-0x02B81B88">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a Sprig of Holly&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -453,7 +453,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C3218">
+  <item nodeId="node-0x02B820C8">
     <command xml:space="preserve">examine otter</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -461,10 +461,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2878"/>
+      <child nodeId="node-0x02B82598"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2878">
+  <item nodeId="node-0x02B82598">
     <command xml:space="preserve">examine Nuvi</command>
     <result xml:space="preserve">You see nothing special about Nuvi.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -472,10 +472,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3138"/>
+      <child nodeId="node-0x02B822F8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3138">
+  <item nodeId="node-0x02B822F8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter's wings breaks the tranquil silence, a comforting constant.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;The otter, who sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.  It is the dapper-est.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -483,7 +483,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C2AA8">
+  <item nodeId="node-0x02B82138">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -491,10 +491,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2648"/>
+      <child nodeId="node-0x02B82218"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2648">
+  <item nodeId="node-0x02B82218">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  A shy little memento of the frosted forest, it has a single pointy leaf and a single berry the color of a cheerful blush.  A gust of wind pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -502,10 +502,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C26B8"/>
+      <child nodeId="node-0x02B82838"/>
     </children>
   </item>
-  <item nodeId="node-0x031C26B8">
+  <item nodeId="node-0x02B82838">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -513,10 +513,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2B88"/>
+      <child nodeId="node-0x02B823D8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2B88">
+  <item nodeId="node-0x02B823D8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  A shy little memento of the frosted forest, it has a single pointy leaf and a single berry the color of a cheerful blush.  A gust of wind pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -524,10 +524,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2808"/>
+      <child nodeId="node-0x02B82288"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2808">
+  <item nodeId="node-0x02B82288">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -535,10 +535,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C28E8"/>
+      <child nodeId="node-0x02B82368"/>
     </children>
   </item>
-  <item nodeId="node-0x031C28E8">
+  <item nodeId="node-0x02B82368">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -546,10 +546,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2B18"/>
+      <child nodeId="node-0x02B82448"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2B18">
+  <item nodeId="node-0x02B82448">
     <command xml:space="preserve">look at bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -557,10 +557,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2BF8"/>
+      <child nodeId="node-0x02B824B8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2BF8">
+  <item nodeId="node-0x02B824B8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;You can also see a Sprig of Holly here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -568,11 +568,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2CD8"/>
-      <child nodeId="node-0x031C2E28"/>
+      <child nodeId="node-0x02B82608"/>
+      <child nodeId="node-0x02B826E8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2CD8">
+  <item nodeId="node-0x02B82608">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -580,10 +580,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C2DB8"/>
+      <child nodeId="node-0x02B82678"/>
     </children>
   </item>
-  <item nodeId="node-0x031C2DB8">
+  <item nodeId="node-0x02B82678">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">You see nothing special about the Sprig of Holly.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -591,7 +591,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C2E28">
+  <item nodeId="node-0x02B826E8">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">A sprig of holly rests nearby.  A shy little memento of the frosted forest, it has a single pointy leaf and a single berry the color of a cheerful blush.  A gust of wind pushes it gently towards you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -599,7 +599,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031C2F08">
+  <item nodeId="node-0x02B82758">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">You examine the nearest frosted greenery, a holly bush whose bright red berries contrast beautifully with the pure white snow.  Brushing a hand over the bush idly, you jump higher than you thought possible when one of its branches extends creakily and a sprig reaches out to pat you right back.  As if taken aback and perhaps chagrined by your startled reaction, the branch withdraws shyly, and the sprig of holly flutters gently to the ground.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -607,10 +607,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3448"/>
+      <child nodeId="node-0x02B829F8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3448">
+  <item nodeId="node-0x02B829F8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -618,11 +618,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C34B8"/>
-      <child nodeId="node-0x031CCC98"/>
+      <child nodeId="node-0x02B82918"/>
+      <child nodeId="node-0x02B8C838"/>
     </children>
   </item>
-  <item nodeId="node-0x031C34B8">
+  <item nodeId="node-0x02B82918">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -630,11 +630,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3528"/>
-      <child nodeId="node-0x031CD018"/>
+      <child nodeId="node-0x02B82988"/>
+      <child nodeId="node-0x02B8D088"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3528">
+  <item nodeId="node-0x02B82988">
     <command xml:space="preserve">look at sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -642,10 +642,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031C3598"/>
+      <child nodeId="node-0x02B828A8"/>
     </children>
   </item>
-  <item nodeId="node-0x031C3598">
+  <item nodeId="node-0x02B828A8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voice whisper on a sudden gust of wind that pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -653,10 +653,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD7F8"/>
+      <child nodeId="node-0x02B8C7C8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD7F8">
+  <item nodeId="node-0x02B8C7C8">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -664,10 +664,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD328"/>
+      <child nodeId="node-0x02B8CDE8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD328">
+  <item nodeId="node-0x02B8CDE8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -675,10 +675,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCDE8"/>
+      <child nodeId="node-0x02B8C8A8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCDE8">
+  <item nodeId="node-0x02B8C8A8">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a Sprig of Holly&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -686,10 +686,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD248"/>
+      <child nodeId="node-0x02B8C988"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD248">
+  <item nodeId="node-0x02B8C988">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -697,7 +697,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031CD018">
+  <item nodeId="node-0x02B8D088">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -705,10 +705,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD168"/>
+      <child nodeId="node-0x02B8D248"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD168">
+  <item nodeId="node-0x02B8D248">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -716,10 +716,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD478"/>
+      <child nodeId="node-0x02B8D0F8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD478">
+  <item nodeId="node-0x02B8D0F8">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -727,10 +727,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD088"/>
+      <child nodeId="node-0x02B8CE58"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD088">
+  <item nodeId="node-0x02B8CE58">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A sprig of holly rests nearby.  Sighs of feminine longing and entreaty in a thousand thousand voices whisper on a sudden gust of wind that pushes it gently towards you.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -738,10 +738,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD8D8"/>
+      <child nodeId="node-0x02B8D4E8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD8D8">
+  <item nodeId="node-0x02B8D4E8">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -749,10 +749,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCD08"/>
+      <child nodeId="node-0x02B8C758"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCD08">
+  <item nodeId="node-0x02B8C758">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;Only, it's a different world than the one you left.  A cool breeze and the unmistakable smell of pine needles coaxes you to open your eyes.&#x000A;&#x000A;You find yourself in a wintry forest glade. Evergreen foliage, bearing a light sprinkling of snow such that it resembles sugar-dusted sweets, surrounds you.  The otter, which sports a pair of fluffy brown wings the same shade as its sleek tawny fur, flits about your head, appraisingly.  His little tophat tilts gently back and forth in a hypnotizing pattern, in time with the rhythm of his lazy wing beats.&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -760,10 +760,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD788"/>
+      <child nodeId="node-0x02B8D398"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD788">
+  <item nodeId="node-0x02B8D398">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -771,7 +771,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031CCC98">
+  <item nodeId="node-0x02B8C838">
     <command xml:space="preserve">look bush</command>
     <result xml:space="preserve">The Holly Bush waves serenely in the languid wind, and at you.  Every now and then it forgets itself and waves against the wind.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -779,10 +779,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCEC8"/>
+      <child nodeId="node-0x02B8CEC8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCEC8">
+  <item nodeId="node-0x02B8CEC8">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -790,10 +790,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD4E8"/>
+      <child nodeId="node-0x02B8C918"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD4E8">
+  <item nodeId="node-0x02B8C918">
     <command xml:space="preserve">take sprig</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -801,10 +801,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCB48"/>
+      <child nodeId="node-0x02B8CBB8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCB48">
+  <item nodeId="node-0x02B8CBB8">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a Sprig of Holly&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -812,10 +812,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD0F8"/>
+      <child nodeId="node-0x02B8CF38"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD0F8">
+  <item nodeId="node-0x02B8CF38">
     <command xml:space="preserve">look sprig</command>
     <result xml:space="preserve">A shy little memento of the frosted forest, this bit of holly has a single pointy leaf and a single berry the color of a cheerful blush.  Whenever you touch it, a light puff of wind kisses your cheek, carrying the ghost of a flirty giggle.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -823,7 +823,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031CD398">
+  <item nodeId="node-0x02B8D408">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">As you try to move away, the winged otter flaps down to block your path, doffing his dapper tophat to you and waving a soft paw shyly.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -831,10 +831,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCE58"/>
+      <child nodeId="node-0x02B8D478"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCE58">
+  <item nodeId="node-0x02B8D478">
     <command xml:space="preserve">say hi</command>
     <result xml:space="preserve">(to Nuvi)&#x000A;The Winged Otter beams at you.  "Hello, there Human!  My name is Nuvi.  I'm sure you're wondering what just happened -- the short version is that you've been transported across time and space to another world."  He grins whiskeryly and spreads his little paws wide in proud indication.  Or maybe he wants a hug. &#x000A;&#x000A;"This is not Earth, but a wondrous land of whimsy and warmth called Fuzziolump!  Your people's thoughts and feelings and imaginings gave us life, in point of fact, a process which has accelerated exponentially in recent decades with the advent of telecommunications and a magical thing called The Internet -- all that cognition flying about in the aether sort of landed here, and took root.  It's not a well-understood matter, but we know we have humanity to thank for our existence! &#x000A;&#x000A;Glossing right over that massive tidbit, we're standing in a lovely little area of the Frosted Forest we lumpkins call the Atrium Glade.  It's the lumpside connection point, which we call a Socket, of the Conduit you passed through to get here; your dryer was the Socket on your end.  Dryers are often Sockets on Earth for some reason -- we get all kinds of socks and, erm, other underthings coming through."  He manages to blush through his fur.&#x000A;&#x000A;&#x000A;"I know that doesn't make a lot of sense: it's fine, don't worry about it.  You can always ask me about Conduits, Sockets, Atrium Glade, Frosted Forest, or Fuzziolump itself on the way, if you like."  He smiles and blinks placidly while the two of you stare at each other in awkward silence for several seconds.  Then a realization strikes him: "Oh!  Yes, sorry, I haven't told you why I brought you here yet.  Our Great Need."  He twitches his whiskers and adjusts his bowtie anxiously. "You see, Fuzziolump has long been a place of peace enjoyed by one and all, but recently there has been an upwelling of violence and turmoil.  The cause is our gods.  We didn't have any at first.  The fully mortal lumpkins are quite complex enough, and even with the vast sum of Earth's imaginings it took ages for us to develop.  Several centuries have passed since we grew smart enough to start recording our history, and it seems the more we wrote and thought and felt the experiences of life, the faster Fuzziolump grew.  Its own denizens" imaginings fuel it in addition to Earth's ever-deepening pool of creative energy, and this exponentiation plus some experimentation with tool-assisted metamorphosis has led to a few more potent lifeforms.  Effectively, gods. &#x000A;&#x000A;Now, this might be cause for celebration -- a whole new category of sapient life, more deeply sapient than any of us can fathom!  Unfortunately, power and depth of mind do not equate to wisdom.  The young gods of Fuzziolump are very different, but their common trait is an understandable lack of experience combined with an unprecedented ability to influence the world around them.  Some have even learned to syphon off the creative energy Fuzziolump thrives on, and threaten to collapse this world in on itself.  It isn't clear what would happen to the gods if this world perished, but I and my loved ones and millions more like us would surely be snuffed out like the humble little candle flames we are.  I cannot allow that to happen.  What to do though?  Every lumpkin knows that Earth and humanity are our progenitors, specifically your creativity.  So, it only seemed reasonable to bring a human creative here to help untangle this little knot of divinity.  At least, I think that's why we've summoned you.  The Council of Animals made it a top secret matter, so little folk like me can only guess.  But yeah, you create every day -- you must know how to turn that power off, or keep it under control?"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -842,10 +842,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD1D8"/>
+      <child nodeId="node-0x02B8D168"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD1D8">
+  <item nodeId="node-0x02B8D168">
     <command xml:space="preserve">say creativity</command>
     <result xml:space="preserve">(to Nuvi)&#x000A;"Really?!  I thought it was a longshot, honestly, that you would be able to control elemental creativity!  Well, the Council of Animals will be thrilled."  He does a barrel roll and flits about your head, joyously.  Shame on you for lying to such an innocent creature!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -853,11 +853,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCF38"/>
-      <child nodeId="node-0x031CCC28"/>
+      <child nodeId="node-0x02B8CFA8"/>
+      <child nodeId="node-0x02B8D018"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCF38">
+  <item nodeId="node-0x02B8CFA8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Atrium Glade&#x000A;A refreshing cool breeze carresses your cheek and ruffles the wintergreen foliage.  Only the gentle fwump fwump of the otter's wings breaks the tranquil silence, a comforting constant. You can see a path in the thick forest leading North.  Nuvi eyes it meaningfully.&#x000A;&#x000A;&#x000A;A holly bush rustles thoughtfully in the wind.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -865,10 +865,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD408"/>
+      <child nodeId="node-0x02B8CAD8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD408">
+  <item nodeId="node-0x02B8CAD8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bejeweled Pines&#x000A;glittery pines TODO.&#x000A;&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -876,10 +876,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD558"/>
+      <child nodeId="node-0x02B8D2B8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD558">
+  <item nodeId="node-0x02B8D2B8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Bejeweled Pines&#x000A;glittery pines TODO.&#x000A;&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -887,7 +887,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031CCC28">
+  <item nodeId="node-0x02B8D018">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Nuvi shuffles along after the player.&#x000A;&#x000A;Bejeweled Pines&#x000A;You stand amongst a dazzling array of colors: these trees are Fancy.&#x000A;&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.&#x000A;&#x000A;&#x000A;Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -895,11 +895,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD5C8"/>
-      <child nodeId="node-0x031CDA28"/>
+      <child nodeId="node-0x02B8D1D8"/>
+      <child nodeId="node-0x02B8D558"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD5C8">
+  <item nodeId="node-0x02B8D1D8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">you found anicemole placeholder in the Ghostly Greeting Chamber&#x000A;Nuvi shuffles along after the player.&#x000A;&#x000A;Ghostly Greeting Chamber&#x000A;You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;You can also see Mr Diggums here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -907,11 +907,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD638"/>
-      <child nodeId="node-0x031CD948"/>
+      <child nodeId="node-0x02B8CA68"/>
+      <child nodeId="node-0x02B8D638"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD638">
+  <item nodeId="node-0x02B8CA68">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -919,10 +919,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD6A8"/>
+      <child nodeId="node-0x02B8D328"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD6A8">
+  <item nodeId="node-0x02B8D328">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Ghostly Greeting Chamber&#x000A;You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;You can also see Mr Diggums here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -930,10 +930,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCD78"/>
+      <child nodeId="node-0x02B8CB48"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCD78">
+  <item nodeId="node-0x02B8CB48">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Nuvi shuffles along after the player.&#x000A;&#x000A;Bejeweled Pines&#x000A;You stand amongst a dazzling array of colors: these trees are Fancy.&#x000A;&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.&#x000A;&#x000A;&#x000A;Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -941,10 +941,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CCFA8"/>
+      <child nodeId="node-0x02B8CC98"/>
     </children>
   </item>
-  <item nodeId="node-0x031CCFA8">
+  <item nodeId="node-0x02B8CC98">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Crashing through the frosted pines as gracefully as possible for a fully grown human following a faery no larger than your little finger, you chase after the elusive sphere of lilac light.  Luckily, she's waiting just at the edge of the current clearing every time you make it through an obstacle blocking line of sight to her.  Eventually, you tumble out into a strange vista of minute ruins.&#x000A;&#x000A;Nuvi shuffles along after the player.&#x000A;&#x000A;Ghostly Greeting Chamber&#x000A;You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;You can also see Mr Diggums here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -952,10 +952,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD2B8"/>
+      <child nodeId="node-0x02B8CC28"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD2B8">
+  <item nodeId="node-0x02B8CC28">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -963,10 +963,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD718"/>
+      <child nodeId="node-0x02B8CD08"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD718">
+  <item nodeId="node-0x02B8CD08">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">[going east]&#x000A;You can't go that way.&#x000A;[going east - failed the can't go that way rule]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -974,10 +974,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CDA98"/>
+      <child nodeId="node-0x02B8D5C8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CDA98">
+  <item nodeId="node-0x02B8D5C8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">[going west]&#x000A;Nuvi shuffles along after the player.&#x000A;&#x000A;Bejeweled Pines&#x000A;You stand amongst a dazzling array of colors: these trees are Fancy.&#x000A;&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.&#x000A;&#x000A;&#x000A;Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic.&#x000A;&#x000A;[going west - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -985,7 +985,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031CD948">
+  <item nodeId="node-0x02B8D638">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Nuvi shuffles along after the player.&#x000A;&#x000A;Bejeweled Pines&#x000A;You stand amongst a dazzling array of colors: these trees are Fancy.&#x000A;&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.&#x000A;&#x000A;&#x000A;Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -993,10 +993,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031CD9B8"/>
+      <child nodeId="node-0x02B8D6A8"/>
     </children>
   </item>
-  <item nodeId="node-0x031CD9B8">
+  <item nodeId="node-0x02B8D6A8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Crashing through the frosted pines as gracefully as possible for a fully grown human following a faery no larger than your little finger, you chase after the elusive sphere of lilac light.  Luckily, she's waiting just at the edge of the current clearing every time you make it through an obstacle blocking line of sight to her.  Eventually, you tumble out into a strange vista of minute ruins.&#x000A;&#x000A;you found anicemole placeholder in the Ghostly Greeting Chamber&#x000A;Nuvi shuffles along after the player.&#x000A;&#x000A;Ghostly Greeting Chamber&#x000A;You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;You can also see Mr Diggums here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1004,7 +1004,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031CDA28">
+  <item nodeId="node-0x02B8D558">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1012,10 +1012,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031F4F00"/>
+      <child nodeId="node-0x02BB76B8"/>
     </children>
   </item>
-  <item nodeId="node-0x031F4F00">
+  <item nodeId="node-0x02BB76B8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">[going east]&#x000A;Crashing through the frosted pines as gracefully as possible for a fully grown human following a faery no larger than your little finger, you chase after the elusive sphere of lilac light.  Luckily, she's waiting just at the edge of the current clearing every time you make it through an obstacle blocking line of sight to her.  Eventually, you tumble out into a strange vista of minute ruins.&#x000A;&#x000A;Nuvi shuffles along after the player.&#x000A;&#x000A;Ghostly Greeting Chamber&#x000A;You stand in the center of what was once a grand antechamber, for certain values of grand: everything, from the fallen grandiose pillars to the rime-encrusted iron skeletons of elaborate furniture is miniature scale relative to you.  It feels a bit like walking into a dollhouse store that a ruination of weather and time have trampled to ghostly memories.  Your faerie friend's face lights up at the sight of you and she flits off through a close copse of pines to the East, leaving a puff of shimmering violet powder in her wake.&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;You can also see Mr Diggums here.&#x000A;&#x000A;[going east - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1023,10 +1023,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031F4950"/>
+      <child nodeId="node-0x02BB72C8"/>
     </children>
   </item>
-  <item nodeId="node-0x031F4950">
+  <item nodeId="node-0x02BB72C8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">[going west]&#x000A;you found anicemole placeholder in the Ghostly Greeting Chamber&#x000A;Nuvi shuffles along after the player.&#x000A;&#x000A;Bejeweled Pines&#x000A;You stand amongst a dazzling array of colors: these trees are Fancy.&#x000A;&#x000A;&#x000A;A winged otter flaps serenely nearby.  His tophat is dapper.&#x000A;&#x000A;the trees here are no less dusted with snow than their fellows you just pushed through, but they have also been festooned with crystal and glass baubles of every conceivable hue.&#x000A;&#x000A;&#x000A;Little soft-glowing lights flit amongst the trees from ornament to ornament, keeping the emphasis and shading dynamic.&#x000A;&#x000A;[going west - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1034,7 +1034,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x031F48E0">
+  <item nodeId="node-0x02BB7728">
     <command xml:space="preserve">speak to otter</command>
     <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1042,10 +1042,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x031F4E20"/>
+      <child nodeId="node-0x02BB7488"/>
     </children>
   </item>
-  <item nodeId="node-0x031F4E20">
+  <item nodeId="node-0x02BB7488">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>

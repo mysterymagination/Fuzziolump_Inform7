@@ -78,6 +78,10 @@ The Ice Mole Path Index is a number which varies.  The Ice Mole Path Index is 1.
 The Ice Mole Path is a list of Rooms that varies.
 The Party is a List of People which varies.
 
+[global maps]
+[tracks modifications that have occurred in rooms as {Room : [mod_id_1, mod_id_2...], ...}]
+Field Mods Map relates one Room to one list of texts.
+
 [now set 'em up]
 When play begins:
 	[shimmerin maze init]
@@ -123,7 +127,9 @@ To burrow like an ice mole:
 		say "An ice mole licks the frozen waterfall gingerly, as if giving it a friendly kiss.  Or perhaps more than friendly.  When he hears you tromping through the crunchy snows, he tunnels away Northwest directly into the ice and has been replaced by a mole hole in the blink of an eye.  As you perform said blink, a chunk of ice falls from the tunnel roof, sympathetically.";
 	otherwise if the location is the Treasure of Stillness:
 		say "An ice mole patiently shovels snow with his great digging claws, to no particular purpose you can see.  His earnest little brow is furrowed, however, so you imagine he must have important duties here.  When he catches your scent on the wind, he abandons his shoveling and burrows away in a shower of glittering ice chips.  The tinkling of disturbed gold and gemstones showering over one another fades out to the Northeast.";
-		now Field Mods Map at Treasure of Stillness has "molehole".
+		add "molehole" to the list that Treasure of Stillness relates to by Field Mods Map.
+	otherwise if the location is the Crystal Gardens:
+		say "An ice mole snuffles about busily beneath a huge growth of emeralds in the shape of a towering oak tree.  His giant claws scrape patiently away at the 'roots', hard enough to chip away the stone.  When the mole sees you approaching, he panics and dives beneath the ice and snow at the base of the emerald tree.  His frenzied digging upsets the root system, which is apparently a thing, and the emerald oak comes crashing to the ground, throwing up a mist of powdery snow that glitters in the multi-hued sunlight.  The perfectly rounded tunnel appears to lead Southeast.";
 
 To retreat like an ice mole: 
 	say "An ice mole moonwalks back from [the location of Mr Diggums]";
@@ -134,6 +140,8 @@ To retreat like an ice mole:
 		say "An ice mole shimmies down from the Northeast over the frozen staircase, managing the steps with more dignity than any quadraped ever managed steps before (you're certain).  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.  You'd swear he never touched the ground on the way back up.";
 	otherwise if the location is the Treasure of Stillness:
 		say "An ice mole snuffles in amongst the treasures from the Southeast, ignoring the sparklies and evidently intent on some secret quest.  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.";
+	otherwise if the location is the Crystal Gardens:
+		say "An ice mole hops up on a nearby yucca plant carved from solid ruby slightly to the Southwest, assuming the pose of a stalwart caretaker.  When he sees you, his fur stands on end and he jumps three feet in the air, and then flees back the way he came.";
 	[in the case of retreat, the mole has moved but the dest index should not be updated because we have to move him back; given that he only moves clockwise, we just leave his dest index where it is]
 	let retreatIndex be 1;
 	if Ice Mole Path Index is 1: 
@@ -362,13 +370,41 @@ To say Treasure of Stillness desc:
 	
 	Up a gradual incline and over the remains of a once-sturdy gate to the Northeast, you can see several oddly pointy bushes glittering in the verdant sunlight.  Down a slightly harsh rockfall (best to slide, but watch your rump!) Southeast lies a lonely little frosted valley; judging by the incline, this particular vector will be a one-way trip.  Up the slope and over the sad ruins of a once fancy archway stand the bases of mighty pillars that once supported a grand antechamber East of here."; 
 	if Shimmerin is not listed in the Party:
-		if Field Mods Map at Treasure of Stillness includes molehole:
+		if "molehole" is listed in the list that relates to Treasure of Stillness by Field Mods Map:
 			say "Scattered about the mole hole are several exciting shinies: a large emerald carved in the likeness of a winking fairy, which pulses gently with a soft verdant radiance; a needle-sized sword that gleams whiter than the fresh snow, its brightness searing an impression behind your eyes; a shimmering midnight blue dress, with skirts divided for riding, that fits in the palm of your hand.";
 			if the Summer Court Tiara is not listed in the Player's inventory:  
 				say "The main point of interest, however, is the tiny jewel-encrusted tiara which seems to be calling to you with a sensual humming.  You find yourself longing more than anything to pick it up...";
 		otherwise:
 			say "In addition to all the loose treasure, you can see faint glimmering from within the ice; you note that there may be yet more wonders held prisoner in its frosty grip.";
 		say "You see no sign of your fairy friend here; seems she didn't wish to linger."
+		
+Northeast of the Treasure of Stillness is the Crystal Gardens.
+Northwest of the Frozen Stair is the Crystal Gardens.
+The description of the Crystal Gardens is "[Crystal Garden desc]".
+To say Crystal Gardens desc:
+	say "You stand in a large clearing where someone has apparently cultivated a vast garden of crystals.  Instead of the soft greens of pine and holly, eldritch purples, blues, reds, and every color imaginable (and a few that are like no color you've imagined previously) filter the subtle sunlight into spectacular rainbows over you.  The dusting of snow only mutes the effect slightly, pleasantly keeping it mysterious rather than gaudy.  Faeries flit amongst the crystalline horticulture, adding their own colors to the filtered sunlight.  Brushing by an explosion of amethyst that looks a bit lke the leaves of a pineapple, you shy away as a sharp pain stings your arm and a warm rivulet of blood seeps into your clothing -- the verge here is beautiful and deadly. 
+
+	Several of the crystals are carved to look like fanciful animals (or, here, regular animals) reading books and wearing stylish clothes.  There are humans too, as well as a few winged humanoids that might be faeries; you note that they are the same size.  The time and care involved in cultivating and pruning crystal topiary boggles your mind.  As a cool wind ruffles the distant foliage, the crystal garden produces a light tinkling that settles into a deeper resonant hum of crystalline vibration.
+	
+	The ground slopes downward in a gently meandering curve heading Southeast to a large clearing that frames a set of grandiose stairs that descend out of sight.  Just over the lip of a once ornate gate to the Southwest you can see a shallow hill with bumps of ice (most likely hiding buried steps) leading down into a gallery frozen forever in its final moment of splendor.";
+	if Shimmerin is not listed in the Party:
+		say "The fairy you're chasing peeks out from behind a sapphire flower as tall as you.  When she sees you approaching, she winks flirtatiously and blows you a little kiss.";
+		if the Summer Court Tiara is listed in the Player's inventory:
+			say "Then, her eyes shift to your pack, which has begun to hum and vibrate softly.  Zooming over in a blur of enthusiasm, the little fairy opens your pack, dives in, and emerges holding reverently the tiny tiara you picked up in the treasure room.
+		
+			'That is... how did you find her?' she asks, breathlessly, her face a mask of astonishment and all pretense of teasing silliness forgotten.  'She's the Summer Queen's own tiara, and has been lost to us since the fall of the courts centuries ago.  Everything hears her call, faeries most of all, so we knew she was under the ice amongst the forsaken treasures but no one could get past the treasure's curse to reach her!'";
+			now Shimmerin is in the Crystal Gardens.
+			now Shimmerin is eager to join.
+		otherwise:
+			say "Simultaneously, blinding beautiful light explodes from every one of the innumerable crystals in the garden, and when you can see again you see that the little fairy has vanished.";
+After answering Shimmerin that when the topic understood includes "[Tiara Tokens]" and Shimmerin is eager to join:
+	if the topic understood includes "mole":
+		[todo: honesty handling]
+	otherwise:
+		[todo: lie handling]
+	now Shimmerin is not eager to join.
+	add Shimmerin to the Party.
+Understand "tiara/summer court/summer queen/crown/diadem/circlet" as Tiara Tokens.
 	
 
 [ doesn't work for no reason?
