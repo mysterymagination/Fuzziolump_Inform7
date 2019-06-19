@@ -51,6 +51,9 @@ Report hiding it behind:
 	
 ]
 
+[field mods are meant to basically be a hashmap of Room objects to an array of strings that indicate what changes have occurred in that room during play, e.g. that an ice mole burrowed and left a giant hole]
+Field Modification relates one Room to various texts. The verb to be field modified with implies the Field Modification relation.
+
 Section 2 - On Global Declarations and the Virtue of Simplicity
 
 [declare/define global regions]
@@ -71,16 +74,15 @@ The Ice Mole is a kind of person.
 Mr Diggums is an Ice Mole. "An ice mole (who is also a nice mole) snuffles peacefully nearby." 
 Mr Diggums is in the Frozen Stair.
 
+[define global inventory objects]
+The Summer Court Tiara is an object.
+
 [declare/define global trackers]
 The Ice Mole Path Index is a number which varies.  The Ice Mole Path Index is 1.
 
 [declare/define global arrays]
 The Ice Mole Path is a list of Rooms that varies.
 The Party is a List of People which varies.
-
-[global maps]
-[tracks modifications that have occurred in rooms as {Room : [mod_id_1, mod_id_2...], ...}]
-Field Mods Map relates one Room to one list of texts.
 
 [now set 'em up]
 When play begins:
@@ -127,7 +129,7 @@ To burrow like an ice mole:
 		say "An ice mole licks the frozen waterfall gingerly, as if giving it a friendly kiss.  Or perhaps more than friendly.  When he hears you tromping through the crunchy snows, he tunnels away Northwest directly into the ice and has been replaced by a mole hole in the blink of an eye.  As you perform said blink, a chunk of ice falls from the tunnel roof, sympathetically.";
 	otherwise if the location is the Treasure of Stillness:
 		say "An ice mole patiently shovels snow with his great digging claws, to no particular purpose you can see.  His earnest little brow is furrowed, however, so you imagine he must have important duties here.  When he catches your scent on the wind, he abandons his shoveling and burrows away in a shower of glittering ice chips.  The tinkling of disturbed gold and gemstones showering over one another fades out to the Northeast.";
-		add "molehole" to the list that Treasure of Stillness relates to by Field Mods Map.
+		now Treasure of Stillness is field modified with "molehole";
 	otherwise if the location is the Crystal Gardens:
 		say "An ice mole snuffles about busily beneath a huge growth of emeralds in the shape of a towering oak tree.  His giant claws scrape patiently away at the 'roots', hard enough to chip away the stone.  When the mole sees you approaching, he panics and dives beneath the ice and snow at the base of the emerald tree.  His frenzied digging upsets the root system, which is apparently a thing, and the emerald oak comes crashing to the ground, throwing up a mist of powdery snow that glitters in the multi-hued sunlight.  The perfectly rounded tunnel appears to lead Southeast.";
 
@@ -253,7 +255,7 @@ To say willoweave basic desc:
 		say "Willoweave bounces on her rainbow-painted roots enthusiastically, eager to see what's next."
 The description of Willoweave is "Emerald green ivy interspersed and accented by soft thistle down serves this dryad like hair, pouring down from her head well past the small of her back.  Soft tawny eyes peer out from a face ever-bright with wonder.  Her skin is the gleaming nut brown of polished oak, and is smoother to the touch than glass.  She has the shape of a human woman carved from wood, save that her feet and hands are more like the roots and branches of trees, respectively.  This has not stopped her from painting the tips of each tendril with whimsical splashes of (mostly contrasting) color.  Being essentially a tree, she wears nothing, but when she catches you examinig her sinuousness, a small carpet of pink hyacinth blooms burst into being on her cheeks and she summons up a modest dusting of moss to cover her torso like a dress.  A very clingy dress.  These seem to fall away on their own over time as her attention flits elsewhere."
 
-A Faerie is a kind of Person. Shimmerin is a Faerie.
+A Faerie is a kind of Person. Shimmerin is a Faerie.  Shimmerin can be eager to join.  Shimmerin is not eager to join.
 The Bejeweled Pines is a room. "[bejeweled pines desc]".  [Shimmerin and Willoweave are here. -- don't want them to show up named immediately]
 North of the Atrium Glade is the Bejeweled Pines.
 There are Trees in the Bejeweled Pines. "[initial fancy trees desc]". Understand "tree/forest/woods/trees/greenery" as Trees.
@@ -370,9 +372,9 @@ To say Treasure of Stillness desc:
 	
 	Up a gradual incline and over the remains of a once-sturdy gate to the Northeast, you can see several oddly pointy bushes glittering in the verdant sunlight.  Down a slightly harsh rockfall (best to slide, but watch your rump!) Southeast lies a lonely little frosted valley; judging by the incline, this particular vector will be a one-way trip.  Up the slope and over the sad ruins of a once fancy archway stand the bases of mighty pillars that once supported a grand antechamber East of here."; 
 	if Shimmerin is not listed in the Party:
-		if "molehole" is listed in the list that relates to Treasure of Stillness by Field Mods Map:
+		if Treasure of Stillness is field modified with "molehole":
 			say "Scattered about the mole hole are several exciting shinies: a large emerald carved in the likeness of a winking fairy, which pulses gently with a soft verdant radiance; a needle-sized sword that gleams whiter than the fresh snow, its brightness searing an impression behind your eyes; a shimmering midnight blue dress, with skirts divided for riding, that fits in the palm of your hand.";
-			if the Summer Court Tiara is not listed in the Player's inventory:  
+			if the Player is not carrying the Summer Court Tiara:  
 				say "The main point of interest, however, is the tiny jewel-encrusted tiara which seems to be calling to you with a sensual humming.  You find yourself longing more than anything to pick it up...";
 		otherwise:
 			say "In addition to all the loose treasure, you can see faint glimmering from within the ice; you note that there may be yet more wonders held prisoner in its frosty grip.";
@@ -380,7 +382,7 @@ To say Treasure of Stillness desc:
 		
 Northeast of the Treasure of Stillness is the Crystal Gardens.
 Northwest of the Frozen Stair is the Crystal Gardens.
-The description of the Crystal Gardens is "[Crystal Garden desc]".
+The description of the Crystal Gardens is "[Crystal Gardens desc]".
 To say Crystal Gardens desc:
 	say "You stand in a large clearing where someone has apparently cultivated a vast garden of crystals.  Instead of the soft greens of pine and holly, eldritch purples, blues, reds, and every color imaginable (and a few that are like no color you've imagined previously) filter the subtle sunlight into spectacular rainbows over you.  The dusting of snow only mutes the effect slightly, pleasantly keeping it mysterious rather than gaudy.  Faeries flit amongst the crystalline horticulture, adding their own colors to the filtered sunlight.  Brushing by an explosion of amethyst that looks a bit lke the leaves of a pineapple, you shy away as a sharp pain stings your arm and a warm rivulet of blood seeps into your clothing -- the verge here is beautiful and deadly. 
 
@@ -389,22 +391,28 @@ To say Crystal Gardens desc:
 	The ground slopes downward in a gently meandering curve heading Southeast to a large clearing that frames a set of grandiose stairs that descend out of sight.  Just over the lip of a once ornate gate to the Southwest you can see a shallow hill with bumps of ice (most likely hiding buried steps) leading down into a gallery frozen forever in its final moment of splendor.";
 	if Shimmerin is not listed in the Party:
 		say "The fairy you're chasing peeks out from behind a sapphire flower as tall as you.  When she sees you approaching, she winks flirtatiously and blows you a little kiss.";
-		if the Summer Court Tiara is listed in the Player's inventory:
+		if the Player carries the Summer Court Tiara:
 			say "Then, her eyes shift to your pack, which has begun to hum and vibrate softly.  Zooming over in a blur of enthusiasm, the little fairy opens your pack, dives in, and emerges holding reverently the tiny tiara you picked up in the treasure room.
 		
 			'That is... how did you find her?' she asks, breathlessly, her face a mask of astonishment and all pretense of teasing silliness forgotten.  'She's the Summer Queen's own tiara, and has been lost to us since the fall of the courts centuries ago.  Everything hears her call, faeries most of all, so we knew she was under the ice amongst the forsaken treasures but no one could get past the treasure's curse to reach her!'";
-			now Shimmerin is in the Crystal Gardens.
-			now Shimmerin is eager to join.
+			now Shimmerin is in the Crystal Gardens;
+			now Shimmerin is eager to join;
 		otherwise:
 			say "Simultaneously, blinding beautiful light explodes from every one of the innumerable crystals in the garden, and when you can see again you see that the little fairy has vanished.";
 After answering Shimmerin that when the topic understood includes "[Tiara Tokens]" and Shimmerin is eager to join:
 	if the topic understood includes "mole":
-		[todo: honesty handling]
+		[honesty handling]
+		say "Shimmerin's eyes brighten and a broad grin lights up her face.  'You were able to get the mole to dig treasure out of the ice?  But he's so stubborn!  He's usually too focused on his snow shoveling to do anything else, even when offered treats.  I'm too small for him to take much notice anyway, so I haven't been able to effectively enlist his services.'  She places the tiara on her head, carefully arranging her auburn locks so that they optimally frame the gorgeous treasure.";
 	otherwise:
-		[todo: lie handling]
-	now Shimmerin is not eager to join.
+		[lie handling -- should be based on CHA score or something, but for now we'll just call it 25% she believes the unlikely premise that the player got the tiara on their own and 75% she realizes they're full of it]
+		let bluffCheck be a random number from 1 to 100;
+		if bluffCheck >= 75:
+			say "The faerie's eyes widen in awe.  'The treasure room only allows the most pure-hearted creatures to shuffle or take from its contents.  You must be a wonderful person!'  She zooms in uncomfortably close to your face and bats her lashes flirtatiously.  'I wanna get to know you -- I'm comin' with!  Name's Shimmerin, by the by.'  She plunks the tiara down on her head and, blushing, quickly tidies her auburn hair.  Flustered and wearing a sheepish grin, she offers a tiny hand.  You shake as best you can with a waggle of your little finger.";
+		otherwise:
+			say "The faerie's brow crinkles skeptically.  'No way.  You're lying to me!  What kind of person lies to such a cute girl?  Someone trying to manipulate her, that's what sort of 'person'!'  She sticks her tongue out at you, then turns her back and refuses to acknowledge you further.  As you turn to leave, she lands on your shoulder and tweaks your ear painfully. 'I'm coming with you.  As an upstanding Lumpkin, I cannot allow a suspicious individual such as yourself to wander my lovely little world unsupervised.  I don't know or care how you got the Queen's tiara, but I'll be keeping her safe.'  She carefully places the tiara on her auburn locks, mussing them in her indignant fervor, then sticks her tongue out at you again.";
+	now Shimmerin is not eager to join;
 	add Shimmerin to the Party.
-Understand "tiara/summer court/summer queen/crown/diadem/circlet" as Tiara Tokens.
+Understand "tiara/summer court/summer queen/crown/diadem/circlet" as "[Tiara Tokens]".
 	
 
 [ doesn't work for no reason?
