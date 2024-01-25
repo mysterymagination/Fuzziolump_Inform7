@@ -10,29 +10,29 @@
             <author>jeff creswell</author>
             <headline>An Interactive Fiction</headline>
             <genre>Fiction</genre>
-            <firstpublished>2019</firstpublished>
+            <firstpublished>2024</firstpublished>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2019-06-19</releasedate>
+                    <releasedate>2024-01-24</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
-                    <compilerversion>6L38</compilerversion>
+                    <compilerversion>Inform 10.1.2 (build )</compilerversion>
                 </release>
             </attached>
         </releases>
         <colophon>
             <generator>Inform 7</generator>
-            <generatorversion>6L38</generatorversion>
-            <originated>2019-06-19</originated>
+            <generatorversion>Inform 10.1.2 (build )</generatorversion>
+            <originated>2024-01-24</originated>
         </colophon>
         <glulx>
-            <serial>190619</serial>
+            <serial>240124</serial>
             <release>1</release>
-            <compiler>Inform 7 build 6L38</compiler>
+            <compiler>Inform Inform 10.1.2 (build )</compiler>
         </glulx>
     </story>
 </ifindex>
